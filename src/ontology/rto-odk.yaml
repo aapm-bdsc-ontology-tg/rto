@@ -9,3 +9,4 @@ import_group:
     - id: bfo
     - id: ogms
     - id: obi
+    - id: doid
