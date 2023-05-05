@@ -1,0 +1,11 @@
+id: rto
+title: Radiation Therapy Ontology
+github_org: aapm-bdsc-ontology-tg
+repo: rto
+import_group:
+  products:
+    - id: ro
+    - id: iao
+    - id: bfo
+    - id: ogms
+    - id: obi
