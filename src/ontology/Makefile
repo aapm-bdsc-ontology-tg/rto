@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro iao bfo ogms obi
+IMPORTS =  ro iao bfo ogms obi doid
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -309,6 +309,66 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: ro
+
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/ro_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/RO --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/ro_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: iao
+
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/iao_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/IAO --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/iao_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: bfo
+
+$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/bfo_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/BFO --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/bfo_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: ogms
+
+$(IMPORTDIR)/ogms_import.owl: $(MIRRORDIR)/ogms.owl $(IMPORTDIR)/ogms_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/ogms_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/OGMS --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/ogms_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: obi
+
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/obi_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/OBI --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/obi_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: doid
+
+$(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl $(IMPORTDIR)/doid_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/doid_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/DOID --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/doid_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -382,6 +442,15 @@ mirror-ogms: | $(TMPDIR)
 mirror-obi: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/obi.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: doid
+.PHONY: mirror-doid
+.PRECIOUS: $(MIRRORDIR)/doid.owl
+mirror-doid: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/doid.owl --create-dirs -o $(MIRRORDIR)/doid.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/doid.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

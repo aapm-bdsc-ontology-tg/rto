@@ -5,8 +5,14 @@ repo: rto
 import_group:
   products:
     - id: ro
+      module_type: filter
     - id: iao
+      module_type: filter
     - id: bfo
+      module_type: filter
     - id: ogms
+      module_type: filter
     - id: obi
+      module_type: filter
     - id: doid
+      module_type: filter
