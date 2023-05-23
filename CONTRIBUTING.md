@@ -1,28 +1,13 @@
 # Contributing to Radiation Therapy Ontology
 
-:+1: First of all: Thank you for taking the time to contribute!
-
-The following is a set of guidelines for contributing to RTO. 
-These guidelines are not strict rules. Use your best judgment, and feel free to propose 
-changes to this document in a pull request.
-
 ## Table Of Contents
 
-- [Code of Conduct](#code-of-conduct)
 - [Guidelines for Contributions and Requests](#contributions)
     * [Reporting problems](#reporting-bugs)
-    * [Editing](#editingm)
+    * [Editing](#editing)
 - [Best practices](#best-practices)
     * [How to write a great issue?](#great-issues)
     * [How to create a great pull/merge request?](#great-pulls)
-
-<a id="code-of-conduct"></a>
-
-## Code of Conduct
-
-The Radiation Therapy Ontology team strives to create a
-welcoming environment for editors, users and other contributors.
-Please carefully read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 <a id="contributions"></a>
 
@@ -42,16 +27,18 @@ To learn how to write a good issue [see here](#great-issues).
 The overall process for editing the  Radiation Therapy Ontology is as follows:
 
 1. [If you want to create/import a new term: Check if the term already exists in an OBO foundry ontology](#checking)
-1. Write an issue about your edits
-1. (if not already done) Clone the repository 
-1. Fetch the main branch and create a new branch the code using XXXISSUEXXX as the branch name on your local machine
-1. Switch to the right branch
+1. [Write an issue about your edits](https://github.com/aapm-bdsc-ontology-tg/rto/issues/)
+1. Create a new branch linked to your issue
+1. (if not already done) Clone the repository (https://github.com/aapm-bdsc-ontology-tg/rto.git)
+1. Fetch / update the local copy of the repository and switch ot the new branch
 1. If you want to change the RTO itself: Open src/ontology/rto-edit.owl in your favourite editor, e.g. [Protege](https://protege.stanford.edu/).
 OR
 1. If you want to change the Imports: Open src/ontology/imports/?.owl in your favourite editor, e.g. [Protege](https://protege.stanford.edu/).
-1. Make your edits
-1. Commit the changes and push changes to origin
+1. Make your edits and save your file locally
+1. Commit the local changes and push changes to origin
 1. Create pull request
+
+![process](/src/assets/git_process_overview.png)
 
 
 <a id="checking"></a>
@@ -62,13 +49,20 @@ You can search for your term using [Ontobee](https://ontobee.org/)
 or [OLS](http://www.ebi.ac.uk/ols/ontologies/rto).
 
 
-<a id="checking"></a>
+<a id="issue"></a>
 
 #### Write an issue about your edits
 
-Before you write a new request, please consider the following: 
 
-- **Does the term already exist?** Before submitting suggestions for new ontology terms, 
+<a id="create_branch"></a>
+
+#### Create a branch linked to your issue
+In the [list of issues](https://github.com/aapm-bdsc-ontology-tg/rto/issues/)
+, click the issue that you would like to create a branch for.
+In the right sidebar under "Development", click Create a branch and then Create Bracnc. 
+
+
+
 - **Can you provide a definition for the term?** It should be very clear what the term means, and you should be
 able to provide a concise definition, ideally with a scientific reference. 
 We define terms using an aristotelian definition following the book of Arp et al. NEED REF
