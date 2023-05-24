@@ -5,7 +5,6 @@
 ## Reporting problems
 
 Use our [Issue Tracker](https://github.com/aapm-bdsc-ontology-tg/rto/issues/) for reporting problems with the ontology. 
-To learn how to write a good issue [see here](#great-issues).
 
 <a id="editing"></a>
 
