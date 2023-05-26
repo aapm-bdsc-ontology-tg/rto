@@ -19,7 +19,7 @@ The overall process for editing the  Radiation Therapy Ontology is as follows:
 1. [Fetch / update the local copy of the repository and switch to the new branch](#switch_to_branch)
 1. If you want to change the RTO itself: Open src/ontology/rto-edit.owl in your favourite editor, e.g. [Protege](https://protege.stanford.edu/).
 OR
-1. If you want to change the Imports: Open src/ontology/imports/?.owl in your favourite editor, e.g. [Protege](https://protege.stanford.edu/).
+1. INCORRECT If you want to change the Imports: Open src/ontology/imports/?.owl in your favourite editor, e.g. [Protege](https://protege.stanford.edu/).
 1. Make your edits and save your file locally
 1. [Commit the local changes and push changes to origin](#commit_change)
 1. [Create pull request](#create_pull_request)
