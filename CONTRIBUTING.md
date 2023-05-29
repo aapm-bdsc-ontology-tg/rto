@@ -17,10 +17,10 @@ The overall process for editing the  Radiation Therapy Ontology is as follows:
 1. [Create a new branch linked to your issue](#create_branch)
 1. (if not already done) Clone the repository (https://github.com/aapm-bdsc-ontology-tg/rto.git)
 1. [Fetch / update the local copy of the repository and switch to the new branch](#switch_to_branch)
-1. If you want to change the RTO itself: Open src/ontology/rto-edit.owl in your favourite editor, e.g. [Protege](https://protege.stanford.edu/).
+1. If you want to change the RTO itself: Open src/ontology/rto-edit.owl in your favourite ontology editor, e.g. [Protege](https://protege.stanford.edu/).
 OR
-1. INCORRECT If you want to change the Imports: Open src/ontology/imports/?.owl in your favourite editor, e.g. [Protege](https://protege.stanford.edu/).
-1. Make your edits and save your file locally
+1. If you want to change the Imports: Open src/ontology/imports/?.txt in your favourite text editor.
+1.  Make your edits and save your file locally. Adding/editing terms needs to adhere to our term [guidelines](#term_guidelines).
 1. [Commit the local changes and push changes to origin](#commit_change)
 1. [Create pull request](#create_pull_request)
 1. [Accept pull request and merge](#merge_pull_request)
@@ -54,6 +54,11 @@ In the right sidebar under "Development", click Create a branch, select an appro
 
 ### Start working locally in the new branch
 Fetch / update the local copy of the repository and switch to the new branch in your git manager (e.g. GitHub Dekstop)
+
+<a id="term_guidelines"></a>
+
+### Adhere to the following term guidelines
+These guidelines are a summary of ones defined by [OBI](http://obi-ontology.org/page/OBI_term_guidelines) and by [OBO](https://obofoundry.org/principles/fp-000-summary.html).
 
 <a id="commit_change"></a>
 
