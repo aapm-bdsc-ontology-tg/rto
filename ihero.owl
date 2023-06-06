@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#"
+     xml:base="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#bearer_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#bearer_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#inheres_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#disposition_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#disposition_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#inheres_in"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_disposition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#function_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#function_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#inheres_in"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_disposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_disposition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#bearer_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_function -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_function">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#bearer_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_part"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_participant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_participant">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#participates_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#bearer_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#quality_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_role">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#bearer_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#role_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#inheres_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#inheres_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurent_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurent_part_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#participates_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#participates_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#quality_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#quality_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#inheres_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realized_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realized_in">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realizes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realizes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#role_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#role_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#inheres_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#personal_demographic_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#begin_date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#begin_date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#one_dimensional_temporal_region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurent_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurent_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_phase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#date_of_birth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#date_of_birth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#personal_demographic_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#planned_course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_dose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_dose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#specifically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_phase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#planned_phase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#disposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#disposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realizable_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#end_date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#end_date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#one_dimensional_temporal_region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurent_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurent_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_phase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#fractional_delivered_dose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#fractional_delivered_dose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_dose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#personal_demographic_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#healthcare_provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#healthcare_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#history -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#history">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#human_being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#human_being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#material_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#immaterial_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#immaterial_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#independent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#independent_continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#independent_continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#label -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#label">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#material_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#material_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#independent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#modality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#modality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#personal_demographic_information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#number_of_fractions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#number_of_fractions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#specifically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#material_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#object_aggregrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#object_aggregrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#material_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurrent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurrent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#one_dimensional_temporal_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#one_dimensional_temporal_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#temporal_region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#organ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#organ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#personal_demographic_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#personal_demographic_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#specifically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#planned_course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#planned_course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#planned_phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#planned_phase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#prescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#prescription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurrent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process_boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process_boundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realizable_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realizable_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#realizable_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#immaterial_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#spatial_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#spatial_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#immaterial_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#specifically_dependent_continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#specifically_dependent_continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#target_volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#target_volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#technique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#technique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#temporal_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#temporal_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#occurrent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#therapy_plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#therapy_plan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#specifically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#total_delivered_dose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#total_delivered_dose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#delivered_dose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#zero_dimensional_temporal_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#zero_dimensional_temporal_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/5/ihero#temporal_region"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

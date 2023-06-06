@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#"
+     xml:base="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_occurent_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_occurent_part">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#occurent_part_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_participant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_participant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#occurent_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#occurent_part_of">
+        <obo:IAO_0000115>&quot;p occurent_part_of q. This is a primitive relation of parthood, holding independently of time, between prcoess instances when one is a subprocess of the other.  For example, this tumor&apos;s growth occurent_part_of Mary&apos;s life.&quot;</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#OROO_phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#OROO_phase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_phase"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_occurent_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#action_specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#action_specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#directive_information_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#begin_radiation_therapy_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#begin_radiation_therapy_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#brachytherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#brachytherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#collimator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#collimator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#data_item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#data_item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#data_item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#information_content_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#device">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#processed_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#directive_information_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#directive_information_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#information_content_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#end_radiation_therapy_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#end_radiation_therapy_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#external_beam_therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#external_beam_therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#information_content_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#information_content_entity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#inverse_planned_specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#inverse_planned_specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_protocol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#medical_imaging_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#medical_imaging_process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planned_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#multileaf_collimator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#multileaf_collimator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#collimator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#plan_specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#plan_specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#directive_information_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planned_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planned_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planning_target_volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planning_target_volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#target_volume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#processed_material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#processed_material">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#plan_specification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planned_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_phase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planned_process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_occurent_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_procedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#occurent_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_procedure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_procedure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#therapeutic_procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#protocol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_session -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_session">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planned_process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#occurent_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_phase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_participant"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planning_target_volume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#has_occurent_part"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_procedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From IHERO, the essential elements for a phase are these (note that their definition of a phase is a set of identical treatments which we define as a session):
+label
+start date
+end date
+modalities: session
+techniques: session
+number of delivered fractions
+dose delivered to volumes: session
+dose per fraction: session
+total delivered dose from phase</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#rt_process_date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#rt_process_date">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#target_volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#target_volume">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#technique_action_specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#technique_action_specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#action_specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#collimator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_protocol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#therapeutic_procedure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#therapeutic_procedure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planned_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#IMRT:oroo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#IMRT:oroo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#technique_action_specification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#inverse_planned_specification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#multileaf_collimator"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#IMRT:oroo2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#IMRT:oroo2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#technique_action_specification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#inverse_planned_specification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#multileaf_collimator"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#hasPart"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_PTV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_PTV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#planning_target_volume"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_phase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_phase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_proc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_proc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#radiation_therapy_procedure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_session -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_session">
+        <has_occurent_part rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_proc"/>
+        <has_occurent_part rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_session_date"/>
+        <has_participant rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_PTV"/>
+        <occurent_part_of rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_RT_phase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_session_date -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#Smith_session_date">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#rt_process_date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#control_point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#imrt1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#imrt1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#technique_action_specification"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint1"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint2"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint3"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint4"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint5"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#invplanpec"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#mlc1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#invplanpec -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#invplanpec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#inverse_planned_specification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#mlc1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#mlc1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#multileaf_collimator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/markphillips/ontologies/2022/1/untitled-ontology-44#controlpoint5"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

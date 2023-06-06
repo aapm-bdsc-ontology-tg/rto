@@ -1,0 +1,30 @@
+08:04:03 From Jonathan Bona (UAMS) to Everyone:
+	https://oboacademy.github.io/obook/lesson/developing-an-obo-ontology/
+08:07:11 From Jonathan Bona (UAMS) to Everyone:
+	https://oboacademy.github.io/obook/tutorial/odk-tutorial-2/
+08:07:31 From Andre Dekker to Everyone:
+	stopped my video for bandwidth. still here
+08:14:15 From Andre Dekker to Everyone:
+	could you open up the txt file to see what axioms we can incliuder
+08:14:19 From Andre Dekker to Everyone:
+	can you define that?
+08:14:21 From Jonathan Bona (UAMS) to Everyone:
+	Andre we couldn’t hear your request
+08:16:31 From Andre Dekker to Everyone:
+	can you also force it to define e.g. the upper tree? Or specific axioms? Like you can do in ontofox?
+08:21:08 From Andre Dekker to Everyone:
+	I do remember from what they showed me that it would be possible to include additional ontologies indeed
+08:23:53 From Andre Dekker to Everyone:
+	we can do that ourselvce
+08:24:00 From Andre Dekker to Everyone:
+	one needs to do that anyway
+08:24:03 From Andre Dekker to Everyone:
+	locally
+08:24:06 From Jonathan Bona (UAMS) to Everyone:
+	https://ontology-development-kit.readthedocs.io/en/latest/InitialSetup.html
+08:31:30 From Jonathan Bona (UAMS) to Everyone:
+	https://oboacademy.github.io/obook/tutorial/odk-tutorial-2/
+08:33:24 From Jonathan Bona (UAMS) to Everyone:
+	http://robot.obolibrary.org/extract
+08:44:43 From Jonathan Bona (UAMS) to Everyone:
+	https://github.com/aapm-bdsc-ontology-tg/rto
