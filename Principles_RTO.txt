@@ -1,0 +1,5 @@
+General Principles Guiding Development of Radiation Therapy Ontology (RTO)
+
+> To follow the guidelines of the Open Biological and Biomedical Ontology (OBO) Foundry (http:/obofoundry.org)
+
+
