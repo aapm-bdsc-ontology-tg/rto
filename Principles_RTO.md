@@ -8,6 +8,6 @@
 1. RTO falls under the gneral class of "formal" ontologies.  The classes and properties are meant to be fundamental and relatively general.  It is understood that practical applications may need a practical ontology to be merged with RTO in order to meet the specifications and constraints of particular applications.  However, the intent is that the use of RTO will relieve application implementers of significant effort and establish a uniform knowledge representation and vocabulary, which characteristics have been shoown to have significant synergisgtic properties.
 1. To the extent tpossible, use if made of classes and properties that have been defined in other OBO Foundry ontologies.  It is understood that there can be considerable overlap between concepts in different biomedical domains, yet the overlap is not sufficiently complete to base an RTO class or property on it.  In those cases, a new class is implemented in RTO, but pointers to the related concept should be present.
 
-Prepared 20 June 2023
+Prepared 28 June 2023
 
 
