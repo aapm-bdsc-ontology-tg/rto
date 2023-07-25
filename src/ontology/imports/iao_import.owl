@@ -11,18 +11,6 @@ Ontology(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl>)
 Annotation(owl:versionInfo "2023-05-05")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000009>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000032>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000038>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000101>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000309>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
 Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -41,77 +29,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000219> "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000219> "denotes"@en)
 
-
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000003> (measurement unit label)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000003> "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000003> "measurement unit label"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000003> <http://purl.obolibrary.org/obo/IAO_0000009>)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000005> (objective specification)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000005> "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000005> "objective specification"@en)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000007> (action specification)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000007> "A directive information entity that describes an action the bearer will take."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000007> "action specification"@en)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000009> (datum label)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000009> "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000009> "datum label"@en)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000032> (scalar measurement datum)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000032> "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000032> "scalar measurement datum"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000032> <http://purl.obolibrary.org/obo/IAO_0000109>)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000038> (graph)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000038> "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000038> "graph"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000309>)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000101> (image)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000101> "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000101> "image"@en)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000104> "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000104> "plan specification"@en)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000109> (measurement datum)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000109> "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000109> "measurement datum"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000027>)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000179> (histogram)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000179> "A histogram is a report graph which is a statistical description of a
-distribution in terms of occurrence frequencies of different event classes."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000179> "histogram"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.org/obo/IAO_0000038>)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000309> (diagram)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000309> "A figure that expresses one or more propositions"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000309> "diagram"@en)
 
 
 )
