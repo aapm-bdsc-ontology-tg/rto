@@ -39,4 +39,13 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+
 )
