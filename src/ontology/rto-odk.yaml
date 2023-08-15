@@ -16,3 +16,5 @@ import_group:
       module_type: filter
     - id: doid
       module_type: filter
+    - id: pato
+      module_type: filter
