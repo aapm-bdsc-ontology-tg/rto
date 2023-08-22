@@ -1,13 +1,25 @@
 format-version: 1.2
-data-version: rto/releases/2023-05-05/rto-base.owl
+data-version: rto/releases/2023-08-16/rto-base.owl
 ontology: rto/rto-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Radiation Therapy Ontology" xsd:string
-property_value: owl:versionInfo "2023-05-05" xsd:string
+property_value: owl:versionInfo "2023-08-16" xsd:string
 
 [Term]
-id: RTO:0000000
-name: root node
+id: IAO:0000030
+is_a: BFO:0000031
+
+[Term]
+id: http://purl.obolibrary.org/obo/PATO_0000011/age
+is_a: BFO:0000019
+
+[Term]
+id: http://purl.obolibrary.org/obo/PATO_0000383/female
+is_a: BFO:0000019
+
+[Term]
+id: http://purl.obolibrary.org/obo/PATO_0000384/male
+is_a: BFO:0000019
 

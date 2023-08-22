@@ -18,6 +18,10 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Radiation Therapy Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C14225/human>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011/age>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000383/female>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000384/male>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -46,6 +50,37 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
 
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C14225/human> (human)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C14225/human> "The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/NCIT_C14225/human> "The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCIT_C14225/human> "National Cancer Institute")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C14225/human> "human")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCIT_C14225/human> "Homo sapiens")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C14225/human> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000011/age> (age)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000011/age> "A time quality inhering in a bearer by virtue of how long the bearer has existed.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000011/age> "A time quality inhering in a bearer by virtue of how long the bearer has existed.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000011/age> "age")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000011/age> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000383/female> (female)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000383/female> "A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000383/female> "A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000383/female> "female")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000383/female> <http://purl.obolibrary.org/obo/BFO_0000019>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0000383/female> <http://purl.obolibrary.org/obo/PATO_0000384/male>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000384/male> (male)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000384/male> "A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000384/male> "A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000384/male> "male")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000384/male> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
 
 )

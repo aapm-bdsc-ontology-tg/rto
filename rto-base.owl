@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/rto/rto-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/rto/rto-base.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rto/rto-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rto/releases/2023-05-05/rto-base.owl"/>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description>None</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <terms:title>Radiation Therapy Ontology</terms:title>
-        <owl:versionInfo>2023-05-05</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rto/releases/2023-08-16/rto-base.owl"/>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description>None</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <dcterms:title>Radiation Therapy Ontology</dcterms:title>
+        <owl:versionInfo>2023-08-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -71,10 +71,46 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RTO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RTO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011/age -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011/age">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000383/female -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383/female">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000384/male -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384/male">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
 </rdf:RDF>
 
