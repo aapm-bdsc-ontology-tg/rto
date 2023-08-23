@@ -333,9 +333,7 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms_combine
 
 $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-    extract -T $(IMPORTDIR)/bfo_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
-    remove --base-iri $(OBOBASE)/BFO --axioms external --preserve-structure false --trim false \
-		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/bfo_terms_combined.txt --select complement \
+		extract -T $(IMPORTDIR)/bfo_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method top \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
