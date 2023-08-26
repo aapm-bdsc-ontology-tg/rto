@@ -143,6 +143,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000601> "has
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/iao.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000602> "has associated axiom(fol)"@en)
 
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (has axiom label)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0010000> "has axiom label"@en)
+
 
 
 ############################
