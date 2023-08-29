@@ -314,7 +314,7 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
     extract -T $(IMPORTDIR)/ro_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
-    remove --base-iri $(OBOBASE)/RO --axioms external --preserve-structure false --trim false \
+    remove --base-iri http://purl.obolibrary.org/obo/BFO_ --base-iri http://purl.obolibrary.org/obo/RO_ --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/ro_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi

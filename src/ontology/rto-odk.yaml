@@ -6,6 +6,9 @@ import_group:
   products:
     - id: ro
       module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/BFO_
+        - http://purl.obolibrary.org/obo/RO_
     - id: iao
       module_type: filter
     - id: bfo
