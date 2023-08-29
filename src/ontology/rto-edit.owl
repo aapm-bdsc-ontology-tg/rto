@@ -13,13 +13,14 @@ Import(<http://purl.obolibrary.org/obo/rto/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ogms_import.owl>)
-Import(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Radiation Therapy Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000001>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -48,6 +49,11 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Class: <http://purl.obolibrary.org/obo/RTO_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000000> "root node"@en)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000001> (stuff)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000001> "stuff"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000001> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
 
 )
