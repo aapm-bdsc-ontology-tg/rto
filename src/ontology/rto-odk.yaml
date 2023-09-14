@@ -12,13 +12,13 @@ import_group:
         - http://purl.obolibrary.org/obo/RO_
         - http://purl.obolibrary.org/obo/IAO_
     - id: ogms
-      module_type: top
+      module_type: filters
       base_iris:
         - http://purl.obolibrary.org/obo/OGMS_
         - http://purl.obolibrary.org/obo/BFO_
         - http://purl.obolibrary.org/obo/OBI_
     - id: obi
-      module_type: top
+      module_type: filters
       base_iris:
         - http://purl.obolibrary.org/obo/OBI_
         - http://purl.obolibrary.org/obo/BFO_
