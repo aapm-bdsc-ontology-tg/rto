@@ -13,7 +13,14 @@ Annotation(owl:versionInfo "2023-10-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000383>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000384>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001894>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001995>))
 Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
@@ -43,11 +50,52 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000019> (quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000011> "A process that realizes a plan which is the concretization of a plan specification."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000047> (biological sex)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000047> "An organismal quality inhering in a bearer by virtue of the bearer's ability to undergo sexual reproduction in order to differentiate the individuals or types involved.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000047> "biological sex")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000047> <http://purl.obolibrary.org/obo/PATO_0001995>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000383> (female)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000383> "A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000383> "female")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000383> <http://purl.obolibrary.org/obo/PATO_0001894>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000384> (male)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000384> "A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000384> "male")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000384> <http://purl.obolibrary.org/obo/PATO_0001894>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001241> "A quality which inheres in a continuant.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001894> (phenotypic sex)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001894> "An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001894> "phenotypic sex")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001894> <http://purl.obolibrary.org/obo/PATO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001995> (organismal quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001995> "A quality that inheres in an entire organism or part of an organism.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001995> "organismal quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001995> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 
 )

@@ -339,12 +339,20 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combine
 
 ## Module for ontology: ogms
 
+$(IMPORTDIR)/ogms_import.owl: $(MIRRORDIR)/ogms.owl $(IMPORTDIR)/ogms_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/ogms_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/OGMS_ --base-iri http://purl.obolibrary.org/obo/BFO_ --base-iri http://purl.obolibrary.org/obo/OBI_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/ogms_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 ## Module for ontology: obi
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
     extract -T $(IMPORTDIR)/obi_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
-    remove --base-iri http://purl.obolibrary.org/obo/OBI_ --base-iri http://purl.obolibrary.org/obo/BFO_ --base-iri http://purl.obolibrary.org/obo/IAO_ --axioms external --preserve-structure false --trim false \
+    remove --base-iri http://purl.obolibrary.org/obo/OBI_ --base-iri http://purl.obolibrary.org/obo/BFO_ --base-iri http://purl.obolibrary.org/obo/IAO_ --base-iri http://purl.obolibrary.org/obo/PATO_ --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/obi_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
