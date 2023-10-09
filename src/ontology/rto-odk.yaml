@@ -4,7 +4,11 @@ github_org: aapm-bdsc-ontology-tg
 repo: rto
 import_group:
   products:
-     - id: bfo
+    - id: ro
+      module_type: filter
+    - id: iao
+      module_type: filter
+    - id: bfo
       module_type: slme
       module_type_slme: top
       base_iris:
@@ -12,14 +16,18 @@ import_group:
         - http://purl.obolibrary.org/obo/RO_
         - http://purl.obolibrary.org/obo/IAO_
     - id: ogms
-      module_type: filters
+      module_type: filter
       base_iris:
         - http://purl.obolibrary.org/obo/OGMS_
         - http://purl.obolibrary.org/obo/BFO_
         - http://purl.obolibrary.org/obo/OBI_
     - id: obi
-      module_type: filters
+      module_type: filter
       base_iris:
         - http://purl.obolibrary.org/obo/OBI_
         - http://purl.obolibrary.org/obo/BFO_
- 
+        - http://purl.obolibrary.org/obo/IAO_
+    - id: doid
+      module_type: filter
+    - id: pato
+      module_type: filter
