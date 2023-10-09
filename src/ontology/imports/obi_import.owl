@@ -12,8 +12,10 @@ Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/
 Annotation(owl:versionInfo "2023-10-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000047>))
@@ -47,6 +49,12 @@ Declaration(Datatype(xsd:date))
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000002> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000015> "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
@@ -56,7 +64,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/BFO_0000019> (quality)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000001>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000020> "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
 
