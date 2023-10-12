@@ -45,4 +45,3 @@ src/patterns/all_pattern_terms.txt
 *.sh
 src/ontology/run.shZone.Identifier
 src/ontology/run.sh
-*.sh
