@@ -7,21 +7,27 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-09-14/imports/iao_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2023-10-09/imports/iao_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl>)
-Annotation(owl:versionInfo "2023-09-14")
+Annotation(owl:versionInfo "2023-10-09")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000101>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000309>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
 Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
@@ -47,6 +53,21 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000219> "den
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000002> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000003> (measurement unit label)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000003> "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en)
@@ -57,27 +78,43 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000003> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000005> "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000005> "objective specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000005> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000007> (action specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000007> "A directive information entity that describes an action the bearer will take."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000007> "action specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000007> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000009> (datum label)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000009> "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000009> "datum label"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000009> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "A generically dependent continuant that is about some thing."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000032> (scalar measurement datum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000032> "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000032> "scalar measurement datum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000032> <http://purl.obolibrary.org/obo/IAO_0000109>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000033> (directive information entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000033> "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000033> "directive information entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000038> (graph)
 
@@ -89,11 +126,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000101> "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000101> "image"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000101> <http://purl.obolibrary.org/obo/IAO_0000308>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000104> "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000104> "plan specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000109> (measurement datum)
 
@@ -108,10 +147,17 @@ distribution in terms of occurrence frequencies of different event classes."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000179> "histogram"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.org/obo/IAO_0000038>)
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000308> (figure)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000308> "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000308> "figure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000309> (diagram)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000309> "A figure that expresses one or more propositions"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000309> "diagram"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000309> <http://purl.obolibrary.org/obo/IAO_0000308>)
 
 
 )
