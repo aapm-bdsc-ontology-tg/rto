@@ -46,4 +46,10 @@ import_group:
         - http://purl.obolibrary.org/obo/CHEBI_
     - id: chebi
       module_type: filter
-  
+    -id: cob
+        - http://purl.obolibrary.org/obo/COB_
+        - http://purl.obolibrary.org/obo/OBI_
+    -id: obi
+        - http://purl.obolibrary.org/obo/OBI_
+        - http://purl.obolibrary.org/obo/BFO_
+	
