@@ -7,17 +7,20 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-10-09/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2023-10-20/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl>)
-Annotation(owl:versionInfo "2023-10-09")
+Annotation(owl:versionInfo "2023-10-20")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000165>))
@@ -63,6 +66,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000004> "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000015> "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
@@ -80,11 +90,23 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000011> "A process that realizes a plan which is the concretization of a plan specification."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000047> (processed material)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000047> "Is a material entity that is created or changed during material processing."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000047> "processed material"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000047> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000011> (age)
 
