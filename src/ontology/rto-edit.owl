@@ -10,17 +10,20 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/rto.owl>
 Import(<http://purl.obolibrary.org/obo/rto/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rto/imports/chebi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rto/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ogms_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/rto/imports/cob_import.owl>)
-Import(<http://purl.obolibrary.org/obo/rto/imports/chebi_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Radiation Therapy Ontology")
 
+Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000001>))
+Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000002>))
+Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000003>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -40,6 +43,31 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://purl.archive.org/purl/rto-draft/RTO_0000001> (collimator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://purl.archive.org/purl/rto-draft/RTO_0000001> "A device that limits the 2D spatial extent of the fluence of subatomic particles.")
+AnnotationAssertion(rdfs:label <https://purl.archive.org/purl/rto-draft/RTO_0000001> "collimator"@en)
+SubClassOf(<https://purl.archive.org/purl/rto-draft/RTO_0000001> <http://purl.obolibrary.org/obo/COB_0001300>)
+
+# Class: <https://purl.archive.org/purl/rto-draft/RTO_0000002> (radiation source)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://purl.archive.org/purl/rto-draft/RTO_0000002> "A device that has been constructed so as to emit subatomic particles.")
+AnnotationAssertion(rdfs:comment <https://purl.archive.org/purl/rto-draft/RTO_0000002> "Radiation source refers to the device that actually produces the radiation independent of the application to radiation therapy.  For example, a linear accelerator operating in the megavoltage regime produces a beam of x-rays by accelerating electrons and using them to create bremmstrahlung.  Such a device can be attached to some sort of flexible armature for positioning and outfitted with dose monitors and electronic feedback circuits, etc to make a radiation therapy device.  Other examples are manufactured Co-60 pellets, proton cyclotrons, etc.")
+AnnotationAssertion(rdfs:label <https://purl.archive.org/purl/rto-draft/RTO_0000002> "radiation source"@en)
+SubClassOf(<https://purl.archive.org/purl/rto-draft/RTO_0000002> <http://purl.obolibrary.org/obo/COB_0001300>)
+
+# Class: <https://purl.archive.org/purl/rto-draft/RTO_0000003> (patient positioner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://purl.archive.org/purl/rto-draft/RTO_0000003> "A device that is used to position a patient during a health care process.")
+AnnotationAssertion(rdfs:comment <https://purl.archive.org/purl/rto-draft/RTO_0000003> "Such a device is  also often used to partially or completely immobilize the patient during the process.")
+AnnotationAssertion(rdfs:label <https://purl.archive.org/purl/rto-draft/RTO_0000003> "patient positioner"@en)
+SubClassOf(<https://purl.archive.org/purl/rto-draft/RTO_0000003> <http://purl.obolibrary.org/obo/COB_0001300>)
 
 
 )
