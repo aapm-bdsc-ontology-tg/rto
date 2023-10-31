@@ -21,6 +21,9 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Radiation Therapy Ontology")
 
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000004>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000005>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000006>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000001>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000002>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000003>))
@@ -48,6 +51,35 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000004> (RT prescription)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000004> "An objective specification that details the desired dose, fractionation schedule and  modality that are the objectives of a particular course of radiation therapy.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000004> "In normal medical practice, the RT prescription is a precursor to the development of an RT plan.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000004> "RT prescription"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000004> <http://purl.obolibrary.org/obo/IAO_0000005>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000005> (RT modality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000005> "An action specification that details the manner in which a radiation therapy treatment will be carried out.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000005> "The \"manner in which it will be carried out\" implies a description of the type of radiation source, the pattern of irradiation, and type of device to deliver the pattern of irradiation.
+
+Example: \"external beam radiation therapy using 6 MV photons delivered by a linac in a four field, opposed manner.\"
+
+Example: \"Fixed field IMRT using 10 MV photons delivered by a linac using 7 non-opposed beams.\"
+
+Example: \"Intracavitary brachytherapy using Ir-192 delivered by an HDR device with a vaginal cylinder.\"")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000005> "RT modality"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000005> <http://purl.obolibrary.org/obo/IAO_0000007>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000006> (RT plan)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000006> "A plan specification that includes an action specification and an objective specification for the delivery of a radiation therapy treatment.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000006> "In accordance with the guidance in the book \"Building Ontologies with Basic Formal Ontology\" (Arp, Smith, Spear; 2015), the RT plan can be concretized by numerous methods, such as a DICOM files, a printed plan, and/or within the consciousness of the medical professionals involved in developing the plan.
+
+An RT plan can be realized by means of a health care process.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000006> "RT plan"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000006> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
 # Class: <https://purl.archive.org/purl/rto-draft/RTO_0000001> (collimator)
 
