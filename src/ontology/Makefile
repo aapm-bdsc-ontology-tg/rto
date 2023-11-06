@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro iao bfo ogms obi doid pato cob chebi
+IMPORTS =  ro iao bfo ogms obi doid pato cob chebi rbo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -397,6 +397,16 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_c
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: rbo
+
+$(IMPORTDIR)/rbo_import.owl: $(MIRRORDIR)/rbo.owl $(IMPORTDIR)/rbo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/rbo_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/RBO_ --base-iri http://purl.obolibrary.org/obo/OBI_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/rbo_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -506,6 +516,15 @@ mirror-cob: | $(TMPDIR)
 mirror-chebi: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/chebi.owl --create-dirs -o $(MIRRORDIR)/chebi.owl --retry 4 --max-time 1000 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/chebi.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: rbo
+.PHONY: mirror-rbo
+.PRECIOUS: $(MIRRORDIR)/rbo.owl
+mirror-rbo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/rbo.owl --create-dirs -o $(MIRRORDIR)/rbo.owl --retry 4 --max-time 1000 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/rbo.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
