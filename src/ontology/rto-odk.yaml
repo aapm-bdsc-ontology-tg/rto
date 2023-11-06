@@ -42,7 +42,7 @@ import_group:
     - id: cob
       module_type: filter
       base_iris:
-        - http://purl.obolibrary.org/obo/COB_
         - http://purl.obolibrary.org/obo/CHEBI_
+        - http://purl.obolibrary.org/obo/BFO_
     - id: chebi
       module_type: filter

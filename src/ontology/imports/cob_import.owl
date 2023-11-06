@@ -7,15 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/cob_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-10-20/imports/cob_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2023-11-06/imports/cob_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cob/releases/2023-05-12/cob.owl>)
-Annotation(owl:versionInfo "2023-10-20")
+Annotation(owl:versionInfo "2023-11-06")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36342>))
-Declaration(Class(<http://purl.obolibrary.org/obo/COB_0001300>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
@@ -26,16 +23,14 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+
 # Class: <http://purl.obolibrary.org/obo/CHEBI_36342> (subatomic particle)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36342> "subatomic particle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_36342> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
-# Class: <http://purl.obolibrary.org/obo/COB_0001300> (device)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0001300> "A processed material entity which is designed to perform a function."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0001300> "device"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/COB_0001300> <http://purl.obolibrary.org/obo/OBI_0000047>)
 
 
 )
