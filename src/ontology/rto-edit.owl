@@ -54,10 +54,12 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000004> (RT prescription)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000004> "An objective specification that details the desired dose, fractionation schedule and  modality that are the objectives of a particular course of radiation therapy.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000004> "A plan specification that details the desired dose, fractionation schedule and  modality that are the needed to carry out a particular course of radiation therapy.")
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000004> "In normal medical practice, the RT prescription is a precursor to the development of an RT plan.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000004> "RT prescription"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000004> <http://purl.obolibrary.org/obo/IAO_0000005>)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000004> "NCIT_192355
+Prescription specifies dose objectives for single phase.")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000004> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000005> (RT modality)
 
