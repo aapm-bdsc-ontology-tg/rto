@@ -63,6 +63,4 @@ SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000112> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000116> "A therapeutic procedure that uses radiation.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000116> "radiation therapy procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> <http://purl.obolibrary.org/obo/OGMS_0000112>)
-
-
 )
