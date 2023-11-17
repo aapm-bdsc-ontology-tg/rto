@@ -1,1 +1,5 @@
+RO:0000057   # has participant
+RO:0000056   # participates in
+RO:0000059   # concretizes
+RO:0000058   # is concretized as
 
