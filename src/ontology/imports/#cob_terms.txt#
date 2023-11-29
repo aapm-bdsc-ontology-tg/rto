@@ -1,0 +1,5 @@
+COB:0001300	# device
+CHEBI:36342
+OBI:0000047	# processed material
+BFO:0000040	# material entity
+BFO:0000004	# independent continuant

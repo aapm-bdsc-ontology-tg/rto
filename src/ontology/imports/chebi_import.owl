@@ -1,0 +1,111 @@
+Prefix(:=<http://purl.obolibrary.org/obo/rto/imports/chebi_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/rto/imports/chebi_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2023-11-13/imports/chebi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/227/chebi.owl>)
+Annotation(owl:versionInfo "2023-11-13")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_10545>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_149675>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_149691>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_149692>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24431>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24636>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30212>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30222>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36342>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36344>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#saved-by>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_10545> (electron)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_10545> "Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_10545> "electron")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_10545> <http://purl.obolibrary.org/obo/CHEBI_36342>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_149675> (helium-3(1+))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_149675> "An inorganic radical cation resulting from the loss of one electron from helium-3.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_149675> "helium-3(1+)")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_149675> <http://purl.obolibrary.org/obo/CHEBI_24431>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_149691> (carbon-12(4+))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_149691> "A monoatomic tetracation resulting from the loss of four electrons from carbon-12.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_149691> "carbon-12(4+)")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_149691> <http://purl.obolibrary.org/obo/CHEBI_24431>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_149692> (oxygen-16(6+))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_149692> "A monoatomic hexacation resulting from the loss of six electrons from oxygen-16.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_149692> "oxygen-16(6+)")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_149692> <http://purl.obolibrary.org/obo/CHEBI_24431>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_24431> (chemical entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24431> "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24431> "chemical entity")
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_24636> (proton)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24636> "Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24636> "proton")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/CHEBI_24431>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/CHEBI_36342>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/CHEBI_36344>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_30126> (tetrafluorochlorine(1+))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30126> "tetrafluorochlorine(1+)")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30126> <http://purl.obolibrary.org/obo/CHEBI_24431>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_30212> (photon)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30212> "Particle of zero charge, zero rest mass, spin quantum number 1, energy hnu and momentum hnu/c (h is the Planck constant, nu the frequency of radiation and c the speed of light), carrier of electromagnetic force.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30212> "photon")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30212> <http://purl.obolibrary.org/obo/CHEBI_36342>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_30222> (neutron)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30222> "Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30222> "neutron")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30222> <http://purl.obolibrary.org/obo/CHEBI_36342>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30222> <http://purl.obolibrary.org/obo/CHEBI_36344>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_30225> (positron)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30225> "Elementary particle not affected by the strong force having a spin 1/2, a positive elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30225> "positron")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30225> <http://purl.obolibrary.org/obo/CHEBI_36342>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_36342> (subatomic particle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_36342> "A particle smaller than an atom.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36342> "subatomic particle")
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_36344> (hadron)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_36344> "Hadron is a subatomic particle which experiences the strong force.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36344> "hadron")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_36344> <http://purl.obolibrary.org/obo/CHEBI_36342>)
+
+
+)

@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/rto/rto-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/rto/rto-base.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rto/rto-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rto/releases/2023-08-15/rto-base.owl"/>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description>None</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <terms:title>Radiation Therapy Ontology</terms:title>
-        <owl:versionInfo>2023-08-15</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rto/releases/2023-11-13/rto-base.owl"/>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description>None</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <dcterms:title>Radiation Therapy Ontology</dcterms:title>
+        <owl:versionInfo>2023-11-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,6 +28,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
@@ -71,10 +78,40 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RTO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RTO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    
+
+
+    <!-- https://purl.archive.org/purl/rto-draft/RTO_0000001 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/purl/rto-draft/RTO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A device that limits the 2D spatial extent of the fluence of subatomic particles.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">collimator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/purl/rto-draft/RTO_0000002 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/purl/rto-draft/RTO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A device that has been constructed so as to emit subatomic particles.</obo:IAO_0000115>
+        <rdfs:comment>Radiation source refers to the device that actually produces the radiation independent of the application to radiation therapy.  For example, a linear accelerator operating in the megavoltage regime produces a beam of x-rays by accelerating electrons and using them to create bremmstrahlung.  Such a device can be attached to some sort of flexible armature for positioning and outfitted with dose monitors and electronic feedback circuits, etc to make a radiation therapy device.  Other examples are manufactured Co-60 pellets, proton cyclotrons, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">radiation source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/purl/rto-draft/RTO_0000003 -->
+
+    <owl:Class rdf:about="https://purl.archive.org/purl/rto-draft/RTO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A device that is used to position a patient during a health care process.</obo:IAO_0000115>
+        <rdfs:comment>Such a device is  also often used to partially or completely immobilize the patient during the process.</rdfs:comment>
+        <rdfs:label xml:lang="en">patient positioner</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
