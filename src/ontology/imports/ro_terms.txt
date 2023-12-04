@@ -1,3 +1,43 @@
-RO:0000059
-BFO:0000020
-BFO:0000031
+BFO:0000002 # continuant
+BFO:0000003 # occurrent
+BFO:0000004 # independent continuant
+BFO:0000006 # spatial region
+BFO:0000015 # process
+BFO:0000016 # disposition
+BFO:0000017 # realizable entity
+BFO:0000019 # quality
+BFO:0000020 # specifically dependent continuant
+BFO:0000023 # role
+BFO:0000031 # generically dependent continuant
+BFO:0000034 # function
+BFO:0000141 # immaterial entity
+RO:0000052 # characteristic of
+RO:0000053 # has characteristic
+RO:0000056 # participates in
+RO:0000057 # has participant
+RO:0000058 # is concretized
+RO:0000059 # concretizes
+RO:0000079 # function of
+RO:0000080 # quality of
+RO:0000081 # role of
+RO:0000085 # has function
+RO:0000086 # has quality
+RO:0000087 # has role
+RO:0000091 # has disposition
+RO:0000092 # disposition of
+RO:0001015 # location of
+RO:0001025 # located in
+RO:0002012 # occurrent part of
+RO:0002100 # starts with
+RO:0002131 # overlaps
+RO:0002222 # temporally related to
+RO:0002323 # mereotopologically related to
+RO:0002350 # member of
+RO:0002351 # has member
+BFO:0000067 # contains process
+BFO:0000051 # has part
+BFO:0000050 # part of
+BFO:0000054 # realized in
+BFO:0000055 # realizes
+BFO:0000066 # occurs in
+BFO:0000067 # contains process
