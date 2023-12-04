@@ -6,7 +6,7 @@ import_group:
   mirror_max_time_download: 1000
   products:
     - id: ro
-      module_type: filter
+      module_type: custom
     - id: iao
       module_type: filter
       base_iris:
