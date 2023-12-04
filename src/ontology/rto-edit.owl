@@ -21,6 +21,9 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Radiation Therapy Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000007>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000001>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000002>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000003>))
@@ -49,9 +52,31 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/RTO_0000005> (radiation therapy device)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000005> "A device that is used to deliver radiation therapy to a patient.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RTO_0000005> "Mark Phillips")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000005> "radiation therapy device"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000005> <http://purl.obolibrary.org/obo/OBI_0000968>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000006> (external therapy device)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000006> "A radiation therapy device in that generaties ionizing radiation outside of the body and the radiation passes from the source through space and parts of the body in order to irradiate the desired target tissue.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RTO_0000006> "Mark Phillips")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000006> "external therapy device"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000006> <http://purl.obolibrary.org/obo/RTO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000007> (brachytherapy device)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000007> "A radiation therapy device that relies on ionizing radiation generated within the body.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RTO_0000007> "Mark Phillips")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000007> "brachytherapy device"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000007> <http://purl.obolibrary.org/obo/RTO_0000005>)
+
 # Class: <https://purl.archive.org/purl/rto-draft/RTO_0000001> (collimator)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://purl.archive.org/purl/rto-draft/RTO_0000001> "A device that limits the 2D spatial extent of the fluence of subatomic particles.")
+AnnotationAssertion(rdfs:isDefinedBy <https://purl.archive.org/purl/rto-draft/RTO_0000001> "Mark Phillips")
 AnnotationAssertion(rdfs:label <https://purl.archive.org/purl/rto-draft/RTO_0000001> "collimator"@en)
 SubClassOf(<https://purl.archive.org/purl/rto-draft/RTO_0000001> <http://purl.obolibrary.org/obo/OBI_0000968>)
 
