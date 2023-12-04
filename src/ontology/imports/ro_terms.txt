@@ -28,9 +28,9 @@ RO:0000092 # disposition of
 RO:0001015 # location of
 RO:0001025 # located in
 RO:0002012 # occurrent part of
-RO:0002100 # starts with
 RO:0002131 # overlaps
 RO:0002222 # temporally related to
+RO:0002224 # starts with
 RO:0002323 # mereotopologically related to
 RO:0002350 # member of
 RO:0002351 # has member
