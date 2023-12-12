@@ -1,5 +1,5 @@
-RBO:00000115	# radiation dosimeter device
-OBI:0000968     # device
 RBO:00015006	# subatomic process
 RBO:00002118	# radioactive decay
 BFO:0000015	# process
+BFO:0000003	# occurrent
+BFO:0000001	# entity

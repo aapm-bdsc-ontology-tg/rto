@@ -13,7 +13,6 @@ Annotation(owl:versionInfo "2023-12-12")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
-Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00000115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00002118>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015006>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -30,12 +29,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 # Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000968> "device")
-
-# Class: <http://purl.obolibrary.org/obo/RBO_00000115> (radiation dosimeter device)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00000115> "A device that is used to measure the amount of ionizing radiation exposure or absorption.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00000115> "radiation dosimeter device")
-SubClassOf(<http://purl.obolibrary.org/obo/RBO_00000115> <http://purl.obolibrary.org/obo/OBI_0000968>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00002118> (Radioactive decay)
 
