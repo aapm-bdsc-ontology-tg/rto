@@ -7,12 +7,17 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-11-13/imports/rbo_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2023-12-12/imports/rbo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2023-09-05/rbo.owl>)
-Annotation(owl:versionInfo "2023-11-13")
+Annotation(owl:versionInfo "2023-12-12")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00000115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00002118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015006>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
@@ -24,15 +29,34 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/OBI_0000047> (processed material)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000047> "Is a material entity that is created or changed during material processing."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000047> "processed material"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000047> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000968> "device")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/OBI_0000047>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00000115> (radiation dosimeter device)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00000115> "A device that is used to measure the amount of ionizing radiation exposure or absorption.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00000115> "radiation dosimeter device")
 SubClassOf(<http://purl.obolibrary.org/obo/RBO_00000115> <http://purl.obolibrary.org/obo/OBI_0000968>)
+
+# Class: <http://purl.obolibrary.org/obo/RBO_00002118> (Radioactive decay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00002118> "A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00002118> "Radioactive decay")
+SubClassOf(<http://purl.obolibrary.org/obo/RBO_00002118> <http://purl.obolibrary.org/obo/RBO_00015006>)
+
+# Class: <http://purl.obolibrary.org/obo/RBO_00015006> (subatomic process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00015006> "Processes in which electrons or components of the atomic nucleus are participants.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00015006> "subatomic process")
+SubClassOf(<http://purl.obolibrary.org/obo/RBO_00015006> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 
 )
