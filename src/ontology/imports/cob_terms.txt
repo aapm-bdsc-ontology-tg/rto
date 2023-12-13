@@ -1,3 +1,4 @@
-CHEBI:36342
+COB:0000011	# atom
+CHEBI:36342	# subatomic particle
 BFO:0000040	# material entity
 BFO:0000004	# independent continuant

@@ -16,6 +16,7 @@ Import(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ogms_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
@@ -24,6 +25,8 @@ Annotation(dcterms:title "Radiation Therapy Ontology")
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000009>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000001>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000002>))
 Declaration(Class(<https://purl.archive.org/purl/rto-draft/RTO_0000003>))
@@ -72,6 +75,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RTO_0000007> "Mark Phillips")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000007> "brachytherapy device"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000007> <http://purl.obolibrary.org/obo/RTO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000008> (electron capture)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000008> "The radioactive decay process by which an atom's inner orbital electron is absorbed within the nucleus followed by conversion of a proton to a neutron and emission of a neutrino.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000008> "electron capture"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000008> <http://purl.obolibrary.org/obo/RBO_00002118>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000009> (gamma emission)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000009> "A subatomic process in which a nucleus moves to a lower energy state by the emission of a photon.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000009> "gamma emission"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000009> <http://purl.obolibrary.org/obo/RBO_00015006>)
 
 # Class: <https://purl.archive.org/purl/rto-draft/RTO_0000001> (collimator)
 
