@@ -26,6 +26,8 @@ Declaration(Class(<http://purl.archive.org/purl/RTO_0000016>))
 Declaration(Class(<http://purl.archive.org/purl/RTO_0000018>))
 Declaration(Class(<http://purl.archive.org/purl/RTO_0000019>))
 Declaration(Class(<http://purl.archive.org/purl/RTO_0000020>))
+Declaration(Class(<http://purl.archive.org/purl/RTO_0000021>))
+Declaration(Class(<http://purl.archive.org/purl/RTO_0000022>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000005>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000006>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000007>))
@@ -35,6 +37,8 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000010>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000011>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/COB_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005/beta_decay>))
 Declaration(Class(<http://purl.obolibrary.org/obo/http://purl.archive.org/purl/rto-draft/RTO_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/http://purl.archive.org/purl/rto-draft/RTO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/http://purl.archive.org/purl/rto-draft/RTO_0000016>))
@@ -45,6 +49,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/rto.owl/RTO_0000010>)
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/rto.owl/RTO_0000011>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000102>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000017>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -94,10 +99,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/RTO_0000016> "bremsstrahlung process"@en)
 SubClassOf(<http://purl.archive.org/purl/RTO_0000016> <http://purl.obolibrary.org/obo/RBO_00015006>)
 
-# Class: <http://purl.archive.org/purl/RTO_0000018> (radiation emission)
+# Class: <http://purl.archive.org/purl/RTO_0000018> (radiation source)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/RTO_0000018> "An object aggregate that consists of a collection of subatomic particles emitted from the same radiation source.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/RTO_0000018> "radiation emission"@en)
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/RTO_0000018> "radiation source"@en)
 SubClassOf(<http://purl.archive.org/purl/RTO_0000018> <http://purl.obolibrary.org/obo/BFO_0000027>)
 
 # Class: <http://purl.archive.org/purl/RTO_0000019> (spectrum)
@@ -109,9 +114,24 @@ SubClassOf(<http://purl.archive.org/purl/RTO_0000019> <http://purl.obolibrary.or
 
 # Class: <http://purl.archive.org/purl/RTO_0000020> (radiation beam)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/RTO_0000020> "A radiation emission that has been produced or modified so that its consituent elements are moving in a given direction with a given energy spectrum.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/RTO_0000020> "A radiation source that has been produced or modified so that its constituent elements are moving in a given direction with a given energy spectrum.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/RTO_0000020> "radiation beam"@en)
 SubClassOf(<http://purl.archive.org/purl/RTO_0000020> <http://purl.archive.org/purl/RTO_0000018>)
+SubClassOf(<http://purl.archive.org/purl/RTO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.archive.org/purl/RTO_0000019>))
+
+# Class: <http://purl.archive.org/purl/RTO_0000021> (linac)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/RTO_0000021> "An RT_device that is designed to produce ionizing radiation for therapeutic purposes and whose radiation source consists of a monoenergetic beam of electrons and a target that results in a bremmstrahlung process.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/RTO_0000021> "linac"@en)
+SubClassOf(<http://purl.archive.org/purl/RTO_0000021> <http://purl.archive.org/purl/RTO_0000022>)
+SubClassOf(<http://purl.archive.org/purl/RTO_0000021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/RTO_0000016>))
+
+# Class: <http://purl.archive.org/purl/RTO_0000022> (RT device)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/RTO_0000022> "An object aggregate that is constructed to produce ionizing radiation for treatment purposes.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/RTO_0000022> "RT device"@en)
+SubClassOf(<http://purl.archive.org/purl/RTO_0000022> <http://purl.obolibrary.org/obo/BFO_0000027>)
+SubClassOf(<http://purl.archive.org/purl/RTO_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/rto.owl/RTO_0000010> <http://purl.archive.org/purl/RTO_0000018>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000005> (radiation therapy device)
 
@@ -144,7 +164,7 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000008> <http://purl.obo
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000009> "A subatomic process in which a nucleus moves to a lower energy state by the emission of a photon.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000009> "gamma emission"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000009> <http://purl.obolibrary.org/obo/RBO_00015006>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000009> <http://purl.obolibrary.org/obo/RBO_00002118>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000010> (isotope)
 
@@ -171,6 +191,16 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000013> <https://purl.ar
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/COB_0000011> "A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/COB_0000011> "atom")
 SubClassOf(<http://purl.obolibrary.org/COB_0000011> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000016> (Iodine 125)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000016> "Iodine 125"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000016> <http://purl.archive.org/purl/rto-draft/RTO_0000013>)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0000008>))
+
+# Class: <http://purl.obolibrary.org/obo/RBO_00015005/beta_decay> (<http://purl.obolibrary.org/obo/RBO_00015005/beta_decay>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/RBO_00015005/beta_decay> <http://purl.obolibrary.org/obo/RBO_00002118>)
 
 # Class: <http://purl.obolibrary.org/obo/http://purl.archive.org/purl/rto-draft/RTO_0000014> (RT method)
 
@@ -228,6 +258,14 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00001
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000011> <http://purl.archive.org/purl/rto-draft/RTO_0000102>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0000008>) <http://purl.archive.org/purl/rto-draft/RTO_0000102>)
 
+# Individual: <http://purl.obolibrary.org/obo/RTO_0000017> (Ir-192)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000017> "Ir-192"@en)
+ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000010> <http://purl.obolibrary.org/obo/RTO_0000017>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/RBO_00015005/beta_decay>) <http://purl.obolibrary.org/obo/RTO_0000017>)
+
 
 DifferentIndividuals(<http://purl.archive.org/purl/rto-draft/RTO_0000101> <http://purl.archive.org/purl/rto-draft/RTO_0000102>)
+DifferentIndividuals(<http://purl.archive.org/purl/rto-draft/RTO_0000101> <http://purl.obolibrary.org/obo/RTO_0000017>)
+DifferentIndividuals(<http://purl.archive.org/purl/rto-draft/RTO_0000102> <http://purl.obolibrary.org/obo/RTO_0000017>)
 )
