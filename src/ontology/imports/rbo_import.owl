@@ -7,18 +7,22 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-12-12/imports/rbo_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2023-09-05/rbo.owl>)
-Annotation(owl:versionInfo "2023-12-12")
+<http://purl.obolibrary.org/obo/rto/releases/2024-02-29/imports/rbo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2024-02-29/rbo.owl>)
+Annotation(owl:versionInfo "2024-02-29")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
-Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00000115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000984>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00002118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RBO_010016>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
@@ -29,34 +33,60 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000047> (processed material)
+# Class: <http://purl.obolibrary.org/obo/BFO_0000027> (object aggregate)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000047> "Is a material entity that is created or changed during material processing."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000047> "processed material"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000047> <http://purl.obolibrary.org/obo/BFO_0000040>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000027> "object aggregate"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity")
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000968> "instrument")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000968> "device")
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/OBI_0000047>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
-# Class: <http://purl.obolibrary.org/obo/RBO_00000115> (radiation dosimeter device)
+# Class: <http://purl.obolibrary.org/obo/OBI_0000984> (dose)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00000115> "A device that is used to measure the amount of ionizing radiation exposure or absorption.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00000115> "radiation dosimeter device")
-SubClassOf(<http://purl.obolibrary.org/obo/RBO_00000115> <http://purl.obolibrary.org/obo/OBI_0000968>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000984> "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000984> "dose")
 
-# Class: <http://purl.obolibrary.org/obo/RBO_00002118> (Radioactive decay)
+# Class: <http://purl.obolibrary.org/obo/RBO_00000029> (dose rate)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00000029> "The measurement datum representing a dose to an organism or object per unit time.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00000029> "dose rate")
+
+# Class: <http://purl.obolibrary.org/obo/RBO_00002118> (radioactive decay)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00002118> "A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00002118> "Radioactive decay")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00002118> "radioactive decay")
 SubClassOf(<http://purl.obolibrary.org/obo/RBO_00002118> <http://purl.obolibrary.org/obo/RBO_00015006>)
+
+# Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00015005> "Radioactive decay in which a beta particle is emitted or in which orbital electron capture occurs.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00015005> "beta decay")
+SubClassOf(<http://purl.obolibrary.org/obo/RBO_00015005> <http://purl.obolibrary.org/obo/RBO_00002118>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015006> (subatomic process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00015006> "Processes in which electrons or components of the atomic nucleus are participants.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00015006> "subatomic process")
-SubClassOf(<http://purl.obolibrary.org/obo/RBO_00015006> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/RBO_010016> (radiation dose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_010016> "A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \"radiation dose\" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_010016> "radiation dose")
+SubClassOf(<http://purl.obolibrary.org/obo/RBO_010016> <http://purl.obolibrary.org/obo/OBI_0000984>)
 
 
 )
