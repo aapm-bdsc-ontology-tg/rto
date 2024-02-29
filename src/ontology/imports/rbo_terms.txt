@@ -1,3 +1,9 @@
 RBO:010016	# radiation dose
 RBO:00000029	# dose rate
 OBI:0000984	# dose
+IAO:0000109	# measurement datum
+IAO:0000027	# data item
+IAO:0000030	# information entity
+BFO:0000031	# generical dependent continuant
+BFO:0000002	# continuant
+BFO:0000001	# entity
