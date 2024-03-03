@@ -1,9 +1,17 @@
+RBO:00015006	# subatomic process
+RBO:00002118	# radioactive decay
+RBO:00000115	# radiation dosimeter device
 RBO:010016	# radiation dose
 RBO:00000029	# dose rate
+OBI:0000968	# device
+OBI:0000047	# processed material
 OBI:0000984	# dose
 IAO:0000109	# measurement datum
 IAO:0000027	# data item
 IAO:0000030	# information entity
 BFO:0000031	# generical dependent continuant
+BFO:0000040	# material entity
+BFO:0000015	# process
+BFO:0000003	# occurrent
 BFO:0000002	# continuant
 BFO:0000001	# entity
