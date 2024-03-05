@@ -46,6 +46,10 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000025>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000026>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000027>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000028>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000030>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000031>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000032>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
@@ -237,6 +241,31 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000027> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000028> "An RT method that describes the use of radiation sources external to the body to deliver radiation therapy.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000028> "external beam therapy"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000028> <http://purl.archive.org/purl/rto-draft/RTO_0000014>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000030> (target volume)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000030> "A site that denotes a region of the body that contains disease that is to be irradiated during a radiation therapy procedure.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000030> "According to Arp et al, a site is relative to another body.  Examples given are the hold of a ship or the interior of a railcar.  They can move through space, as opposed to a spatial region which is immovable.  This seems appropriate for the region containing a tumor.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000030> "target volume"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000030> <http://purl.obolibrary.org/obo/BFO_0000029>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000031> (clinical target volume)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000031> "A target volume that encompasses the tissue that contains the gross tumor volume plus tissue that is suspected to contain microscopic tumor.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000031> "clinical target volume"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000031> <http://purl.archive.org/purl/rto-draft/RTO_0000030>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000032> (gross tumor volume)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000032> "A target volume that encompasses the tissue that contains macroscopic tumor or other tissue that is intended to be irradiated.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000032> "gross tumor volume"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000032> <http://purl.archive.org/purl/rto-draft/RTO_0000030>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000033> (planning target volume)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000033> "A target volume that contains the gross tumor volume and clinical target volume (if it exists) and a margin to account for uncertainty in setting up the patient for irradiation.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000033> "planning target volume"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000033> <http://purl.archive.org/purl/rto-draft/RTO_0000030>)
 
 # Class: <http://purl.obolibrary.org/COB_0000011> (atom)
 
