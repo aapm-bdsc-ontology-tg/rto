@@ -46,6 +46,7 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000025>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000026>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000027>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000028>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
@@ -237,6 +238,13 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000027> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000028> "An RT method that describes the use of radiation sources external to the body to deliver radiation therapy.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000028> "external beam therapy"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000028> <http://purl.archive.org/purl/rto-draft/RTO_0000014>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000034> (dose volume histogram)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000034> "A histogram that displays the volume of tissue that receives a given dose during radiation therapy.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000034> "dose volume histogram"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000034> "DVH")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000034> <http://purl.obolibrary.org/obo/IAO_0000179>)
 
 # Class: <http://purl.obolibrary.org/COB_0000011> (atom)
 
