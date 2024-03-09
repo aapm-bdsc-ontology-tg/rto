@@ -21,6 +21,6 @@ PATO:0000384
 PATO:0000011
 PATO:0000165
 PATO:0001018
-IAO:0000033 # information content entity
+IAO:0000030 # information content entity
 IAO:0000033 # directive information entity
 IAO:0000104 # plan specification 
