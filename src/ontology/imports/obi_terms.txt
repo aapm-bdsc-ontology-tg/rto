@@ -2,8 +2,8 @@ OBI:0000047
 OBI:0000011
 OBI:0000968	# device
 OBI:0000093	# patient role
-BFO:0000023   	# role
-BFO:0000017   	# realizable entity
+BFO:0000023 # role
+BFO:0000017 # realizable entity
 BFO:0000040
 BFO:0000004
 BFO:0000015
@@ -21,3 +21,6 @@ PATO:0000384
 PATO:0000011
 PATO:0000165
 PATO:0001018
+IAO:0000033 # information content entity
+IAO:0000033 # directive information entity
+IAO:0000104 # plan specification 

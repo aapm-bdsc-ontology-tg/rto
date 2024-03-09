@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2024-03-08/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2024-03-09/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2024-01-09/obi.owl>)
-Annotation(owl:versionInfo "2024-03-08")
+Annotation(owl:versionInfo "2024-03-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -22,6 +22,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
@@ -138,11 +139,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000033> (directive information entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000033> "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000033> "directive information entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000104> "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000104> "plan specification"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.org/obo/BFO_0000002>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
 
