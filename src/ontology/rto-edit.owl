@@ -294,7 +294,7 @@ AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_000
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000038> "radiation therapy treatment plan"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/OBI_0000260>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.archive.org/purl/rto-draft/RTO_0000038>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000039> (radiation therapy treatment)
 
