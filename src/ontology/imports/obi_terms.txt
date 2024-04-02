@@ -11,6 +11,7 @@ BFO:0000020	# specifically dependent continuant
 BFO:0000003
 BFO:0000002
 BFO:0000001
+BFO:0000031 # generically dependent continuant
 PATO:0001894
 PATO:0000047
 PATO:0001995
