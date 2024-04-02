@@ -7,7 +7,7 @@ BFO:0000004
 BFO:0000015
 BFO:0000017	# realizable entity	
 BFO:0000019
-BFO:0000020	# sepcifically dependent continuant
+BFO:0000020	# specifically dependent continuant
 BFO:0000003
 BFO:0000002
 BFO:0000001
@@ -20,3 +20,10 @@ PATO:0000384
 PATO:0000011
 PATO:0000165
 PATO:0001018
+IAO:0000030 # information content entity
+IAO:0000033 # directive information entity
+IAO:0000038 # graph
+IAO:0000179 # histogram
+IAO:0000104 # plan specification
+IAO:0000308 # figure
+IAO:0000309 # diagram
