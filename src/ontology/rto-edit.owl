@@ -268,7 +268,6 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_000
 http://purl.obolibrary.org/obo/NCIT_C28180")
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000035> <http://purl.obolibrary.org/obo/IAO_0000005>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000036> (radiation therapy method)
 
@@ -279,29 +278,29 @@ AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_000
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000036> "radiation therapy method"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000036> <http://purl.obolibrary.org/obo/IAO_0000007>)
 
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000037> (radiation therapy plan protocol)
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000037> (radiation therapy protocol)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000037> "A plan specification that has as parts a radiation therapy prescription and a radiation therapy method and is concretized in a radiation therapy treatment plan.")
-AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "Example: Radiation therapy treatment of the prostate and seminal vesicles to a dose of 6600 cGy in 20 fractions with a boost dose of 600 cGy in 3 fractions by means of VMAT using 6 MV photons.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000037> "A plan specification that describes radiation therapy methods and prescriptions as applicable to certain patient classes.")
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "This class name uses the term \"protocol\" in a general sense that also includes research protocols and institution-specific therapy protocols.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000037> "radiation therapy plan protocol"@en)
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "Example: The elements of a clinical study that details the manner in which radiation therapy will be applied as part of that study.
+Example: NRG-LU008 is a clinical study for people with non-small cell lung cancer (NSCLC) that has spread to the lymph nodes in the chest and is not able to be treated by surgery. The radiation therapy protocol of this research study details the use of SBRT.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000037> "radiation therapy protocol"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000037> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000038> (radiation therapy treatment plan)
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000038> (radiation therapy plan specification)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000038> "A plan that contains the details of how to deliver ionizing radiation that is consistent with the radiationn therapy method and radiation therapy rescription, and is realized in a  radiation therapy treatment (a healthcare process).")
-AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000038> "An instantiation of this class would be the patient-specific set of instructions that can be used by a radiation therapy device to deliver the prescribed treatment using the relevant radiation therapy method.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000038> "radiation therapy treatment plan"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/OBI_0000260>)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.archive.org/purl/rto-draft/RTO_0000037>))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000038> "A plan specification that has parts radiation therapy method and radiation therapy prescription and provides details required for its realization in a plan and subsequent concretization in a radiation therapy treatment.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000038> "Following the discussion Arp et al, this class can be instantiated in multiple ways and is not meant to be restrictive to a particular mode, such as a printout or set of DICOM objects.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000038> "radiation therapy plan specification"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/IAO_0000104>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.obolibrary.org/obo/OBI_0000260>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000039> (radiation therapy treatment)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000039> "A healthcare process that uses ionizing radiation to treat a condition within the body as the realization of a radiation therapy treatment plan.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000039> "A healthcare process that uses ionizing radiation to treat a condition within the body as the realization of a plan that concretized a radiation therapy plan specification.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.archive.org/purl/rto-draft/RTO_0000038>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
 
 # Class: <http://purl.obolibrary.org/COB_0000011> (atom)
 
