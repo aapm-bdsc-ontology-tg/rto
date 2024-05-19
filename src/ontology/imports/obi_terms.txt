@@ -2,6 +2,8 @@ OBI:0000047
 OBI:0000011
 OBI:0000968	# device
 OBI:0000260	# plan
+OBI:0000093	# patient role
+BFO:0000023 # role
 BFO:0000040
 BFO:0000004
 BFO:0000015
@@ -9,7 +11,7 @@ BFO:0000017	# realizable entity
 BFO:0000019
 BFO:0000020	# specifically dependent continuant
 BFO:0000003
-BFO:0000002
+BFO:0000002	# continuant
 BFO:0000001
 BFO:0000031 # generically dependent continuant
 PATO:0001894
