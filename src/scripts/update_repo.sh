@@ -21,11 +21,10 @@ cp target/$OID/src/ontology/run.sh $SRCDIR/ontology/
 cp -r target/$OID/src/sparql/* $SRCDIR/sparql/
 mkdir -p $ROOTDIR/.github
 mkdir -p $ROOTDIR/.github/workflows
-cp target/$OID/.github/workflows/qc.yml $ROOTDIR/.github/workflows/qc.yml
-
+cp -n target/$OID/.github/workflows/qc.yml $ROOTDIR/.github/workflows/qc.yml
 
 
 
 echo "WARNING: These files should be manually migrated: mkdocs.yaml, .gitignore, src/ontology/catalog.xml (if you added a new import or component)"
-
+echo "WARNING: Your QC workflows have not been updated automatically. Please update the ODK version number(s) in .github/workflows/qc.yml."
 echo "Ontology repository update successfully completed."
