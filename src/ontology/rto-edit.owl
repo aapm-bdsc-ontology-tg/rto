@@ -53,6 +53,10 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000036>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000040>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000041>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000042>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000043>))
 Declaration(Class(<http://purl.obolibrary.org/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
@@ -281,9 +285,9 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000036> <http://purl.obo
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000037> (radiation therapy protocol)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000037> "A plan specification that describes radiation therapy methods and prescriptions as applicable to certain patient classes.")
-AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "This class name uses the term \"protocol\" in a general sense that also includes research protocols and institution-specific therapy protocols.")
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "Example: The elements of a clinical study that details the manner in which radiation therapy will be applied as part of that study.
 Example: NRG-LU008 is a clinical study for people with non-small cell lung cancer (NSCLC) that has spread to the lymph nodes in the chest and is not able to be treated by surgery. The radiation therapy protocol of this research study details the use of SBRT.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "This class name uses the term \"protocol\" in a general sense that also includes research protocols and institution-specific therapy protocols.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000037> "radiation therapy protocol"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000037> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
@@ -301,6 +305,30 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000040> (radiation therapy planning method)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000040> "An action specification that describes the how a radiation therapy plan is to be generated")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000040> "radiation therapy planning method"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000040> <http://purl.obolibrary.org/obo/IAO_0000007>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000041> (inverse planning)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000041> "A radiation therapy planning method that uses mathematical optimization methods on objective functions to produce a radiation therapy plan.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000041> "inverse planning"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000041> <http://purl.archive.org/purl/rto-draft/RTO_0000040>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000042> (forward planning)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000042> "A radiation therapy planning method that uses sequential parameter modifications of radiation therapy device settings to produce a radiation therapy plan.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000042> "forward planning"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000042> <http://purl.archive.org/purl/rto-draft/RTO_0000040>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000043> (clinical setup)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000043> "A radiation therapy planning method that develops a radiation therapy plan based on the anatomical and tumor characteristics as observed clinically.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000043> "clinical setup"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000043> <http://purl.archive.org/purl/rto-draft/RTO_0000040>)
 
 # Class: <http://purl.obolibrary.org/COB_0000011> (atom)
 
