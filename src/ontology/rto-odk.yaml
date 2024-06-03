@@ -52,5 +52,6 @@ import_group:
       base_iris:
         - http://purl.obolibrary.org/obo/RBO_
         - http://purl.obolibrary.org/obo/OBI_
+	- http://purl.obolibrary.org/obo/IAO_
         - http://purl.obolibrary.org/obo/COB_
         - http://purl.obolibrary.org/obo/BFO_
