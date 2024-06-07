@@ -25,8 +25,8 @@ PATO:0000011
 PATO:0000165
 PATO:0001018
 IAO:0000030 # information content entity
-IAO:0000027       # data item
-IAO:0000109	  # measuerement datum
+IAO:0000027 # data item
+IAO:0000109	# measuerement datum
 IAO:0000033 # directive information entity
 IAO:0000038 # graph
 IAO:0000179 # histogram
