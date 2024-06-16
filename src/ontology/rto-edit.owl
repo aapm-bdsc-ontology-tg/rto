@@ -53,6 +53,7 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000036>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
@@ -281,9 +282,9 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000036> <http://purl.obo
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000037> (radiation therapy protocol)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000037> "A plan specification that describes radiation therapy methods and prescriptions as applicable to certain patient classes.")
-AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "This class name uses the term \"protocol\" in a general sense that also includes research protocols and institution-specific therapy protocols.")
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "Example: The elements of a clinical study that details the manner in which radiation therapy will be applied as part of that study.
 Example: NRG-LU008 is a clinical study for people with non-small cell lung cancer (NSCLC) that has spread to the lymph nodes in the chest and is not able to be treated by surgery. The radiation therapy protocol of this research study details the use of SBRT.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000037> "This class name uses the term \"protocol\" in a general sense that also includes research protocols and institution-specific therapy protocols.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000037> "radiation therapy protocol"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000037> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
@@ -301,6 +302,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000040> (control_point)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000040> "A set of values that of relevant machine parameters that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000040> "control_point"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000040> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Class: <http://purl.obolibrary.org/COB_0000011> (atom)
 
