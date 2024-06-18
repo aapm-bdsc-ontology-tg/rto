@@ -3,7 +3,7 @@ title: Radiation Therapy Ontology
 github_org: aapm-bdsc-ontology-tg
 repo: rto
 import_group:
-  mirror_max_time_download: 1000
+  mirror_max_time_download: 10000
   products:
     - id: ro
       module_type: custom
@@ -47,6 +47,8 @@ import_group:
         - http://purl.obolibrary.org/obo/COB_
     - id: chebi
       module_type: filter
+      use_gzipped: TRUE
+      is_large: TRUE
     - id: rbo
       module_type: filter
       base_iris:
