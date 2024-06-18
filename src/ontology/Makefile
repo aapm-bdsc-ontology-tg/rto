@@ -556,7 +556,7 @@ mirror-cob: | $(TMPDIR)
 .PHONY: mirror-chebi
 .PRECIOUS: $(MIRRORDIR)/chebi.owl
 mirror-chebi: | $(TMPDIR)
-	curl -L $(OBOBASE)/chebi.owl --create-dirs -o $(TMPDIR)/chebi-download.owl --retry 4 --max-time 1000 && \
+	curl -L $(OBOBASE)/chebi.owl --create-dirs -o $(TMPDIR)/chebi-download.owl --retry 4 --max-time 10000 && \
 	$(ROBOT) convert -i $(TMPDIR)/chebi-download.owl -o $(TMPDIR)/$@.owl
 
 
