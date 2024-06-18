@@ -439,11 +439,8 @@ $(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms_combine
 ## Module for ontology: chebi
 
 $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_combined.txt
-	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T $(IMPORTDIR)/chebi_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
-    remove --base-iri $(OBOBASE)/CHEBI --axioms external --preserve-structure false --trim false \
-		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/chebi_terms_combined.txt --select complement \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		$(ANNOTATE_CONVERT_FILE); fi
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T $(IMPORTDIR)/chebi_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 ## Module for ontology: rbo
 
@@ -553,7 +550,7 @@ mirror-cob: | $(TMPDIR)
 
 ## ONTOLOGY: chebi
 .PHONY: mirror-chebi
-.PRECIOUS: $(MIRRORDIR)/chebi.owl
+.PRECIOUS: $(MIRRORDIR)/chebi_import.owl
 ifeq ($(strip $(IMP_LARGE)),true)
 mirror-chebi: | $(TMPDIR)
 	curl -L $(OBOBASE)/chebi.owl.gz --create-dirs -o $(MIRRORDIR)/chebi.owl.gz --retry 4 --max-time 10000 && \
