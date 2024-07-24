@@ -5,6 +5,14 @@ repo: rto
 import_group:
   mirror_max_time_download: 10000
   products:
+    - id: rbo
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/RBO_
+        - http://purl.obolibrary.org/obo/OBI_
+        - http://purl.obolibrary.org/obo/IAO_
+        - http://purl.obolibrary.org/obo/COB_
+        - http://purl.obolibrary.org/obo/BFO_
     - id: ro
       module_type: custom
     - id: iao
@@ -49,11 +57,3 @@ import_group:
       module_type: filter
       use_gzipped: TRUE
       is_large: TRUE
-    - id: rbo
-      module_type: filter
-      base_iris:
-        - http://purl.obolibrary.org/obo/RBO_
-        - http://purl.obolibrary.org/obo/OBI_
-	      - http://purl.obolibrary.org/obo/IAO_
-        - http://purl.obolibrary.org/obo/COB_
-        - http://purl.obolibrary.org/obo/BFO_

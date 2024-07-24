@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                48cf6aa969762a034163c0ef876350d5d66cac1eb1997b309528d1538a3cfadb
+CONFIG_HASH=                8ca25e71b7fbe4d4a4a6956de90192173641d4c23096802b4f57c6986ef1bfae
 
 
 # ----------------------------------------
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro iao bfo ogms obi doid pato cob chebi rbo
+IMPORTS =  rbo ro iao bfo ogms obi doid pato cob chebi
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -364,6 +364,16 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: rbo
+
+$(IMPORTDIR)/rbo_import.owl: $(MIRRORDIR)/rbo.owl $(IMPORTDIR)/rbo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/rbo_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/RBO_ --base-iri http://purl.obolibrary.org/obo/OBI_ --base-iri http://purl.obolibrary.org/obo/IAO_ --base-iri http://purl.obolibrary.org/obo/COB_ --base-iri http://purl.obolibrary.org/obo/BFO_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/rbo_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 ## Module for ontology: ro
 
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
@@ -439,16 +449,9 @@ $(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms_combine
 ## Module for ontology: chebi
 
 $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T $(IMPORTDIR)/chebi_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
-    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## Module for ontology: rbo
-
-$(IMPORTDIR)/rbo_import.owl: $(MIRRORDIR)/rbo.owl $(IMPORTDIR)/rbo_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-    extract -T $(IMPORTDIR)/rbo_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
-    remove --base-iri http://purl.obolibrary.org/obo/RBO_ --base-iri http://purl.obolibrary.org/obo/OBI_ --base-iri http://purl.obolibrary.org/obo/COB_ --base-iri http://purl.obolibrary.org/obo/BFO_ --axioms external --preserve-structure false --trim false \
-		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/rbo_terms_combined.txt --select complement \
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T $(IMPORTDIR)/chebi_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/CHEBI --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/chebi_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
@@ -479,9 +482,17 @@ no-mirror-refresh-%:
 
 IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
-IMP_LARGE=false # Global parameter to bypass handling of large imports
+IMP_LARGE=true # Global parameter to bypass handling of large imports
 
 ifeq ($(strip $(MIR)),true)
+
+
+## ONTOLOGY: rbo
+.PHONY: mirror-rbo
+.PRECIOUS: $(MIRRORDIR)/rbo.owl
+mirror-rbo: | $(TMPDIR)
+	curl -L $(OBOBASE)/rbo.owl --create-dirs -o $(TMPDIR)/rbo-download.owl --retry 4 --max-time 10000 && \
+	$(ROBOT) convert -i $(TMPDIR)/rbo-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: ro
@@ -550,7 +561,7 @@ mirror-cob: | $(TMPDIR)
 
 ## ONTOLOGY: chebi
 .PHONY: mirror-chebi
-.PRECIOUS: $(MIRRORDIR)/chebi_import.owl
+.PRECIOUS: $(MIRRORDIR)/chebi.owl
 ifeq ($(strip $(IMP_LARGE)),true)
 mirror-chebi: | $(TMPDIR)
 	curl -L $(OBOBASE)/chebi.owl.gz --create-dirs -o $(MIRRORDIR)/chebi.owl.gz --retry 4 --max-time 10000 && \
@@ -559,14 +570,6 @@ else
 mirror-chebi:
 	@echo "Not refreshing chebi because refreshing large imports is disabled (IMP_LARGE=$(IMP_LARGE))."
 endif
-
-
-## ONTOLOGY: rbo
-.PHONY: mirror-rbo
-.PRECIOUS: $(MIRRORDIR)/rbo.owl
-mirror-rbo: | $(TMPDIR)
-	curl -L $(OBOBASE)/rbo.owl --create-dirs -o $(TMPDIR)/rbo-download.owl --retry 4 --max-time 10000 && \
-	$(ROBOT) convert -i $(TMPDIR)/rbo-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

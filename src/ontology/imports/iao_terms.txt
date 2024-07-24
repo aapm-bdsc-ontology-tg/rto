@@ -16,6 +16,13 @@ IAO:0000033
 IAO:0000027	# data item
 IAO:0000109	# measurement data item
 IAO:0000030
-BFO:0000031
-BFO:0000002
-BFO:0000001
+BFO:0000001	# entity
+BFO:0000002	# continuant
+BFO:0000003	# occurrent
+BFO:0000004	# independent continuant
+BFO:0000015	# process
+BFO:0000017	# realizable entity
+BFO:0000020	# specifically dependent continuant
+BFO:0000031	# generically dependent continuant
+BFO:0000040	# material entity
+BFO:0000141	# immaterial entity
