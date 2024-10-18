@@ -309,6 +309,7 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValues
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000069> "A radiation therapy process in which a radiation source or multiple sources are placed in contact with the tumor or a resection cavity in order to deliver a therapeutic radiation dose.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000069> "brachytherapy treatment"@en)
+EquivalentClasses(<http://purl.archive.org/purl/rto-draft/RTO_0000069> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000007>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000013>)))
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000069> <http://purl.archive.org/purl/rto-draft/RTO_0000039>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000002>))
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000074>))
