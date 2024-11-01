@@ -54,7 +54,15 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000082>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000083>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000084>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000085>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000086>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -292,17 +300,45 @@ AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_000
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000038> "radiation therapy plan specification"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000039> (radiation therapy treatment)
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000039> (radiation therapy course)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000039> "A healthcare process that uses ionizing radiation to treat a condition within the body as the realization of a plan that concretized a radiation therapy plan specification.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy course"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000035>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/RTO_0000082>))
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00015005> "beta decay")
 SubClassOf(<http://purl.obolibrary.org/obo/RBO_00015005> <http://purl.obolibrary.org/obo/RBO_00002118>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000079> (radiation therapy session)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000079> "A health care process in which a single fraction of the prescribed radiation dose is delivered to a patient as part of a process designed to treat a disease.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000079> "radiation therapy session"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000079> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/RTO_0000081>))
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000080> (fractional dose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000080> "A radiation dose that is realized as part of a radiation therapy process and occurs during a radiation therapy session.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000080> "fractional dose"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000080> <http://purl.obolibrary.org/obo/RBO_010016>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000081> (radiation therapy fractional dose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000081> "An objective specification denoting the desired dose per radiation therapy session.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000081> "radiation therapy fractional dose"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000081> <http://purl.obolibrary.org/obo/IAO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0000082> (radiation therapy total dose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0000082> "An objective specification denoting the total desired dose delivered during a radiation therapy course and is the sum of the fractional doses delivered in the sequence of radiation therapy sessions.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000082> "radiation therapy total dose"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0000082> <http://purl.obolibrary.org/obo/IAO_0000005>)
 
 
 ############################
@@ -313,6 +349,28 @@ SubClassOf(<http://purl.obolibrary.org/obo/RBO_00015005> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000101> "Amersham 6702"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000013> <http://purl.archive.org/purl/rto-draft/RTO_0000101>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_0000083> (test dose)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000083> "test dose"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/RTO_0000082> <http://purl.obolibrary.org/obo/RTO_0000083>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_0000084> (test fraction)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000084> "test fraction"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/RTO_0000081> <http://purl.obolibrary.org/obo/RTO_0000084>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_0000085> (test session)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000085> "test session"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/RTO_0000079> <http://purl.obolibrary.org/obo/RTO_0000085>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/RTO_0000085> <http://purl.obolibrary.org/obo/RTO_0000084>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_0000086> (test course)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000086> "test course"@en)
+ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/RTO_0000086>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/RTO_0000086> <http://purl.obolibrary.org/obo/RTO_0000083>)
 
 
 )
