@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2024-07-19/imports/obi_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2024-06-10/obi.owl>)
-Annotation(owl:versionInfo "2024-07-19")
+<http://purl.obolibrary.org/obo/rto/releases/2024-11-07/imports/obi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2024-10-25/obi.owl>)
+Annotation(owl:versionInfo "2024-11-07")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -40,7 +40,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000093>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000398>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000933>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000982>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000984>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000047>))
@@ -272,16 +275,38 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000260> "plan"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> <http://purl.obolibrary.org/obo/BFO_0000017>)
 
+# Class: <http://purl.obolibrary.org/obo/OBI_0000398> (image creation device)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000398> "An image creation device is a device which captures a digitized image of an object"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000398> "image acquisition device")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000398> "image creation device")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000398> <http://purl.obolibrary.org/obo/OBI_0000968>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000933> (positron emission tomography scanner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000933> "A device that produces a three-dimensional image or picture of functional processes in the body. It detects pairs of gamma rays emitted indirectly by a positron-emitting radionuclide (tracer), which is introduced into the body on a biologically active molecule."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000933> "PET scanner?")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000933> "positron emission tomography scanner")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000933> <http://purl.obolibrary.org/obo/OBI_0000398>)
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000968> "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000968> "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000968> "instrument")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000968> "device")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/OBI_0000047>)
 
+# Class: <http://purl.obolibrary.org/obo/OBI_0000982> (computed tomography scanner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000982> "An image acquisition device that generates a three-dimensional image of the inside of an object from a large series of two-dimensional X-ray images taken around a single axis of rotation."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000982> "CT scanner")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000982> "X-ray computed tomography scanner")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000982> "computed tomography scanner")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000982> <http://purl.obolibrary.org/obo/OBI_0000398>)
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0000984> (dose)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000984> "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000984> "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000984> "dose")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000984> <http://purl.obolibrary.org/obo/IAO_0000109>)
 
