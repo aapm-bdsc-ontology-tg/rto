@@ -53,6 +53,7 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000036>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000095>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -298,6 +299,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000095> (gamma knife)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000095> "An external therapy device that contains multiple Co-60 sources and is designed to treat small volume targets in the brain.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000095> "The name \"Leksell Gamma Knife\" is a trademark of a device built and  marketed by Elekta Instrument AB.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000095> "gamma knife"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000095> <http://purl.archive.org/purl/rto-draft/RTO_0000006>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
