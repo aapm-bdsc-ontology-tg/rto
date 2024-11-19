@@ -80,6 +80,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001026>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GENEPIO_0001739>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000024>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -101,6 +102,23 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/GENEPIO_0001739> (after)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/GENEPIO_0001739> <http://purl.obolibrary.org/obo/IAO_0000428>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GENEPIO_0001739> "T1 after t2 iff:= t2 before_or_simulataneous_with t1 and not (t1 simultaeous_with t2)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/GENEPIO_0001739> "Damion Dooley"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GENEPIO_0001739> "Damion Dooley's note: Intention is to have it be the inverse of \"before\".  This allows axioms like \"B after A\" to be placed in class B, rather than having to phrase them as \"A before B\" in class A.
+
+I believe time dependency relations (conditions) don't imply existence by themselves.  If B after A, and B exists, this doesn't necessarily mean that A exists, only that if A does exist, it must be before B.  To add that extra existence implication probably requires the \"causally downstream of\" and \"immediately causally downstream of\" RO relations, in a closed system where B cannot exist any other way."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GENEPIO_0001739> "after"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/GENEPIO_0001739> <http://purl.obolibrary.org/obo/RO_0002222>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/GENEPIO_0001739> <http://purl.obolibrary.org/obo/RO_0002083>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/GENEPIO_0001739>)
 
 
 ############################
@@ -555,4 +573,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000024> "tes
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/RTO_0000024>)
 
 
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO3: overlaps") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst1) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst3) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst2) Variable(:inst4)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002088> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002091> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO5: during") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst1) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst4) Variable(:inst2)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002085> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002092> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Note that preceded_by is not sufficiently narrow, require after term") Annotation(rdfs:label "TO1: before") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst2) Variable(:inst3)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/GENEPIO_0001739> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO6: finishes") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst3) Variable(:inst1)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002229> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO4: starts") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(<urn:swrl:var#tr1>) Variable(<urn:swrl:var#inst1>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(<urn:swrl:var#tr1>) Variable(<urn:swrl:var#inst2>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(<urn:swrl:var#tr2>) Variable(<urn:swrl:var#inst1>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(<urn:swrl:var#tr2>) Variable(<urn:swrl:var#inst4>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(<urn:swrl:var#inst2>) Variable(<urn:swrl:var#inst4>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002223> Variable(<urn:swrl:var#tr1>) Variable(<urn:swrl:var#tr2>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO7: equals") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst2)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002082> Variable(:tr1) Variable(:tr2))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO2: meets") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst2)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002090> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002087> Variable(:tr2) Variable(:tr1))))
 )
