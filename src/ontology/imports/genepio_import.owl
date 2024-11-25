@@ -1,885 +1,206 @@
-<?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/hopperfx/ontologies/2024/10/untitled-ontology-76"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/hopperfx/ontologies/2024/10/untitled-ontology-76">
-    <Prefix name="" IRI="http://www.semanticweb.org/hopperfx/ontologies/2024/10/untitled-ontology-76/"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/GENEPIO_0002113"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001931"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001933"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0002135"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000179"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000039"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/UO_0000003"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/GENEPIO_0000006"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0001937"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000602"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000601"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000180"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GENEPIO_0002113"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001931"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GENEPIO_0002113"/>
-        <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000039"/>
-            <Class IRI="http://purl.obolibrary.org/obo/UO_0000003"/>
-        </ObjectMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GENEPIO_0002113"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0002135"/>
-            <Datatype abbreviatedIRI="xsd:dateTime"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001931"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001933"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001931"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000039"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001931"/>
-        <DataMinCardinality cardinality="1">
-            <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0001937"/>
-        </DataMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001933"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <Class IRI="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        </ObjectSomeValuesFrom>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </DisjointClasses>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000179"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal>entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000180"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal>Entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">Julius Caesar</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">Verdi’s Requiem</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">the Second World War</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">your body mass index</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/0000004</IRI>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>per discussion with Barry Smith</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <IRI>http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/apollo_sv.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/cido.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/clo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/ecto.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/envo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/foodon.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/iao.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/mondo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/omrse.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/pco.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/rbo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/stato.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/uberon.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/vo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/001-001</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/bfo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal>entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000001</IRI>
-        <Literal xml:lang="en">entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000179"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000180"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>Continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">An entity  that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/0000007</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/apollo_sv.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/clo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/envo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/foodon.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/iao.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/mondo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/omrse.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/pato.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/pco.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/rbo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/stato.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/uberon.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/vo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/008-002</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/126-001</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/009-002</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/011-002</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/009-002</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/126-001</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/008-002</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/011-002</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/bfo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal>continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000002</IRI>
-        <Literal xml:lang="en">continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000179"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal>gdc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/BFO_0000180"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal>GenericallyDependentContinuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/074-001</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <IRI>http://purl.obolibrary.org/obo/apollo_sv.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <IRI>http://purl.obolibrary.org/obo/foodon.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <IRI>http://purl.obolibrary.org/obo/stato.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0010000"/>
-            <IRI>http://purl.obolibrary.org/obo/bfo/axiom/074-001</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <IRI>http://purl.obolibrary.org/obo/bfo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal>generically dependent continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000031</IRI>
-        <Literal xml:lang="en">generically dependent continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/GENEPIO_0002113</IRI>
-        <Literal xml:lang="en">time value specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">information content entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">A generically dependent continuant that is about some thing.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>An information entity is an entity that represents information about some other entity.  For example, a measurement, a clustered data set.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+Prefix(:=<http://purl.obolibrary.org/obo/rto/imports/genepio_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
-Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>James Malone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>OBI_0000142</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">OBI_0000142</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/apollo_sv.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/foodon.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/iao.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/obi.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/ogms.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/stato.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <IRI>http://www.ebi.ac.uk/efo/efo.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>information content entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>information</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>information content entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal xml:lang="en">information content entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
-        <Literal>information entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/GENEPIO_0000006"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <Literal xml:lang="en">scalar</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <Literal>scalar value specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <Literal>A value specification that consists of two parts: a numeral and a unit label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <Literal xml:lang="en">A value specification that consists of two parts: a numeral and a unit label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <Literal>PERSON:Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <IRI>http://purl.obolibrary.org/obo/obi.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001931</IRI>
-        <Literal>scalar value specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal>value specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal>The value of &apos;positive&apos; in a classification scheme of &quot;positive or negative&quot;; the value of &apos;20g&apos; on the quantitative scale of mass.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal>An information content entity that specifies a value within a classification scheme or on a quantitative scale.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal xml:lang="en">An information content entity that specifies a value within a classification scheme or on a quantitative scale.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal>This term is currently a descendant of &apos;information content entity&apos;, which requires that it &apos;is about&apos; something. A value specification of &apos;20g&apos; for a measurement data item of the mass of a particular mouse &apos;is about&apos; the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change &apos;value specification&apos; to remove the &apos;is about&apos; requirement.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal>PERSON:Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <IRI>http://purl.obolibrary.org/obo/obi.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal xml:lang="en">Damion Dooley&apos;s note: 
-Often a value specification may need to allow for a &quot;data item state&quot; that indicates that a given datum doesn&apos;t have a recorded or observed or retrievable value, and the general reason for this state.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001933</IRI>
-        <Literal>value specification</Literal>
-    </AnnotationAssertion>
-</Ontology>
+
+Ontology(<http://purl.obolibrary.org/obo/rto/imports/genepio_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2024-12-02/imports/genepio_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/genepio/releases/2023-08-19/genepio.owl>)
+Annotation(owl:versionInfo "2024-12-02")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GENEPIO_0002113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001931>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001933>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GENEPIO_0001739>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002083>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
+Declaration(Datatype(xsd:date))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (has curation status)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000114> "PERSON:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000114> "PERSON:Bill Bug"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000114> "PERSON:Melanie Courtot"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000114> "has curation status"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000115> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "textual definition")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (term editor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000117> "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (alternative label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000118> "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000118> "OBO Operations committee")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000118> "PERSON:Daniel Schober")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000118> "alternative label"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000118> "alternative term"@en)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/GENEPIO_0001739> (after)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/GENEPIO_0001739> <http://purl.obolibrary.org/obo/IAO_0000428>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GENEPIO_0001739> "T1 after t2 iff:= t2 before_or_simulataneous_with t1 and not (t1 simultaeous_with t2)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/GENEPIO_0001739> "Damion Dooley"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GENEPIO_0001739> "after"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/GENEPIO_0001739> <http://purl.obolibrary.org/obo/RO_0002083>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/GENEPIO_0001739>)
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+############################
+#   Classes
+############################
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity")
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000002> "An entity  that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000002> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000002> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000027> (object aggregate)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000027> "object aggregate"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000029> "A site is an entity which consists of a characteristic spatial shape in relation to some arrangement of other material entities.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/BFO_0000029> "James Malone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000031> "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000031> "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/GENEPIO_0002113> (time value specification)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GENEPIO_0002113> "time value specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GENEPIO_0002113> <http://purl.obolibrary.org/obo/OBI_0001931>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000005> (objective specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000005> "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000005> "PERSON: Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000005> "PERSON: Barry Smith"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000005> "PERSON: Bjoern Peters"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000005> "PERSON: Jennifer Fostel"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000005> "objective specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000005> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000007> (action specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000007> "A directive information entity that describes an action the bearer will take."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000007> "Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000007> "action specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000007> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "A generically dependent continuant that is about some thing."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "An information entity is an entity that represents information about some other entity.  For example, a measurement, a clustered data set.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000030> "PERSON: Chris Stoeckert"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000030> "James Malone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000030> "PERSON: Chris Stoeckert")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information entity")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000104> "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000104> "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000104> "Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000104> "Clint Dowland"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000104> "plan specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000968> "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000968> "PERSON: Helen Parkinson")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000968> "device")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0001931> (scalar value specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001931> "A value specification that consists of two parts: a numeral and a unit label")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0001931> "PERSON:Bjoern Peters")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001931> "scalar value specification")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001931> <http://purl.obolibrary.org/obo/OBI_0001933>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0001933> (value specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001933> "An information content entity that specifies a value within a classification scheme or on a quantitative scale.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0001933> "PERSON:Bjoern Peters")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001933> "value specification")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001933> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000428> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000428> "Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000428> "requires discussion"@en)
+
+
+)
