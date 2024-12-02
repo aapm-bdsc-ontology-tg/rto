@@ -81,3 +81,5 @@ src/ontology/run.sh
 src/ontology/run.sh
 src/scripts/update_repo.shZone.Identifier
 
+.aider*
+.env
