@@ -59,3 +59,13 @@ COB:0000082 # planned process
 COB:0000026 # processed material entity
 COB:0001300 # device
 COB:0000022 # organism
+NCBITaxon:2759 # Eukaryota
+NCBITaxon:33154 # Opisthokonta
+NCBITaxon:33208 # Metazoa
+NCBITaxon:33213 # Bilateria
+NCBITaxon:7742 # Vertebrata
+NCBITaxon:117571 # Euteleostomi
+NCBITaxon:32523 # Tetrapoda
+NCBITaxon:32524 # Amniota
+NCBITaxon:40674 # Mammalia
+NCBITaxon:314146 # Euarchontoglires
