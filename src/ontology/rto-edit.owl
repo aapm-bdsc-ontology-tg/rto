@@ -60,14 +60,23 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000082>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000083>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000095>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001002>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001007>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001010>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001011>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_1110053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(DataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001000>))
+Declaration(DataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001008>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001001>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001003>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001004>))
+Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001013>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -88,6 +97,16 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000136> "A (currently) primitive relation that relates an information artifact to an entity.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
 
 ############################
 #   Data Properties
@@ -99,6 +118,12 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00010
 FunctionalDataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001000>)
 DataPropertyDomain(<http://purl.archive.org/purl/rto-draft/RTO_0001000> <http://purl.archive.org/purl/rto-draft/RTO_0000039>)
 DataPropertyRange(<http://purl.archive.org/purl/rto-draft/RTO_0001000> xsd:integer)
+
+# Data Property: <http://purl.archive.org/purl/rto-draft/RTO_0001008> (hasFractionalDose)
+
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001008> "hasFractionalDose"@en)
+DataPropertyDomain(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http://purl.archive.org/purl/rto-draft/RTO_0000039>)
+DataPropertyRange(<http://purl.archive.org/purl/rto-draft/RTO_0001008> xsd:decimal)
 
 
 
@@ -324,6 +349,7 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00000
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> DataSomeValuesFrom(<http://purl.archive.org/purl/rto-draft/RTO_0001000> xsd:integer))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> DataSomeValuesFrom(<http://purl.archive.org/purl/rto-draft/RTO_0001008> xsd:decimal))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000040> (radiation therapy course)
 
@@ -335,6 +361,8 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000040> ObjectSomeValues
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000080> (fractional radiation dose)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000080> "A radiation dose that represents a given portion of an intended radiation therapeutic dose.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000080> "Typically a prescription contains the intended total dose and the number of treatment sessions; alternatively it is the prescribed by providing the total dose and the dose per treatment session.  In the former case, it is mathematically derived as the quotient of total dose / treatment sessions.  In the latter case, it is explicitly denoted.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000080> "fractional radiation dose"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000080> <http://purl.obolibrary.org/obo/RBO_010016>)
 
@@ -367,6 +395,32 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000095> <http://purl.arc
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001002> "SRS"@en)
 EquivalentClasses(<http://purl.archive.org/purl/rto-draft/RTO_0001002> ObjectIntersectionOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> DataSomeValuesFrom(<http://purl.archive.org/purl/rto-draft/RTO_0001000> DatatypeRestriction(xsd:integer xsd:maxInclusive "5"^^xsd:integer))))
 
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001007> (oncology gene)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001007> "A chemical entity composed of the DNA structure that can result in changes that lead to or influence the development or response of cancer cells.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001007> "This is an ad hoc definition that is meant to describe the medical terminology that is used in clinical oncology.  It is to be understood that the Gene Ontology is a much much more comprehensive and intellectually rigorous representation.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001007> "oncology gene"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001007> <http://purl.obolibrary.org/obo/CHEBI_24431>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001010> (primary cancer)
+
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001010> "primary cancer"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001010> <http://purl.obolibrary.org/obo/OBI_1110053>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001011> (metastatic tumor)
+
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001011> "metastatic tumor"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001011> <http://purl.obolibrary.org/obo/OBI_1110053>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001012> (radiation therapy plan)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001012> "A plan that is realized in a radiation therapy treatment.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001012> "radiation therapy plan"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001012> <http://purl.obolibrary.org/obo/OBI_0000260>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.archive.org/purl/rto-draft/RTO_0000035>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.archive.org/purl/rto-draft/RTO_0000036>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.archive.org/purl/rto-draft/RTO_0000038>))
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
@@ -376,6 +430,18 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibra
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0100026> "organism")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100026> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_1110053> (cancer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_1110053> "A disease characterized by abnormal and uncontrolled cell division")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_1110053> "cancer")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_1110053> <http://purl.obolibrary.org/obo/OGMS_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000031> (disease)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000031> "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000031> "disease")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.obolibrary.org/obo/BFO_0000016>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
@@ -409,6 +475,11 @@ DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001000> <http
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001004> "RT therapy 2"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.archive.org/purl/rto-draft/RTO_0001004>)
 DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001000> <http://purl.archive.org/purl/rto-draft/RTO_0001004> "6"^^xsd:decimal)
+
+# Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001013> (RT plan 1)
+
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001013> "RT plan 1"@en)
+ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001012> <http://purl.archive.org/purl/rto-draft/RTO_0001013>)
 
 
 )
