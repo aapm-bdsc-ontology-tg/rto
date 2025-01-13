@@ -57,6 +57,8 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000089>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000090>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000091>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000092>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000093>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -327,6 +329,22 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000091> <http://purl.arc
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000092> "A collimator that limits the extent of the irradiated field by means of multiple pieces of hardware whose positions in the radiation beam can be varied so as to achieve the desired beam profile.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000092> "multileaf collimator"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000092> <http://purl.archive.org/purl/rto-draft/RTO_0000001>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000093> (cone beam computed tomography scanner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000093> "An image creation device in which a volume of tissue is simultaneously exposed to x-rays, captured by a 2-dimensional screen, and a series of tomographic image slices are computed.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000093> "cone beam computed tomography scanner"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000093> "CBCT
+Cone beam CT")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000093> <http://purl.obolibrary.org/obo/OBI_0000398>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000094> (magnetic resonance tomographic scanner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000094> "An image creation device in which tomographic images are obtained through the use of radiofrequency waves, large homogeneous magnetic field and magnetic field gradients.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000094> "magnetic resonance tomographic scanner"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000094> "MRI
+MR scanner")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000094> <http://purl.obolibrary.org/obo/OBI_0000398>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
