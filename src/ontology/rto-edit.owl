@@ -55,6 +55,8 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000093>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000094>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001017>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -316,6 +318,20 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00000
 AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000094> "MRI
 MR scanner")
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000094> <http://purl.obolibrary.org/obo/OBI_0000398>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001017> (oncologic chemotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "A health care process that uses drugs to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "National Cancer Institute
+https://www.cancer.gov/publications/dictionaries/cancer-terms/def/chemotherapy")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001017> "oncologic chemotherapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001018> (oncologic surgery)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001018> "A health care process that  removes or samples cancerous tissue.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001018> "oncologic surgery"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
