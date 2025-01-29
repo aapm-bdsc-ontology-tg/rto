@@ -66,6 +66,9 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001011>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001012>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001017>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001018>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001019>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001020>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_1110053>))
@@ -74,6 +77,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(DataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001000>))
 Declaration(DataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001008>))
+Declaration(DataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001022>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001001>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001003>))
@@ -126,6 +130,12 @@ DataPropertyRange(<http://purl.archive.org/purl/rto-draft/RTO_0001000> xsd:integ
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001008> "hasFractionalDose"@en)
 DataPropertyDomain(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http://purl.archive.org/purl/rto-draft/RTO_0000039>)
 DataPropertyRange(<http://purl.archive.org/purl/rto-draft/RTO_0001008> xsd:decimal)
+
+# Data Property: <http://purl.archive.org/purl/rto-draft/RTO_0001022> (has_date_time)
+
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001022> "has_date_time"@en)
+DataPropertyDomain(<http://purl.archive.org/purl/rto-draft/RTO_0001022> <http://purl.archive.org/purl/rto-draft/RTO_0001021>)
+DataPropertyRange(<http://purl.archive.org/purl/rto-draft/RTO_0001022> xsd:dateTime)
 
 
 
@@ -434,6 +444,26 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001018> "A health care process that  removes or samples cancerous tissue.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001018> "oncologic surgery"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001019> (oncologic immunotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "A health care process that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001019> "oncologic immunotherapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001020> (oncologic targeted therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "A health care process that treats cancer by using drugs or other substances to target specific molecutles that cancer cells nned to survive and spread.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001020> "oncologic targeted therapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001020> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001021> (process start)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001021> "The zero-dimensional region that denotes the starting date and/or time of a process.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001021> "From the documentationn of zero-dimensional temporal region:
+\"'example of usage' \"a temporal region that is occupied by a process boundary\"@en\"")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001021> "process start"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001021> <http://purl.obolibrary.org/obo/BFO_0000148>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
