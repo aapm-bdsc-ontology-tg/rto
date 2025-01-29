@@ -57,6 +57,8 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000093>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000094>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001017>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001018>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001019>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -332,6 +334,18 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001018> "A health care process that  removes or samples cancerous tissue.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001018> "oncologic surgery"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001019> (oncologic immunotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "A health care process that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001019> "oncologic immunotherapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001020> (oncologic targeted therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "A health care process that treats cancer by using drugs or other substances to target specific molecutles that cancer cells nned to survive and spread.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001020> "oncologic targeted therapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001020> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
