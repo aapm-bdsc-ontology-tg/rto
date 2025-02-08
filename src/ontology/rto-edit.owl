@@ -69,6 +69,7 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001018>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001019>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001020>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001021>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_1110053>))
@@ -380,11 +381,13 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000080> <http://purl.obo
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000081> (radiation therapy fractional dose)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000081> "An objective specification of the dose to be delivered in each treatment session (also known as treatment fraction)")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000081> "radiation therapy fractional dose"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000081> <http://purl.obolibrary.org/obo/IAO_0000005>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000082> (radiation therapy total dose)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000082> "An objective specification of the desired total dose to be delivered during a radiation therapy treatment.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000082> "radiation therapy total dose"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000082> <http://purl.obolibrary.org/obo/IAO_0000005>)
 
@@ -464,6 +467,14 @@ AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_000
 \"'example of usage' \"a temporal region that is occupied by a process boundary\"@en\"")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001021> "process start"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001021> <http://purl.obolibrary.org/obo/BFO_0000148>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001023> (radiation therapy session)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001023> "A health care process in which one fraction of radiation therapy is delivered.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001023> "A RT treatment consists of 1 or more treatment sessions each of which realizes the process that realizes the objective specification of RT fractional dose.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001023> "Refers to the period of time when the patient enters the treatment room and receives  treatment until they leave the room.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001023> "radiation therapy session"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001023> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
