@@ -14,8 +14,8 @@ idspace: protege http://protege.stanford.edu/plugins/owl/protege#
 idspace: swrl http://www.w3.org/2003/11/swrl# 
 idspace: swrlb http://www.w3.org/2003/11/swrlb# 
 ontology: rto/rto-full
-property_value: dcterms:description "None" xsd:string
-property_value: dcterms:license https://creativecommons.org/licenses/unspecified
+property_value: dcterms:description "An ontology describing the domain of radiation therapy concerned primarily with the processes and equipment used to deliver therapeutic radiation in a clinical setting. RTO aims to be useful in bridging institutional and clinical practice differences. It is also intended to useful in investigations in oncology which includes medical, surgical and genetic oncological domains. In modeling this domain, RTO uses terms from many existing OBO ontologies." xsd:string
+property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Radiation Therapy Ontology" xsd:string
 property_value: owl:versionInfo "2025-02-21" xsd:string
 
