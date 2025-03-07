@@ -348,6 +348,7 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001027> "A radiation therapy imaging process that utilizes cone beam CT imaging in order to visualize the appropriate anatomy and matching that to the planning images.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001027> "cone beam computed tomography"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001027> <http://purl.archive.org/purl/rto-draft/RTO_0001026>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000093>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001028> (port film)
 
