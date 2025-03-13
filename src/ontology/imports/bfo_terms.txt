@@ -1,4 +1,8 @@
 BFO:0000001
+BFO:0000117  # has occurrent part
+BFO:0000121  # has temporal part
+BFO:0000132  # occurrent part of
+BFO:0000139  # temporal part of
 BFO:0000179
 BFO:0000180
 IAO:0000111
