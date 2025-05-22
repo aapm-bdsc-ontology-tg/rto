@@ -55,6 +55,11 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000093>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000094>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001024>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001025>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001026>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001027>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -316,6 +321,41 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00000
 AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000094> "MRI
 MR scanner")
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000094> <http://purl.obolibrary.org/obo/OBI_0000398>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001024> (radiation therapy simulation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001024> "A health care process which prepares a patient for radiation therapy treatment by means of imaging, localization and may include the manufacture of localization devices.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001024> "radiation therapy simulation"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000003>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001025> (radiation therapy session)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001025> "A health care process that consists of a single episode (fraction) of the delivery of radiation therapy.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001025> "A radiation therapy treatment consists of 1 or more radiation therapy sessions.
+Each session is bounded by the entrance to a treatment room until the prescribed treatment has been executed and the patient leaves the room.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001025> "radiation therapy session"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001025> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001026> (radiation therapy imaging)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001026> "A health care process that consists of localizing and positioning the patient by means of some imaging process in order to carry out the prescribed radiation therapy treatment.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001026> "radiation therapy imaging"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001027> (cone beam computed tomography)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001027> "A radiation therapy imaging process that utilizes cone beam CT imaging in order to visualize the appropriate anatomy and matching that to the planning images.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001027> "cone beam computed tomography"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001027> <http://purl.archive.org/purl/rto-draft/RTO_0001026>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000093>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001028> (port film)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001028> "A radiation therapy imaging process that uses 2D planar images in order to localize the anatomy and match that with the planning images.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001028> "Typically a port film is carried out using megavoltage photons, but if the treatment device is so equipped, kilovoltage photons can be used.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001028> "port film"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001028> <http://purl.archive.org/purl/rto-draft/RTO_0001026>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
