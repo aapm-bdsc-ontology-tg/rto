@@ -34,7 +34,6 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000010>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000011>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000013>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000016>))
-Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000018>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000019>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000020>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000021>))
@@ -53,6 +52,11 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000036>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000088>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000089>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000090>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000091>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000092>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000093>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000094>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001024>))
@@ -169,12 +173,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000016> "bremsstrahlung process"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000016> <http://purl.obolibrary.org/obo/RBO_00015006>)
 
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000018> (radiation source)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000018> "An object aggregate that consists of a collection of subatomic particles emitted from the same radiation source.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000018> "radiation source"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000018> <http://purl.obolibrary.org/obo/BFO_0000027>)
-
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000019> (spectrum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000019> "A quality that is the distribution of energies of the constituent subatomic particles that constitute a radiation emission.")
@@ -184,15 +182,16 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000019> <http://purl.obo
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000020> (radiation beam)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000020> "A radiation source that has been produced or modified so that its constituent elements are moving in a given direction with a given energy spectrum.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000020> "An object aggregate  that that consists of a collection of subatomic particles that are moving in a given direction with a given energy spectrum.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000020> "radiation beam"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000020> <http://purl.archive.org/purl/rto-draft/RTO_0000018>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000020> <http://purl.obolibrary.org/obo/BFO_0000027>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.archive.org/purl/rto-draft/RTO_0000019>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000021> (medical linear accelerator)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000021> "A radiotherapy device that is designed to produce ionizing radiation for therapeutic purposes and whose radiation source consists of a monoenergetic beam of electrons that are accelerated in a linear waveguide.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.archive.org/purl/rto-draft/RTO_0000021> "\"linac\", \"linear accelerator\"")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000021> "Most medical linear accelerators have two modes: electron and photon. If the electrons are steered into a high Z target, bremsstrahlung will result in x-rays which can then be used to treat.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000021> "medical linear accelerator"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000021> <http://purl.archive.org/purl/rto-draft/RTO_0000006>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0000016>))
@@ -305,6 +304,36 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000088> (compensator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000088> "A device used in a radiation therapy process that modulates the dose deposited by a radiation beam in order to better conform the dose distribution to the target volume.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000088> "compensator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000088> <http://purl.obolibrary.org/obo/OBI_0000968>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000089> (x-ray compensator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000089> "A compensator that modulates the dose distribution of a beam of x-rays by varying the fluence of x-rays across the beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000089> "x-ray compensator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000089> <http://purl.archive.org/purl/rto-draft/RTO_0000088>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000090> (charged particle compensator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000090> "A compensator that modulates the dose distribution of a beam of charged particles by varying the energy of the particles across the beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000090> "charged particle compensator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000090> <http://purl.archive.org/purl/rto-draft/RTO_0000088>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000091> (wedge)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000091> "An x-ray compensator that modulates the x-ray fluence in one dimension across the beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000091> "wedge"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000091> <http://purl.archive.org/purl/rto-draft/RTO_0000089>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000092> (multileaf collimator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000092> "A collimator that limits the extent of the irradiated field by means of multiple pieces of hardware whose positions in the radiation beam can be varied so as to achieve the desired beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000092> "multileaf collimator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000092> <http://purl.archive.org/purl/rto-draft/RTO_0000001>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000093> (cone beam computed tomography scanner)
 
