@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/aapm-bdsc-ontology-tg/rto/workflows/CI/badge.svg)
 # Radiation Therapy Ontology
 
-Description: None
+Description: an OBO Foundry compliant realist ontology representing the domain of Radiation Therapy initiated by a task group of the American Association of Physicists in Medicine (AAPM).
 
 More information can be found at http://obofoundry.org/ontology/rto
 

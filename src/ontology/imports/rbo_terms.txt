@@ -1,10 +1,21 @@
-RBO:00015006	# subatomic process
-RBO:00002118	# radioactive decay
-RBO:00000115	# radiation dosimeter device
-COB:0000011	# atom
-OBI:0000968	# device
-OBI:0000047	# processed material
-BFO:0000040	# material entity
-BFO:0000015	# process
-BFO:0000003	# occurrent
-BFO:0000001	# entity
+IAO:0000109 # measurement datum
+IAO:0000027 # data item
+IAO:0000030 # information content entity
+BFO:0000001 # entity
+BFO:0000002 # continuant
+BFO:0000003 # occurrent
+BFO:0000004 # independent continuant
+BFO:0000015 # process
+BFO:0000017 # realizable entity
+BFO:0000020 # specifically dependent continuant
+BFO:0000031 # generically dependent continuant
+BFO:0000040 # material entity
+BFO:0000141 # immaterial entity
+RBO:00000115 # radiation dosimeter device
+RBO:00002118 # radioactive decay
+RBO:00015006 # subatomic process
+RBO:010016 # radiation dose
+COB:0000011 # atom
+OBI:0000047 # processed material
+OBI:0000968 # device
+OBI:0000984 # dose

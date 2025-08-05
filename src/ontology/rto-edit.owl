@@ -18,8 +18,8 @@ Import(<http://purl.obolibrary.org/obo/rto/imports/ogms_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>)
-Annotation(dcterms:description "None")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:description "An ontology describing the domain of radiation therapy concerned primarily with the processes and equipment used to deliver therapeutic radiation in a clinical setting. RTO aims to be useful in bridging institutional and clinical practice differences. It is also intended to useful in investigations in oncology which includes medical, surgical and genetic oncological domains. In modeling this domain, RTO uses terms from many existing OBO ontologies.")
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Radiation Therapy Ontology")
 
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000001>))
@@ -34,7 +34,6 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000010>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000011>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000013>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000016>))
-Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000018>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000019>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000020>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000021>))
@@ -54,7 +53,22 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000040>))
-Declaration(Class(<http://purl.obolibrary.org/COB_0000011>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000088>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000089>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000090>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000091>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000092>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000093>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000094>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001017>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001018>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001019>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001020>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001024>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001025>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001026>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001027>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -143,7 +157,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000010> "Elements are defined as atoms with a specific  number of protons in the nucleus.  The number of neutrons can vary, with each variation denoting a specific isotope of that element.")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.archive.org/purl/rto-draft/RTO_0000010> "NCI")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000010> "isotope"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000010> <http://purl.obolibrary.org/COB_0000011>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000010> <http://purl.obolibrary.org/obo/COB_0000011>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000011> (radioactive isotope)
 
@@ -164,12 +178,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000016> "bremsstrahlung process"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000016> <http://purl.obolibrary.org/obo/RBO_00015006>)
 
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000018> (radiation source)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000018> "An object aggregate that consists of a collection of subatomic particles emitted from the same radiation source.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000018> "radiation source"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000018> <http://purl.obolibrary.org/obo/BFO_0000027>)
-
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000019> (spectrum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000019> "A quality that is the distribution of energies of the constituent subatomic particles that constitute a radiation emission.")
@@ -179,15 +187,16 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000019> <http://purl.obo
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000020> (radiation beam)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000020> "A radiation source that has been produced or modified so that its constituent elements are moving in a given direction with a given energy spectrum.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000020> "An object aggregate  that that consists of a collection of subatomic particles that are moving in a given direction with a given energy spectrum.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000020> "radiation beam"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000020> <http://purl.archive.org/purl/rto-draft/RTO_0000018>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000020> <http://purl.obolibrary.org/obo/BFO_0000027>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.archive.org/purl/rto-draft/RTO_0000019>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000021> (medical linear accelerator)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000021> "A radiotherapy device that is designed to produce ionizing radiation for therapeutic purposes and whose radiation source consists of a monoenergetic beam of electrons that are accelerated in a linear waveguide.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.archive.org/purl/rto-draft/RTO_0000021> "\"linac\", \"linear accelerator\"")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000021> "Most medical linear accelerators have two modes: electron and photon. If the electrons are steered into a high Z target, bremsstrahlung will result in x-rays which can then be used to treat.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000021> "medical linear accelerator"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000021> <http://purl.archive.org/purl/rto-draft/RTO_0000006>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0000016>))
@@ -268,7 +277,6 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00000
 AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000035> "A verbal or written order given by an authorized person instructing a patient to obtain and use a medical device, prescription or undergo a procedure. [Definition Source: NCI]
 http://purl.obolibrary.org/obo/NCIT_C28180")
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000035> <http://purl.obolibrary.org/obo/IAO_0000005>)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000036> (radiation therapy method)
 
@@ -294,7 +302,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000038> "Following the discussion Arp et al, this class can be instantiated in multiple ways and is not meant to be restrictive to a particular mode, such as a printout or set of DICOM objects.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000038> "radiation therapy plan specification"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/IAO_0000104>)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.obolibrary.org/obo/OBI_0000260>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000039> (radiation therapy treatment)
 
@@ -309,11 +316,115 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000040> "control_point"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000040> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
-# Class: <http://purl.obolibrary.org/COB_0000011> (atom)
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000088> (compensator)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/COB_0000011> "A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/COB_0000011> "atom")
-SubClassOf(<http://purl.obolibrary.org/COB_0000011> <http://purl.obolibrary.org/obo/BFO_0000040>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000088> "A device used in a radiation therapy process that modulates the dose deposited by a radiation beam in order to better conform the dose distribution to the target volume.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000088> "compensator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000088> <http://purl.obolibrary.org/obo/OBI_0000968>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000089> (x-ray compensator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000089> "A compensator that modulates the dose distribution of a beam of x-rays by varying the fluence of x-rays across the beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000089> "x-ray compensator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000089> <http://purl.archive.org/purl/rto-draft/RTO_0000088>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000090> (charged particle compensator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000090> "A compensator that modulates the dose distribution of a beam of charged particles by varying the energy of the particles across the beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000090> "charged particle compensator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000090> <http://purl.archive.org/purl/rto-draft/RTO_0000088>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000091> (wedge)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000091> "An x-ray compensator that modulates the x-ray fluence in one dimension across the beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000091> "wedge"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000091> <http://purl.archive.org/purl/rto-draft/RTO_0000089>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000092> (multileaf collimator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000092> "A collimator that limits the extent of the irradiated field by means of multiple pieces of hardware whose positions in the radiation beam can be varied so as to achieve the desired beam profile.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000092> "multileaf collimator"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000092> <http://purl.archive.org/purl/rto-draft/RTO_0000001>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000093> (cone beam computed tomography scanner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000093> "An image creation device in which a volume of tissue is simultaneously exposed to x-rays, captured by a 2-dimensional screen, and a series of tomographic image slices are computed.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000093> "cone beam computed tomography scanner"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000093> "CBCT
+Cone beam CT")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000093> <http://purl.obolibrary.org/obo/OBI_0000398>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000094> (magnetic resonance tomographic scanner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000094> "An image creation device in which tomographic images are obtained through the use of radiofrequency waves, large homogeneous magnetic field and magnetic field gradients.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000094> "magnetic resonance tomographic scanner"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000094> "MRI
+MR scanner")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000094> <http://purl.obolibrary.org/obo/OBI_0000398>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001017> (oncologic chemotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "A health care process that uses drugs to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001017> "oncologic chemotherapy"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001017> "National Cancer Institute:
+https://www.cancer.gov/publications/dictionaries/cancer-terms/def/chemotherapy")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001018> (oncologic surgery)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001018> "A health care process that surgically removes or samples cancerous tissue.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001018> "oncologic surgery"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001019> (oncologic immunotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "A health care process that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001019> "oncologic immunotherapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001020> (oncologic targeted therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "A health care process that treats cancer by using drugs or other substances to target specific molecutles that cancer cells nned to survive and spread.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001020> "oncologic targeted therapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001020> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001024> (radiation therapy simulation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001024> "A health care process which prepares a patient for radiation therapy treatment by means of imaging, localization and may include the manufacture of localization devices.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001024> "radiation therapy simulation"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000003>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001025> (radiation therapy session)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001025> "A health care process that consists of a single episode (fraction) of the delivery of radiation therapy.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001025> "A radiation therapy treatment consists of 1 or more radiation therapy sessions.
+Each session is bounded by the entrance to a treatment room until the prescribed treatment has been executed and the patient leaves the room.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001025> "radiation therapy session"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001025> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001026> (radiation therapy imaging)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001026> "A health care process that consists of localizing and positioning the patient by means of some imaging process in order to carry out the prescribed radiation therapy treatment.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001026> "radiation therapy imaging"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001027> (cone beam computed tomography)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001027> "A radiation therapy imaging process that utilizes cone beam CT imaging in order to visualize the appropriate anatomy and matching that to the planning images.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001027> "cone beam computed tomography"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001027> <http://purl.archive.org/purl/rto-draft/RTO_0001026>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000093>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001028> (port film)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001028> "A radiation therapy imaging process that uses 2D planar images in order to localize the anatomy and match that with the planning images.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001028> "Typically a port film is carried out using megavoltage photons, but if the treatment device is so equipped, kilovoltage photons can be used.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001028> "port film"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001028> <http://purl.archive.org/purl/rto-draft/RTO_0001026>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 

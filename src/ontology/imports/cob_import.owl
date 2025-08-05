@@ -7,23 +7,39 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/cob_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-12-26/imports/cob_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cob/releases/2023-05-12/cob.owl>)
-Annotation(owl:versionInfo "2023-12-26")
+<http://purl.obolibrary.org/obo/rto/releases/2025-02-21/imports/cob_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cob/releases/2025-02-20/cob.owl>)
+Annotation(owl:versionInfo "2025-02-21")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36342>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000011>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000055> "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
+
 
 
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
 
@@ -31,12 +47,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "mat
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_36342> (subatomic particle)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36342> "subatomic particle"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_36342> "A particle smaller than an atom.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36342> "subatomic particle")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_36342> <http://purl.obolibrary.org/obo/BFO_0000040>)
+DisjointClasses(<http://purl.obolibrary.org/obo/CHEBI_36342> <http://purl.obolibrary.org/obo/COB_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/COB_0000011> (atom)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000011> "A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000011> "A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000011> "atom"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000011> <http://purl.obolibrary.org/obo/BFO_0000040>)
 

@@ -7,12 +7,13 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-11-12/imports/pato_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2023-05-18/pato.owl>)
-Annotation(owl:versionInfo "2023-11-12")
+<http://purl.obolibrary.org/obo/rto/releases/2025-02-21/imports/pato_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2025-02-01/pato.owl>)
+Annotation(owl:versionInfo "2025-02-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24431>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
@@ -32,6 +33,10 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24431> "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24431> "chemical entity")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality")
 
 
 )

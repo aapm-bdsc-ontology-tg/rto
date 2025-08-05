@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/doid_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2023-11-12/imports/doid_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/doid/releases/2023-10-21/doid.owl>)
-Annotation(owl:versionInfo "2023-11-12")
+<http://purl.obolibrary.org/obo/rto/releases/2025-02-21/imports/doid_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/doid/releases/2025-02-03/doid.owl>)
+Annotation(owl:versionInfo "2025-02-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_10283>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_11054>))
@@ -26,6 +26,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/DOID_5041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_8557>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/language>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
@@ -41,55 +42,55 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#sav
 
 # Class: <http://purl.obolibrary.org/obo/DOID_10283> (prostate cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_10283> "prostate cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_10283> "prostate cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_11054> (urinary bladder cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_11054> "urinary bladder cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_11054> "urinary bladder cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_1319> (brain cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1319> "brain cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1319> "brain cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_1324> (lung cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1324> "lung cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1324> "lung cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_1380> (endometrial cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1380> "endometrial cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1380> "endometrial cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_1612> (breast cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1612> "breast cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1612> "breast cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_1993> (rectum cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1993> "rectum cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1993> "rectum cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_2596> (larynx cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_2596> "larynx cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_2596> "larynx cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_263> (kidney cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_263> "kidney cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_263> "kidney cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_3068> (glioblastoma)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_3068> "glioblastoma")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_3068> "glioblastoma"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_3565> (meningioma)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_3565> "meningioma")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_3565> "meningioma"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_5041> (esophageal cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_5041> "esophageal cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_5041> "esophageal cancer"@en)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_8557> (oropharynx cancer)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_8557> "oropharynx cancer")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_8557> "oropharynx cancer"@en)
 
 
 )
