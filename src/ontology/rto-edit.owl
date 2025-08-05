@@ -52,6 +52,7 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000036>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000037>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000040>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000088>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000089>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000090>))
@@ -308,6 +309,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000040> (control_point)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000040> "A set of values that of relevant machine parameters that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000040> "control_point"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000040> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000088> (compensator)
 
