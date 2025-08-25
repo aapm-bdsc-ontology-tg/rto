@@ -13,6 +13,8 @@ BFO:0000040 # material entity
 BFO:0000141 # immaterial entity
 RBO:00000115 # radiation dosimeter device
 RBO:00002118 # radioactive decay
+RBO:00015005 # beta decay
+RBO:00015004 # alpha decay
 RBO:00015006 # subatomic process
 RBO:010016 # radiation dose
 COB:0000011 # atom
