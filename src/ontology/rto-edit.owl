@@ -41,7 +41,6 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000023>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000024>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000025>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000026>))
-Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000027>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000030>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000031>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000032>))
@@ -229,13 +228,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.archive.org/purl/rto-draft/RTO_0000026> "Cs-137")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000026> "Cesium-137"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000026> <http://purl.archive.org/purl/rto-draft/RTO_0000011>)
-
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000027> (alpha decay)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000027> "Nuclear decay in which an alpha particle is emitted.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000027> "alpha decay"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000027> "RBO_00015004")
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000027> <http://purl.obolibrary.org/obo/RBO_00002118>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000030> (target volume)
 
