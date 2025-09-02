@@ -7,6 +7,8 @@ OBI:0000398 # image creation device
 OBI:0000982 # computer tomography scanner
 OBI:0000933 # positron emission tomography scanner
 OBI:0000984 # dose
+OBI:0002135 # has specified value [data property]
+OBI:0001937 # has specified numeric value [data property]
 BFO:0000001
 BFO:0000002 # continuant
 BFO:0000003

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2025-02-21/imports/obi_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2025-01-09/obi.owl>)
-Annotation(owl:versionInfo "2025-02-21")
+<http://purl.obolibrary.org/obo/rto/releases/2025-09-02/imports/obi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2025-07-28/obi.owl>)
+Annotation(owl:versionInfo "2025-09-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -53,6 +53,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001894>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001995>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
@@ -93,8 +95,22 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000118> "alt
 # Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000015>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.obolibrary.org/obo/OBI_0001937> (has specified numeric value)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001937> "A relation between a value specification and a number that quantifies it."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001937> "has specified numeric value")
+SubDataPropertyOf(<http://purl.obolibrary.org/obo/OBI_0001937> <http://purl.obolibrary.org/obo/OBI_0002135>)
+
+# Data Property: <http://purl.obolibrary.org/obo/OBI_0002135> (has specified value)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0002135> "A relation between a value specification and a literal."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0002135> "has specified value"@en)
 
 
 
