@@ -91,6 +91,16 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.obolibrary.org/obo/OBI_0001937> (has specified numeric value)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0001937> <http://purl.obolibrary.org/obo/IAO_0000109>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/OBI_0001937> xsd:float)
+
+
 
 ############################
 #   Classes
@@ -417,6 +427,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001028> "Typically a port film is carried out using megavoltage photons, but if the treatment device is so equipped, kilovoltage photons can be used.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001028> "port film"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001028> <http://purl.archive.org/purl/rto-draft/RTO_0001026>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000414> (mass measurement datum)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000030>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001937> xsd:float))
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
