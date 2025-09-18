@@ -41,7 +41,6 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000023>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000024>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000025>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000026>))
-Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000027>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000030>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000031>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000032>))
@@ -240,13 +239,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000026> "Cesium-137"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000026> <http://purl.archive.org/purl/rto-draft/RTO_0000011>)
 
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000027> (alpha decay)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000027> "Nuclear decay in which an alpha particle is emitted.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000027> "alpha decay"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000027> "RBO_00015004")
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000027> <http://purl.obolibrary.org/obo/RBO_00002118>)
-
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000030> (target volume)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000030> "A site that denotes a region of the body that contains disease that is to be irradiated during a radiation therapy procedure.")
@@ -444,7 +436,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> DataSomeValuesFrom(<http
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00015005> "beta decay")
-SubClassOf(<http://purl.obolibrary.org/obo/RBO_00015005> <http://purl.obolibrary.org/obo/RBO_00002118>)
 
 
 ############################
