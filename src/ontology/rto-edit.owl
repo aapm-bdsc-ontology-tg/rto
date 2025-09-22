@@ -251,18 +251,22 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000030> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000031> "A target volume that encompasses the tissue that contains the gross tumor volume plus tissue that is suspected to contain microscopic tumor.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000031> "clinical target volume"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000031> <http://purl.archive.org/purl/rto-draft/RTO_0000030>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.archive.org/purl/rto-draft/RTO_0000033>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000032> (gross tumor volume)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000032> "A target volume that encompasses the tissue that contains macroscopic tumor or other tissue that is intended to be irradiated.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000032> "gross tumor volume"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000032> <http://purl.archive.org/purl/rto-draft/RTO_0000030>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.archive.org/purl/rto-draft/RTO_0000031>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000033> (planning target volume)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000033> "A target volume that contains the gross tumor volume and clinical target volume (if it exists) and a margin to account for uncertainty in setting up the patient for irradiation.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000033> "planning target volume"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000033> <http://purl.archive.org/purl/rto-draft/RTO_0000030>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.archive.org/purl/rto-draft/RTO_0000031>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.archive.org/purl/rto-draft/RTO_0000032>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000034> (dose volume histogram)
 
