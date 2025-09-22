@@ -250,7 +250,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000031> "clinical target volume"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000031> <http://purl.archive.org/purl/rto-draft/RTO_0000030>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.archive.org/purl/rto-draft/RTO_0000033>))
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.archive.org/purl/rto-draft/RTO_0000032>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000032> (gross tumor volume)
 
