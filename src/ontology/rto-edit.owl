@@ -374,11 +374,11 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000094> <http://purl.obo
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001017> (oncologic chemotherapy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "A health care process that uses drugs to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "A chemotherapy process that uses drugs to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001017> "oncologic chemotherapy"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001017> "National Cancer Institute:
 https://www.cancer.gov/publications/dictionaries/cancer-terms/def/chemotherapy")
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obolibrary.org/obo/OGMS_0000113>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001018> (oncologic surgical procedure)
 
@@ -388,9 +388,9 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obo
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001019> (oncologic immunotherapy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "A health care process that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "An immunotherapy process that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001019> "oncologic immunotherapy"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000114>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001020> (oncologic targeted therapy)
 
@@ -453,7 +453,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001021> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/RTO_0001023> (imaging procedure)
 
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RTO_0001023> "Such an imaging procedure uses some technological method for producing the images, such as ultrasound, MRI or CT, although there many other options, sometimes quite specialized.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0001023> "A health care process that renders a patient or particular tissue of a patient into an image.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RTO_0001023> "Such an imaging procedure uses some technological method for producing the images, such as ultrasound, MRI or CT, although there many other options, sometimes quite specialized.  The image can be one dimensional (e.g. Doppler vascular imaging), two dimensional, three dimensional or four dimensional (time evolution of changes).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0001023> "imaging procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001023> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 
