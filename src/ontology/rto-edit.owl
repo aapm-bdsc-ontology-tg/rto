@@ -12,6 +12,7 @@ Ontology(<http://purl.obolibrary.org/obo/rto.owl>
 Import(<http://purl.obolibrary.org/obo/rto/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/cob_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rto/imports/doid_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ogms_import.owl>)
