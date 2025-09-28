@@ -63,6 +63,9 @@ Push changes to GitHub
 # Check ontology
 Open ontology in Protege and check
 
+# Create a new release 
+On GitHub create a release
+
 # Note
 I did the above workflow on main, this is not correct. Better is to checkout a branch, e.g. pre-release-vX and then a pull request
 
