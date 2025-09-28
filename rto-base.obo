@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: rto/releases/2025-02-21/rto-base.owl
+data-version: rto/releases/2025-09-28/rto-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: rto/rto-base
@@ -7,5 +7,5 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "An ontology describing the domain of radiation therapy concerned primarily with the processes and equipment used to deliver therapeutic radiation in a clinical setting. RTO aims to be useful in bridging institutional and clinical practice differences. It is also intended to useful in investigations in oncology which includes medical, surgical and genetic oncological domains. In modeling this domain, RTO uses terms from many existing OBO ontologies." xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Radiation Therapy Ontology" xsd:string
-property_value: owl:versionInfo "2025-02-21" xsd:string
+property_value: owl:versionInfo "2025-09-28" xsd:string
 

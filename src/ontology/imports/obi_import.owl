@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2025-09-02/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2025-09-28/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2025-07-28/obi.owl>)
-Annotation(owl:versionInfo "2025-09-02")
+Annotation(owl:versionInfo "2025-09-28")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -22,6 +22,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
@@ -34,6 +35,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000414>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000093>))
@@ -52,23 +54,15 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001894>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001995>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
-Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/format>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/subject>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
-Declaration(Datatype(xsd:date))
 ############################
 #   Annotation Properties
 ############################
@@ -77,8 +71,8 @@ Declaration(Datatype(xsd:date))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "textual definition")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (alternative label)
@@ -92,9 +86,31 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000118> "alt
 #   Object Properties
 ############################
 
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000050> (part of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000050> "a core relation that holds between a part and its whole"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000050> "part_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000050> "part of"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000051>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000051> (has part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000051> "a core relation that holds between a whole and its part"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000051> "has_part"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has part"@en)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
+
 # Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000136> "A (currently) primitive relation that relates an information artifact to an entity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about"@en)
 
 
 ############################
@@ -181,6 +197,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000141>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000030> (object)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000030> "object"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000030> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
@@ -252,6 +273,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000308> "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000308> "figure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000414> (mass measurement datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000414> "A scalar measurement datum that is the result of measurement of mass quality"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000414> "mass measurement datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> <http://purl.obolibrary.org/obo/IAO_0000109>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
 
