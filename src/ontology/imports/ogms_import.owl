@@ -16,12 +16,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000090>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000096>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000112>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000113>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000114>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
@@ -57,41 +52,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000090> (treatment)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000090> "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000090> "treatment")
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000090> <http://purl.obolibrary.org/obo/OGMS_0000096>)
-
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000096> (health care process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000096> "A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000096> "health care process")
 SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000096> <http://purl.obolibrary.org/obo/OBI_0000011>)
-
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000112> (therapeutic procedure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000112> "A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000112> "therapeutic procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000112> <http://purl.obolibrary.org/obo/OGMS_0000090>)
-
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000113> (chemotherapy procedure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000113> "A therapeutic procedure that uses synthetic or naturally-occurring chemicals")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000113> "chemotherapy procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000113> <http://purl.obolibrary.org/obo/OGMS_0000112>)
-
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000114> (immunotherapy procedure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000114> "A therapeutic procedure that uses immune system derived entities.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000114> "immunotherapy procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000114> <http://purl.obolibrary.org/obo/OGMS_0000112>)
-
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000116> (radiation therapy procedure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000116> "A therapeutic procedure that uses radiation.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000116> "radiation therapy procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
 
 )
