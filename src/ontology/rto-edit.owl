@@ -432,6 +432,14 @@ AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_000
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001028> "port film"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001028> <http://purl.archive.org/purl/rto-draft/RTO_0001026>)
 
+# Class: <http://purl.obolibrary.org/obo/COB_0000026> (processed material entity)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0000026> <http://purl.obolibrary.org/obo/OBI_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0001300> (device)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0001300> <http://purl.obolibrary.org/obo/OBI_0000968>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000414> (mass measurement datum)
 
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000030>))
