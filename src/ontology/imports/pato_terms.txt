@@ -4,3 +4,4 @@ BFO:0000019  # quality
 PATO:0001241 # physical object quality
 PATO:0001018 # physical quality
 PATO:0000125 # mass
+

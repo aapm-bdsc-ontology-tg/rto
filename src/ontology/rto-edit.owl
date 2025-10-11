@@ -70,6 +70,9 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001026>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001027>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001026>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -283,6 +286,7 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00000
 AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0000035> "A verbal or written order given by an authorized person instructing a patient to obtain and use a medical device, prescription or undergo a procedure. [Definition Source: NCI]
 http://purl.obolibrary.org/obo/NCIT_C28180")
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000035> <http://purl.obolibrary.org/obo/IAO_0000005>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/RTO_0001024>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000036> (radiation therapy method)
 
@@ -311,9 +315,9 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obo
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000039> (radiation therapy treatment)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000039> "A healthcare process that uses ionizing radiation to treat a condition within the body as the realization of a plan that concretized a radiation therapy plan specification.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000039> "A radiation therapy procedure that uses ionizing radiation to treat a condition within the body as the realization of a plan that concretized a radiation therapy plan specification.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000116>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000040> (control_point)
@@ -370,29 +374,31 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000094> <http://purl.obo
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001017> (oncologic chemotherapy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "A health care process that uses drugs to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "A chemotherapy process that uses drugs to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001017> "oncologic chemotherapy"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001017> "National Cancer Institute:
 https://www.cancer.gov/publications/dictionaries/cancer-terms/def/chemotherapy")
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obolibrary.org/obo/OGMS_0000113>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001018> (oncologic surgery)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001018> "A health care process that surgically removes or samples cancerous tissue.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001018> "A therpeutic procedure that surgically removes or samples cancerous tissue.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001018> "oncologic surgery"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001018> "Cancer surgery NCIT_C157740")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001019> (oncologic immunotherapy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "A health care process that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "A immunotherapy procedure that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001019> "oncologic immunotherapy"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000114>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001020> (oncologic targeted therapy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "A health care process that treats cancer by using drugs or other substances to target specific molecutles that cancer cells nned to survive and spread.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "A therapeutic procedure that treats cancer by using drugs or other substances to target specific molecules that cancer cells nned to survive and spread.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001020> "oncologic targeted therapy"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001020> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001020> "targeted therapy NCIT_C93352")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001020> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001024> (radiation therapy simulation)
 
@@ -400,23 +406,25 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001024> "radiation therapy simulation"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.archive.org/purl/rto-draft/RTO_0000003>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/RTO_0001024>))
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001025> (radiation therapy session)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001025> "A health care process that consists of a single episode (fraction) of the delivery of radiation therapy.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001025> "A radiation therapy procedure that consists of a single episode (fraction) of the delivery of radiation therapy.")
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001025> "A radiation therapy treatment consists of 1 or more radiation therapy sessions.
 Each session is bounded by the entrance to a treatment room until the prescribed treatment has been executed and the patient leaves the room.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001025> "radiation therapy session"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001025> <http://purl.obolibrary.org/obo/OGMS_0000096>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001025> <http://purl.obolibrary.org/obo/OGMS_0000116>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001026> (radiation therapy imaging)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001026> "A health care process that consists of localizing and positioning the patient by means of some imaging process in order to carry out the prescribed radiation therapy treatment.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001026> "A medical imaging process that is used in radiation therapy procedures.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0001026> "This definition encompasses imaging (CBCT, surface imaging, etc) for positioning the patient for treatment but can also include imaging such as MRI for treatment planning.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001026> "radiation therapy imaging"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> <http://purl.obolibrary.org/obo/OGMS_0000096>)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> <http://purl.obolibrary.org/obo/RTO_0001026>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.obolibrary.org/obo/OGMS_0000116>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001027> (cone beam computed tomography)
 
@@ -437,9 +445,41 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001028> <http://purl.arc
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000030>))
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001937> xsd:float))
 
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000096> (health care process)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000096> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/RTO_0001024>))
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000116> (radiation therapy procedure)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/RTO_0001024>))
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/RTO_0001024>))
+
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00015005> "beta decay")
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0001024> (care plan)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0001024> "A plan of the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RTO_0001024> "This is analagous to \"care plan\" in the FHIR specification.  In that context, care plan is described as an intended process rather than as an actual process.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0001024> "care plan"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001024> <http://purl.obolibrary.org/obo/OBI_0000260>)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.archive.org/purl/rto-draft/RTO_0000035>))
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RTO_0001025>))
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0001025> (radiation therapy intent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0001025> "An objective specification that describes the goal of a radiation therapy treatment that realizes a plan containing this objective.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0001025> "radiation therapy intent"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001025> <http://purl.obolibrary.org/obo/IAO_0000005>)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/RTO_0001024>))
+
+# Class: <http://purl.obolibrary.org/obo/RTO_0001026> (medical imaging)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RTO_0001026> "A health care process that uses some form of imaging for the purpose of obtaining medical information about a patient.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RTO_0001026> "This is a very general procedure that can include x-ray images, ultrasound imaging but can also include pathological microscopy.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0001026> "medical imaging"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001026> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 
 
 ############################
