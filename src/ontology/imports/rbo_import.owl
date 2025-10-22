@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2025-09-28/imports/rbo_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2025-10-08/imports/rbo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2025-09-17/rbo.owl>)
-Annotation(owl:versionInfo "2025-09-28")
+Annotation(owl:versionInfo "2025-10-08")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -25,6 +25,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0001300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
@@ -230,6 +232,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000011> "atom"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000011> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
+# Class: <http://purl.obolibrary.org/obo/COB_0000026> (processed material entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000026> "A material entity processed by human activity with an intent to produce it."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000026> "processed material entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000026> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0001300> (device)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0001300> "A processed material entity which is designed to be capable of a process."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0001300> "device"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0001300> <http://purl.obolibrary.org/obo/COB_0000026>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000005> (objective specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000005> "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en)
@@ -318,7 +332,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000984> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00000115> "A device that is used to measure the amount of ionizing radiation exposure or absorption.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RBO_00000115> "radiation dosimeter")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00000115> "radiation dosimeter device")
-SubClassOf(<http://purl.obolibrary.org/obo/RBO_00000115> <http://purl.obolibrary.org/obo/BFO_0000040>)
+SubClassOf(<http://purl.obolibrary.org/obo/RBO_00000115> <http://purl.obolibrary.org/obo/COB_0001300>)
 
 # Class: <http://purl.obolibrary.org/obo/RBO_00002118> (radioactive decay)
 
