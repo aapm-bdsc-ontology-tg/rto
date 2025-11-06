@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                50a297370f23db7714f591bd0fe977d1258b3c825a31534dadc4fca6b05a40e2
+CONFIG_HASH=                909becde61528b4e97446ff15ee2d1817883537c63ca6967c642078f84f20635
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  rbo ro iao bfo ogms obi doid pato cob chebi
+IMPORTS =  rbo ro iao bfo ogms mf obi doid pato cob chebi
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -498,6 +498,27 @@ $(IMPORTDIR)/ogms_import.owl: $(MIRRORDIR)/ogms.owl $(IMPORTDIR)/ogms_terms.txt 
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
+## Module for ontology: mf (filter)
+$(IMPORTDIR)/mf_import.owl: $(MIRRORDIR)/mf.owl $(IMPORTDIR)/mf_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/mf_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/MF_ \
+		        --base-iri http://purl.obolibrary.org/obo/OGMS_ \
+		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/mf_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
 ## Module for ontology: obi (filter)
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt $(IMPORTSEED) | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \
@@ -672,6 +693,14 @@ mirror-bfo: | $(TMPDIR)
 mirror-ogms: | $(TMPDIR)
 	curl -L $(OBOBASE)/ogms.owl --create-dirs -o $(TMPDIR)/ogms-download.owl --retry 4 --max-time 10000 && \
 	$(ROBOT) convert -i $(TMPDIR)/ogms-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: mf
+.PHONY: mirror-mf
+.PRECIOUS: $(MIRRORDIR)/mf.owl
+mirror-mf: | $(TMPDIR)
+	curl -L $(OBOBASE)/mf.owl --create-dirs -o $(TMPDIR)/mf-download.owl --retry 4 --max-time 10000 && \
+	$(ROBOT) convert -i $(TMPDIR)/mf-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: obi

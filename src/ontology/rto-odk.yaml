@@ -33,6 +33,12 @@ import_group:
         - http://purl.obolibrary.org/obo/OGMS_
         - http://purl.obolibrary.org/obo/BFO_
         - http://purl.obolibrary.org/obo/OBI_
+    - id: mf
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/MF_
+        - http://purl.obolibrary.org/obo/OGMS_
+        - http://purl.obolibrary.org/obo/BFO_
     - id: obi
       module_type: filter
       base_iris:
