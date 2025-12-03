@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2025-12-02/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2025-12-03/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2025-10-14/obi.owl>)
-Annotation(owl:versionInfo "2025-12-02")
+Annotation(owl:versionInfo "2025-12-03")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -40,7 +40,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000414>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000093>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000398>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000933>))
@@ -307,13 +306,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000047> "Is a material entity that is created or changed during material processing."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000047> "processed material"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000047> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
-# Class: <http://purl.obolibrary.org/obo/OBI_0000093> (patient role)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000093> "a role which inheres in a person and is realized by the process of being under the care of a physician or health care provider"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000093> "patient")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000093> "patient role"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000093> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000260> (plan)
 
