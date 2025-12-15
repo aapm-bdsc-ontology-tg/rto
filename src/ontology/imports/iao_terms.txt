@@ -18,6 +18,13 @@ IAO:0000109	# measurement data item
 IAO:0000030	# information content entity
 IAO:0000414	# mass measurement datum
 IAO:0000136	# is about [a property]
+IAO:0020000 	# Identifier
+IAO:0000646 	# Postal code
+IAO:0020016 	# Given name
+IAO:0020017 	# Family name
+IAO:0000578 	# Centrally registered identifier
+IAO:0000577 	# Centrally registered identifier symbol
+IAO:0000579 	# Centrally registered identifier registry
 BFO:0000001	# entity
 BFO:0000002	# continuant
 BFO:0000003	# occurrent
