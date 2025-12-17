@@ -1,6 +1,7 @@
 IAO:0000109 # measurement datum
 IAO:0000027 # data item
 IAO:0000030 # information content entity
+IAO:0000033 # directive information entity
 BFO:0000001 # entity
 BFO:0000002 # continuant
 BFO:0000003 # occurrent
