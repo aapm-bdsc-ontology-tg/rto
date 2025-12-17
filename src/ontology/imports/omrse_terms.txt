@@ -1,0 +1,5 @@
+OMRSE:00000011    # patient role
+OMRSE:00000012    # healthcare provider role
+OMRSE:00000010    # healthcare role
+OMRSE:00002072    # role in human social processes
+BFO:0000023       # role

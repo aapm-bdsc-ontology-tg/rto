@@ -4,6 +4,7 @@ OGMS:0000112  # therapeutic process
 OGMS:0000113  # chemotherapy process
 OGMS:0000114  # immunotherapy process
 OGMS:0000116  # radiation therapy process
+OGMS:0000087  # extended organism
 OBI:0000011   # planned process
 BFO:0000040   # material entity
 BFO:0000015   # process
