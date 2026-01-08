@@ -8,7 +8,6 @@ OBI:0000933 # positron emission tomography scanner
 OBI:0000984 # dose
 OBI:0002135 # has specified value [data property]
 OBI:0001937 # has specified numeric value [data property]
-OBI:0100026 # organism
 OBI:0000070 # assay 
 OBI:0000445 # mass measurement assay
 OBI:0600020 # histology assay 
