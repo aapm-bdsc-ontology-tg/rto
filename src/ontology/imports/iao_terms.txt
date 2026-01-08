@@ -40,4 +40,6 @@ BFO:0000020	# specifically dependent continuant
 BFO:0000031	# generically dependent continuant
 BFO:0000040	# material entity
 BFO:0000141	# immaterial entity
+BFO:0000019	# quality
 PATO:0001241	# physical object quality
+
