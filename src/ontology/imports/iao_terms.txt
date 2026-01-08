@@ -4,6 +4,9 @@ IAO:0000101	# image
 IAO:0000109	# measurement datum
 IAO:0000027	# data item
 IAO:0000032	# scalar measurement datum
+IAO:0000414 	# mass measurement datum 
+IAO:0000408	# length measurement datum 
+IAO:0000416 	# time measurement datum 
 IAO:0000009	# datum label
 IAO:0000003	# measurement unit label
 IAO:0000007	# action specification

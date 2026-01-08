@@ -9,6 +9,14 @@ OBI:0000984 # dose
 OBI:0002135 # has specified value [data property]
 OBI:0001937 # has specified numeric value [data property]
 OBI:0100026 # organism
+OBI:0000070 # assay 
+OBI:0000445 # mass measurement assay
+OBI:0600020 # histology assay 
+OBI:0000299 # has specified output
+OBI:0000293 # has specified input
+OBI:0001950 # has performer
+OBI:0000295 # is specified input of 
+OBI:0000312 # is specified output of 
 BFO:0000001
 BFO:0000002 # continuant
 BFO:0000003
