@@ -54,4 +54,4 @@ COB:0000035 # completely executed planned process
 COB:0000082 # planned process
 COB:0000026 # processed material entity
 COB:0001300 # device
-COB_0000022 # organism
+COB:0000022 # organism
