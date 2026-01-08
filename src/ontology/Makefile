@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                cc822191431f7ddfdaa49bb4ed9a86b62d42156dcff3a65e775abd89a31ef884
+CONFIG_HASH=                cf4d2436ac7d2579474131a55ddf54c9ae21ff40897f46b31ac86321c486d3c8
 
 
 # ----------------------------------------
@@ -421,6 +421,7 @@ $(IMPORTDIR)/rbo_import.owl: $(MIRRORDIR)/rbo.owl $(IMPORTDIR)/rbo_terms.txt $(I
 		        --base-iri http://purl.obolibrary.org/obo/IAO_ \
 		        --base-iri http://purl.obolibrary.org/obo/COB_ \
 		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
+		        --base-iri http://purl.obolibrary.org/obo/UBERON_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
