@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                90f3548fad643421201051cbec586c70a81f784e39b7a79cdb8497f938069152
+CONFIG_HASH=                cc822191431f7ddfdaa49bb4ed9a86b62d42156dcff3a65e775abd89a31ef884
 
 
 # ----------------------------------------
@@ -447,6 +447,7 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt $(I
 		 remove --axioms external --preserve-structure false --trim false \
 		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
 		        --base-iri http://purl.obolibrary.org/obo/IAO_ \
+		        --base-iri http://purl.obolibrary.org/obo/PATO_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
@@ -530,6 +531,7 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt $(I
 		        --base-iri http://purl.obolibrary.org/obo/IAO_ \
 		        --base-iri http://purl.obolibrary.org/obo/PATO_ \
 		        --base-iri http://purl.obolibrary.org/obo/NCBITaxon_ \
+		        --base-iri http://purl.obolibrary.org/obo/COB_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
