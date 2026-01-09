@@ -13,6 +13,7 @@ import_group:
         - http://purl.obolibrary.org/obo/IAO_
         - http://purl.obolibrary.org/obo/COB_
         - http://purl.obolibrary.org/obo/BFO_
+        - http://purl.obolibrary.org/obo/UBERON_
     - id: ro
       module_type: custom
     - id: iao
@@ -20,6 +21,7 @@ import_group:
       base_iris:
         - http://purl.obolibrary.org/obo/BFO_
         - http://purl.obolibrary.org/obo/IAO_
+        - http://purl.obolibrary.org/obo/PATO_
     - id: bfo
       module_type: slme
       module_type_slme: top
@@ -46,6 +48,7 @@ import_group:
         - http://purl.obolibrary.org/obo/IAO_
         - http://purl.obolibrary.org/obo/PATO_
         - http://purl.obolibrary.org/obo/NCBITaxon_
+        - http://purl.obolibrary.org/obo/COB_
     - id: doid
       module_type: filter
     - id: pato

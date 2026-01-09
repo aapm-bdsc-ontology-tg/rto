@@ -19,8 +19,10 @@ RBO:00015004 # alpha decay
 RBO:00015006 # subatomic process
 RBO:010016 # radiation dose
 COB:0000011 # atom
+COB:0000022 # organism
 COB:0001300 # device
 COB:0000026 # processed material entity
 OBI:0000047 # processed material
 OBI:0000968 # device
 OBI:0000984 # dose
+UBERON:0000465 # material anatomical entity
