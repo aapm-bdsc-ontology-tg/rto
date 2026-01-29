@@ -16,6 +16,9 @@ OBI:0000293 # has specified input
 OBI:0001950 # has performer
 OBI:0000295 # is specified input of 
 OBI:0000312 # is specified output of 
+OBI:0001927 # specifies value of
+OBI:0000938 # categorical measurement datum
+OBI:0001930 # categorical value specification
 BFO:0000001
 BFO:0000002 # continuant
 BFO:0000003

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-01-08/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2026-01-28/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2025-12-18/obi.owl>)
-Annotation(owl:versionInfo "2026-01-08")
+Annotation(owl:versionInfo "2026-01-28")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
@@ -43,9 +43,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000398>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000445>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000933>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000938>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000982>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000984>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0600020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000047>))
@@ -64,6 +66,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0001927>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0001950>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
@@ -147,6 +150,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is specified output of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/RO_0000056>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/COB_0000035>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0001927> (specifies value of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001927> "A relation between a value specification and an entity which the specification is about."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001927> "specifies value of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0001927> <http://purl.obolibrary.org/obo/IAO_0000136>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0001950> (has performer)
 
@@ -364,6 +373,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000933> "positron emission tomography scanner")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000933> <http://purl.obolibrary.org/obo/OBI_0000398>)
 
+# Class: <http://purl.obolibrary.org/obo/OBI_0000938> (categorical measurement datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000938> "A measurement datum that is reported on a categorical scale."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000938> "nominal mesurement datum")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000938> "categorical measurement datum")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000938> <http://purl.obolibrary.org/obo/IAO_0000109>)
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0000968> (obsolete device)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000968> "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent."@en)
@@ -383,6 +399,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000982> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000984> "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000984> "dose")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000984> <http://purl.obolibrary.org/obo/IAO_0000109>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0001930> (categorical value specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001930> "A value specification that is specifies one category out of a fixed number of nominal categories"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001930> "categorical value specification")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001930> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0600020> (histological assay)
 
