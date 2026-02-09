@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                cf4d2436ac7d2579474131a55ddf54c9ae21ff40897f46b31ac86321c486d3c8
+CONFIG_HASH=                22aff0218f0d286ca21d7abb779e25ecb25e01a552b2304de4b62ab8006525d4
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  rbo ro iao bfo ogms omrse obi doid pato cob chebi
+IMPORTS =  rbo ro iao bfo ogms omrse obi doid pato cob chebi ncit
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -422,6 +422,7 @@ $(IMPORTDIR)/rbo_import.owl: $(MIRRORDIR)/rbo.owl $(IMPORTDIR)/rbo_terms.txt $(I
 		        --base-iri http://purl.obolibrary.org/obo/COB_ \
 		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
 		        --base-iri http://purl.obolibrary.org/obo/UBERON_ \
+		        --base-iri http://purl.obolibrary.org/obo/DOID_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
@@ -544,24 +545,11 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt $(I
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
-## Module for ontology: doid (filter)
-$(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl $(IMPORTDIR)/doid_terms.txt $(IMPORTSEED) | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --add-source true \
-		 extract --term-file $(IMPORTDIR)/doid_terms.txt $(T_IMPORTSEED) \
-		         --copy-ontology-annotations true --force true --method BOT \
-		 remove --axioms external --preserve-structure false --trim false \
-		        --base-iri http://purl.obolibrary.org/obo/DOID \
-		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
-		        --term rdfs:label \
-		        --term IAO:0000115 \
-		        --term OMO:0002000 \
-		        --term-file $(IMPORTDIR)/doid_terms.txt $(T_IMPORTSEED) \
-		        --select complement \
-		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
-		               --subset-decls true --synonym-decls true \
-		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
+## Module for ontology: doid (filter - http://purl.obolibrary.org/obo/DOID_)
+$(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl
+	@echo "ERROR: You have configured doid as a custom module;"
+	@echo "       This rule needs to be overwritten in rto.Makefile!"
+	@false
 
 ## Module for ontology: pato (filter)
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt $(IMPORTSEED) | all_robot_plugins
@@ -624,6 +612,25 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms.t
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 endif # IMP_LARGE=true
+
+## Module for ontology: ncit (filter)
+$(IMPORTDIR)/ncit_import.owl: $(MIRRORDIR)/ncit.owl $(IMPORTDIR)/ncit_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/ncit_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/NCIT_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/ncit_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
 
 endif # IMP=true
 
@@ -746,6 +753,14 @@ mirror-chebi: | $(TMPDIR)
 	curl -L $(OBOBASE)/chebi.owl.gz --create-dirs -o $(MIRRORDIR)/chebi.owl.gz --retry 4 --max-time 10000 && \
 	$(ROBOT) convert -i $(MIRRORDIR)/chebi.owl.gz -o $(TMPDIR)/$@.owl
 endif
+
+
+## ONTOLOGY: ncit
+.PHONY: mirror-ncit
+.PRECIOUS: $(MIRRORDIR)/ncit.owl
+mirror-ncit: | $(TMPDIR)
+	curl -L $(OBOBASE)/ncit.owl --create-dirs -o $(TMPDIR)/ncit-download.owl --retry 4 --max-time 10000 && \
+	$(ROBOT) convert -i $(TMPDIR)/ncit-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
