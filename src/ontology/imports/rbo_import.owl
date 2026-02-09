@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-01-08/imports/rbo_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2025-12-11/rbo.owl>)
-Annotation(owl:versionInfo "2026-01-08")
+<http://purl.obolibrary.org/obo/rto/releases/2026-02-09/imports/rbo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2026-01-15/rbo.owl>)
+Annotation(owl:versionInfo "2026-02-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -28,6 +28,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0001300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
@@ -253,6 +254,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/COB_0000026> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0001300> "A processed material entity which is designed to be capable of a process."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0001300> "device"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0001300> <http://purl.obolibrary.org/obo/COB_0000026>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_4> (disease)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4> "disease")
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4> <http://purl.obolibrary.org/obo/BFO_0000017>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000005> (objective specification)
 
