@@ -52,6 +52,7 @@ import_group:
         - http://purl.obolibrary.org/obo/COB_
     - id: doid
       module_type: filter
+      base_iris:
         - http://purl.obolibrary.org/obo/DOID_
     - id: pato
       module_type: filter

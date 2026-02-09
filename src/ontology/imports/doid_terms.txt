@@ -1,5 +1,5 @@
 DOID:10283 #prostate cancer
-DOID:10283 #cancer
+DOID:162 #cancer
 DOID:4 #disease
 # DOID:3565
 # DOID:3068

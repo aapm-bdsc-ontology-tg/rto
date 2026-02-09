@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                22aff0218f0d286ca21d7abb779e25ecb25e01a552b2304de4b62ab8006525d4
+CONFIG_HASH=                ee416c9229ec4773495f30e2488ef6fd93b0624c283fe455451799b158102db8
 
 
 # ----------------------------------------
@@ -545,11 +545,24 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt $(I
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
-## Module for ontology: doid (filter - http://purl.obolibrary.org/obo/DOID_)
-$(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl
-	@echo "ERROR: You have configured doid as a custom module;"
-	@echo "       This rule needs to be overwritten in rto.Makefile!"
-	@false
+## Module for ontology: doid (filter)
+$(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl $(IMPORTDIR)/doid_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/doid_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/DOID_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/doid_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
 
 ## Module for ontology: pato (filter)
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt $(IMPORTSEED) | all_robot_plugins
