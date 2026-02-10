@@ -23,6 +23,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C141345>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C146985>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C148411>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C148412>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C15608>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C161009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C162609>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C162610>))
@@ -76,7 +77,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28108>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28257>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28285>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48698>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48699>))
@@ -247,6 +247,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C148411> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C148412> "T3d TNM Finding")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C148412> <http://purl.obolibrary.org/obo/NCIT_C48728>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C15608> (Staging)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C15608> "Staging")
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C161009> (Clinical Primary Tumor TNM Finding)
 
@@ -510,10 +514,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C28065> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/NCIT_C28108> (Disease Stage Qualifier)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C28108> "Disease Stage Qualifier")
-
-# Class: <http://purl.obolibrary.org/obo/NCIT_C28257> (Pathological Staging)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C28257> "Pathological Staging")
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C28285> (Stage IS)
 
