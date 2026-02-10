@@ -1,4 +1,4 @@
-NCIT:C28257 # Staging
+NCIT:C15608 # Staging
 NCIT:C48698 # Cancer TNM Finding Category
 NCIT:C48879 # Generic TNM Finding
 
