@@ -452,6 +452,10 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0001300> <http://purl.obol
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000030>))
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001937> xsd:float))
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C48698> (Cancer TNM Finding Category)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48698> <http://purl.obolibrary.org/obo/OBI_0001930>)
+
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000116> (radiation therapy procedure)
 
 SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
