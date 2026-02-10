@@ -452,6 +452,10 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0001300> <http://purl.obol
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000030>))
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001937> xsd:float))
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C15608> (Staging)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C15608> <http://purl.obolibrary.org/obo/COB_0000035>)
+
 # Class: <http://purl.obolibrary.org/obo/NCIT_C177561> (AJCC Cancer Staging Manual)
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C177561> <http://purl.obolibrary.org/obo/IAO_0000104>)
