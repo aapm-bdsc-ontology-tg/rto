@@ -8,6 +8,7 @@ BFO:0000003 # occurrent
 BFO:0000004 # independent continuant
 BFO:0000015 # process
 BFO:0000017 # realizable entity
+BFO:0000016 # disposition
 BFO:0000020 # specifically dependent continuant
 BFO:0000031 # generically dependent continuant
 BFO:0000040 # material entity
@@ -26,3 +27,4 @@ OBI:0000047 # processed material
 OBI:0000968 # device
 OBI:0000984 # dose
 UBERON:0000465 # material anatomical entity
+DOID:4 # disease

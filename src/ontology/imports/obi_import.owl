@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-01-28/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2026-02-09/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2025-12-18/obi.owl>)
-Annotation(owl:versionInfo "2026-01-28")
+Annotation(owl:versionInfo "2026-02-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
@@ -67,6 +67,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0001927>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0001938>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0001950>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
@@ -156,6 +157,13 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001927> "A relation between a value specification and an entity which the specification is about."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001927> "specifies value of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0001927> <http://purl.obolibrary.org/obo/IAO_0000136>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0001938> (has value specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001938> "A relation between an information content entity and a value specification that specifies its value."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001938> "has value specification")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/BFO_0000051>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0001950> (has performer)
 
@@ -379,6 +387,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000938> "nominal mesurement datum")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000938> "categorical measurement datum")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000938> <http://purl.obolibrary.org/obo/IAO_0000109>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000938> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/OBI_0001930>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000968> (obsolete device)
 

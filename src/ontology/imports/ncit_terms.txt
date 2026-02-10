@@ -1,0 +1,188 @@
+NCIT:C15608 # Staging
+NCIT:C48698 # Cancer TNM Finding Category
+NCIT:C48879 # Generic TNM Finding
+
+NCIT:C48885 # Generic Primary Tumor TNM Finding
+NCIT:C106299 # Any T
+NCIT:C48719 # T0 TNM Finding
+NCIT:C48720 # T1 TNM Finding
+NCIT:C48721 # T1a TNM Finding
+NCIT:C188292 # T1a1 Stage Finding
+NCIT:C188293 # T1a2 Stage Finding
+NCIT:C48722 # T1b TNM Finding
+NCIT:C188294 # T1b1 TNM Finding
+NCIT:C188295 # T1b2 TNM Finding
+NCIT:C180899 # T1b3 TNM Finding
+NCIT:C48723 # T1c TNM Finding
+NCIT:C95805 # T1mi TNM Finding
+NCIT:C48724 # T2 TNM Finding
+NCIT:C48725 # T2a TNM Finding
+NCIT:C188296 # T2a1 TNM Finding
+NCIT:C188297 # T2a2 TNM Finding
+NCIT:C48726 # T2b TNM Finding
+NCIT:C48727 # T2c TNM Finding
+NCIT:C148411 # T2d TNM Finding
+NCIT:C48728 # T3 TNM Finding
+NCIT:C48729 # T3a TNM Finding
+NCIT:C223528 # T3ab TNM Finding
+NCIT:C48730 # T3b TNM Finding
+NCIT:C48731 # T3c TNM Finding
+NCIT:C148412 # T3d TNM Finding
+NCIT:C48732 # T4 TNM Finding
+NCIT:C48733 # T4a TNM Finding
+NCIT:C48734 # T4b TNM Finding
+NCIT:C48735 # T4c TNM Finding
+NCIT:C48736 # T4d TNM Finding
+NCIT:C188298 # T4e TNM Finding
+NCIT:C132010 # T5 TNM Finding
+NCIT:C48737 # TX TNM Finding
+
+NCIT:C48884 # Generic Regional Lymph Nodes TNM Finding
+NCIT:C48705 # N0 TNM Finding
+NCIT:C48706 # N1 TNM Finding
+NCIT:C48707 # N1a TNM Finding
+NCIT:C48708 # N1b TNM Finding
+NCIT:C95929 # N1bI Stage Finding
+NCIT:C95935 # N1bII Stage Finding
+NCIT:C95936 # N1bIII Stage Finding
+NCIT:C95937 # N1bIV Stage Finding
+NCIT:C48709 # N1c TNM Finding
+NCIT:C95955 # N1mi TNM Finding
+NCIT:C48786 # N2 TNM Finding
+NCIT:C48711 # N2a TNM Finding
+NCIT:C48712 # N2b TNM Finding
+NCIT:C48713 # N2c TNM Finding
+NCIT:C206714 # N2mi TNM Finding
+NCIT:C48714 # N3 TNM Finding
+NCIT:C48715 # N3a TNM Finding
+NCIT:C48716 # N3b TNM Finding
+NCIT:C48717 # N3c TNM Finding
+NCIT:C96026 # N4 TNM Finding
+NCIT:C48718 # NX TNM Finding
+
+NCIT:C48883 # Generic Distant Metastasis TNM Finding
+NCIT:C48699 # M0 TNM Finding
+NCIT:C48700 # M1 TNM Finding
+NCIT:C48701 # M1a TNM Finding
+NCIT:C48702 # M1b TNM Finding
+NCIT:C48703 # M1c TNM Finding
+NCIT:C188301 # M1d TNM Finding
+NCIT:C48704 # MX TNM Finding
+NCIT:C95956 # cM0 (i+) TNM Finding
+
+NCIT:C48881 # Clinical TNM Finding
+NCIT:C162610 # Clinical Distant Metastasis TNM Finding
+NCIT:C161009 # Clinical Primary Tumor TNM Finding
+NCIT:C162609 # Clinical Regional Lymph Nodes TNM Finding
+
+NCIT:C48739 # Pathologic TNM Finding
+NCIT:C48886 # Pathologic Distant Metastasis TNM Finding
+NCIT:C48888 # Pathologic Primary Tumor TNM Finding
+NCIT:C48887 # Pathologic Regional Lymph Nodes TNM Finding
+NCIT:C48740 # pM0 TNM Finding
+NCIT:C48741 # pM1 TNM Finding
+NCIT:C48742 # pM1a TNM Finding
+NCIT:C48743 # pM1b TNM Finding
+NCIT:C48744 # pM1c TNM Finding
+NCIT:C95922 # pN0 (i+) TNM Finding
+NCIT:C95921 # pN0 (i-) TNM Finding
+NCIT:C95925 # pN0 (mol+) TNM Finding
+NCIT:C95923 # pN0 (mol-) TNM Finding
+NCIT:C48745 # pN0 TNM Finding
+NCIT:C48746 # pN1 TNM Finding
+NCIT:C48747 # pN1a TNM Finding
+NCIT:C48748 # pN1b TNM Finding
+NCIT:C48749 # pN1c TNM Finding
+NCIT:C48750 # pN2 TNM Finding
+NCIT:C48751 # pN2a TNM Finding
+NCIT:C48752 # pN2b TNM Finding
+NCIT:C48753 # pN2c TNM Finding
+NCIT:C48754 # pN3 TNM Finding
+NCIT:C48755 # pN3a TNM Finding
+NCIT:C48756 # pN3b TNM Finding
+NCIT:C48757 # pN3c TNM Finding
+NCIT:C48758 # pT0 TNM Finding
+NCIT:C48759 # pT1 TNM Finding
+NCIT:C48760 # pT1a TNM Finding
+NCIT:C222357 # pT1a1 TNM Finding
+NCIT:C222349 # pT1a2 TNM Finding
+NCIT:C48761 # pT1b TNM Finding
+NCIT:C222343 # pT1b1 TNM Finding
+NCIT:C222345 # pT1b2 TNM Finding
+NCIT:C208258 # pT1b3 TNM Finding
+NCIT:C48763 # pT1c TNM Finding
+NCIT:C208259 # pT1c1 TNM Finding
+NCIT:C208260 # pT1c2 TNM Finding
+NCIT:C208261 # pT1c3 TNM Finding
+NCIT:C48764 # pT2 TNM Finding
+NCIT:C48765 # pT2a TNM Finding
+NCIT:C208262 # pT2a1 TNM Finding
+NCIT:C208263 # pT2a2 TNM Finding
+NCIT:C48766 # pT2b TNM Finding
+NCIT:C48767 # pT2c TNM Finding
+NCIT:C208264 # pT2d TNM Finding
+NCIT:C48768 # pT3 TNM Finding
+NCIT:C48769 # pT3a TNM Finding
+NCIT:C48770 # pT3b TNM Finding
+NCIT:C48771 # pT3c TNM Finding
+NCIT:C48772 # pT4 TNM Finding
+NCIT:C48773 # pT4a TNM Finding
+NCIT:C48774 # pT4b TNM Finding
+NCIT:C48775 # pT4c TNM Finding
+NCIT:C48776 # pT4d TNM Finding
+NCIT:C96025 # pTa TNM Finding
+NCIT:C48738 # pTis TNM Finding
+
+NCIT:C177561 # AJCC Cancer Staging Manual
+NCIT:C191343 # AJCC Cancer Staging Manual 4th Edition
+NCIT:C191344 # AJCC Cancer Staging Manual 5th Edition
+NCIT:C186612 # AJCC Cancer Staging Manual 6th Edition
+NCIT:C125755 # AJCC Cancer Staging Manual 7th Edition
+NCIT:C146985 # AJCC Cancer Staging Manual 8th Edition
+NCIT:C186613 # AJCC Cancer Staging System Version 9
+
+NCIT:C28108 # Disease Stage Qualifier
+
+NCIT:C28051 # Stage 0
+NCIT:C27964 # Stage 0a
+NCIT:C27965 # Stage 0is
+
+NCIT:C27966 # Stage I
+NCIT:C27975 # Stage IA
+NCIT:C27983 # Stage IA1
+NCIT:C27984 # Stage IA2
+NCIT:C136485 # Stage IA3
+NCIT:C27976 # Stage IB
+NCIT:C28052 # Stage IB1
+NCIT:C28053 # Stage IB2
+NCIT:C181581 # Stage IB3
+NCIT:C27981 # Stage IC
+NCIT:C28285 # Stage IS
+
+NCIT:C28054 # Stage II
+NCIT:C27967 # Stage IIA
+NCIT:C95177 # Stage IIA1
+NCIT:C95178 # Stage IIA2
+NCIT:C27968 # Stage IIB
+NCIT:C27969 # Stage IIC
+
+NCIT:C27970 # Stage III
+NCIT:C27977 # Stage IIIA
+NCIT:C139980 # Stage IIIA1
+NCIT:C139981 # Stage IIIA2
+NCIT:C27978 # Stage IIIB
+NCIT:C27982 # Stage IIIC
+NCIT:C95179 # Stage IIIC1
+NCIT:C95180 # Stage IIIC2
+NCIT:C137676 # Stage IIID
+
+NCIT:C27971 # Stage IV
+NCIT:C27979 # Stage IVA
+NCIT:C141344 # Stage IVA1
+NCIT:C141345 # Stage IVA2
+NCIT:C27980 # Stage IVB
+NCIT:C28055 # Stage IVC
+NCIT:C27972 # Stage IVS
+
+NCIT:C28065 # Limited Stage
+NCIT:C28064 # Extensive Stage

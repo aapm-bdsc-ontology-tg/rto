@@ -14,6 +14,7 @@ import_group:
         - http://purl.obolibrary.org/obo/COB_
         - http://purl.obolibrary.org/obo/BFO_
         - http://purl.obolibrary.org/obo/UBERON_
+        - http://purl.obolibrary.org/obo/DOID_
     - id: ro
       module_type: custom
     - id: iao
@@ -51,6 +52,8 @@ import_group:
         - http://purl.obolibrary.org/obo/COB_
     - id: doid
       module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/DOID_
     - id: pato
       module_type: filter
       base_iris:
@@ -66,3 +69,8 @@ import_group:
       module_type: filter
       use_gzipped: TRUE
       is_large: TRUE
+    - id: ncit
+      module_type: filter
+      is_large: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/NCIT_
