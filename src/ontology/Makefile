@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ee416c9229ec4773495f30e2488ef6fd93b0624c283fe455451799b158102db8
+CONFIG_HASH=                461a80857ca2d21ef35773ebb890a8c0f560c50d4ec08c393ee237817089054f
 
 
 # ----------------------------------------
@@ -627,6 +627,7 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms.t
 endif # IMP_LARGE=true
 
 ## Module for ontology: ncit (filter)
+ifeq ($(IMP_LARGE),true)
 $(IMPORTDIR)/ncit_import.owl: $(MIRRORDIR)/ncit.owl $(IMPORTDIR)/ncit_terms.txt $(IMPORTSEED) | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \
 		 odk:normalize --add-source true \
@@ -644,6 +645,7 @@ $(IMPORTDIR)/ncit_import.owl: $(MIRRORDIR)/ncit.owl $(IMPORTDIR)/ncit_terms.txt 
 		               --subset-decls true --synonym-decls true \
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
+endif # IMP_LARGE=true
 
 endif # IMP=true
 
@@ -771,9 +773,11 @@ endif
 ## ONTOLOGY: ncit
 .PHONY: mirror-ncit
 .PRECIOUS: $(MIRRORDIR)/ncit.owl
+ifeq ($(IMP_LARGE),true)
 mirror-ncit: | $(TMPDIR)
 	curl -L $(OBOBASE)/ncit.owl --create-dirs -o $(TMPDIR)/ncit-download.owl --retry 4 --max-time 10000 && \
 	$(ROBOT) convert -i $(TMPDIR)/ncit-download.owl -o $(TMPDIR)/$@.owl
+endif
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
