@@ -3,3 +3,8 @@ OMRSE:00000012    # healthcare provider role
 OMRSE:00000010    # healthcare role
 OMRSE:00002072    # role in human social processes
 BFO:0000023       # role
+OMRSE:00000102	  # health care facility
+OMRSE:00000062	  # facility
+OMRSE:00000061	  # architectural structure
+BFO:0000040	  # material entity
+BFO:0000004	  # independend continuant
