@@ -37,9 +37,11 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000010>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000011>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000013>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000016>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000018>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000019>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000020>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000021>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000022>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000023>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000024>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000025>))
@@ -192,6 +194,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000016> "bremsstrahlung process"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000016> <http://purl.obolibrary.org/obo/RBO_00015006>)
 
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000018> (radiation therapy prescribed dose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000018> "An objective specification that is the dose intended to be delivered during radiation therapy.  It is a part of radiation therapy prescription.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000018> "radiation therapy prescribed dose"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000018> <http://purl.obolibrary.org/obo/IAO_0000005>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.archive.org/purl/rto-draft/RTO_0000035>))
+
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000019> (spectrum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000019> "A quality that is the distribution of energies of the constituent subatomic particles that constitute a radiation emission.")
@@ -214,6 +223,13 @@ AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_000
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000021> "medical linear accelerator"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000021> <http://purl.archive.org/purl/rto-draft/RTO_0000006>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0000016>))
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000022> (radiation therapy prescribed fraction)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000022> "An objective specification that is the intended number of radiation therapy fractions to be delivered in a course of radiation therapy.  It is part of radiatiuon therapy prescription.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000022> "radiation therapy prescribed fraction"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000022> <http://purl.obolibrary.org/obo/IAO_0000005>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.archive.org/purl/rto-draft/RTO_0000035>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000023> (Iodine-125)
 
