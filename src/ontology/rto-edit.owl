@@ -78,6 +78,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001026>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000024>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -521,6 +522,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001026> ObjectSomeValuesFrom(<ht
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000101> "Amersham 6702"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000013> <http://purl.archive.org/purl/rto-draft/RTO_0000101>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_0000024> (test plan specification)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000024> "test plan specification"@en)
+ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/RTO_0000024>)
 
 
 )
