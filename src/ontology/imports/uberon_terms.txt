@@ -1,0 +1,2 @@
+UBERON:0000465 # material anatomic entity
+UBERON:0002367 # prostate gland

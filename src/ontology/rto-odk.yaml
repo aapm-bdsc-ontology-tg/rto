@@ -74,3 +74,8 @@ import_group:
       is_large: TRUE
       base_iris:
         - http://purl.obolibrary.org/obo/NCIT_
+    - id: uberon
+      module_type: filter
+      is_large: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/UBERON_
