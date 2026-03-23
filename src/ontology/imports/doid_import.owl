@@ -7,12 +7,13 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/doid_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-02-09/imports/doid_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/doid/releases/2026-02-02/doid.owl>)
-Annotation(owl:versionInfo "2026-02-09")
+<http://purl.obolibrary.org/obo/rto/releases/2026-03-22/imports/doid_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/doid/releases/2026-02-28/doid.owl>)
+Annotation(owl:versionInfo "2026-03-22")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_10283>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_162>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_2526>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 
@@ -31,6 +32,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/DOID_10283> <http://purl.obolibrary.o
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_162> "cancer"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DOID_162> <http://purl.obolibrary.org/obo/DOID_4>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_2526> (prostate adenocarcinoma)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_2526> "prostate adenocarcinoma"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_2526> <http://purl.obolibrary.org/obo/DOID_10283>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_2526> <http://purl.obolibrary.org/obo/DOID_162>)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_4> (disease)
 

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                461a80857ca2d21ef35773ebb890a8c0f560c50d4ec08c393ee237817089054f
+CONFIG_HASH=                efb4d530046eee86c7b2652720b53e82ecac5ef9d26ce73ae5d92aef97782477
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  rbo ro iao bfo ogms omrse obi doid pato cob chebi ncit
+IMPORTS =  rbo ro iao bfo ogms omrse obi doid pato cob chebi ncit uberon gsso
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -647,6 +647,48 @@ $(IMPORTDIR)/ncit_import.owl: $(MIRRORDIR)/ncit.owl $(IMPORTDIR)/ncit_terms.txt 
 		 $(ANNOTATE_CONVERT_FILE)
 endif # IMP_LARGE=true
 
+## Module for ontology: uberon (filter)
+ifeq ($(IMP_LARGE),true)
+$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/uberon_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/UBERON_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/uberon_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+endif # IMP_LARGE=true
+
+## Module for ontology: gsso (filter)
+ifeq ($(IMP_LARGE),true)
+$(IMPORTDIR)/gsso_import.owl: $(MIRRORDIR)/gsso.owl $(IMPORTDIR)/gsso_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/gsso_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/GSSO_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/gsso_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+endif # IMP_LARGE=true
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -777,6 +819,26 @@ ifeq ($(IMP_LARGE),true)
 mirror-ncit: | $(TMPDIR)
 	curl -L $(OBOBASE)/ncit.owl --create-dirs -o $(TMPDIR)/ncit-download.owl --retry 4 --max-time 10000 && \
 	$(ROBOT) convert -i $(TMPDIR)/ncit-download.owl -o $(TMPDIR)/$@.owl
+endif
+
+
+## ONTOLOGY: uberon
+.PHONY: mirror-uberon
+.PRECIOUS: $(MIRRORDIR)/uberon.owl
+ifeq ($(IMP_LARGE),true)
+mirror-uberon: | $(TMPDIR)
+	curl -L $(OBOBASE)/uberon.owl --create-dirs -o $(TMPDIR)/uberon-download.owl --retry 4 --max-time 10000 && \
+	$(ROBOT) convert -i $(TMPDIR)/uberon-download.owl -o $(TMPDIR)/$@.owl
+endif
+
+
+## ONTOLOGY: gsso
+.PHONY: mirror-gsso
+.PRECIOUS: $(MIRRORDIR)/gsso.owl
+ifeq ($(IMP_LARGE),true)
+mirror-gsso: | $(TMPDIR)
+	curl -L $(OBOBASE)/gsso.owl --create-dirs -o $(TMPDIR)/gsso-download.owl --retry 4 --max-time 10000 && \
+	$(ROBOT) convert -i $(TMPDIR)/gsso-download.owl -o $(TMPDIR)/$@.owl
 endif
 
 

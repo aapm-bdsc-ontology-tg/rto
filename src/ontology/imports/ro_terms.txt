@@ -34,6 +34,8 @@ RO:0002224 # starts with
 RO:0002323 # mereotopologically related to
 RO:0002350 # member of
 RO:0002351 # has member
+RO:0002472 # is evidence for
+RO:0002558 # has evidence
 BFO:0000067 # contains process
 BFO:0000051 # has part
 BFO:0000050 # part of

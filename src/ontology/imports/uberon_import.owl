@@ -1,0 +1,33 @@
+Prefix(:=<http://purl.obolibrary.org/obo/rto/imports/uberon_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/rto/imports/uberon_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2026-03-23/imports/uberon_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/uberon/releases/2025-12-04/uberon.owl>)
+Annotation(owl:versionInfo "2026-03-23")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002367>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (material anatomical entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0002367> (prostate gland)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0002367> "prostate gland")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002367> <http://purl.obolibrary.org/obo/UBERON_0000465>)
+
+
+)
