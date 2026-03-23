@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2025-09-28/imports/ro_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-06-24/ro.owl>)
-Annotation(owl:versionInfo "2025-09-28")
+<http://purl.obolibrary.org/obo/rto/releases/2026-03-22/imports/ro_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl>)
+Annotation(owl:versionInfo "2026-03-22")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -53,6 +53,8 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002224>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002323>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002350>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002472>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002558>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
@@ -642,6 +644,25 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obo
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002351> "has member"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/BFO_0000051>)
 IrreflexiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002472> (is evidence for)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002472> "A relationship between a piece of evidence a and some entity b, where b is  an information content entity, material entity or process, and 
+the a supports either the existence of b, or the truth value of b.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002472> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002472> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002472> "is evidence for")
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002472> <http://purl.obolibrary.org/obo/RO_0002558>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002558> (has evidence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002558> "inverse of is evidence for")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002558> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002558> <http://www.ncbi.nlm.nih.gov/pubmed/25052702>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002558> <http://purl.obolibrary.org/obo/RO_0002259>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002558> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002558> "x has evidence y iff , x is  an information content entity, material entity or process, and y supports either the existence of x, or the truth value of x.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002558> "has evidence")
 
 
 
