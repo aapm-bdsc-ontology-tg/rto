@@ -48,6 +48,8 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000023>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000024>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000025>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000026>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000027>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000028>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000030>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000031>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000032>))
@@ -264,6 +266,21 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000026> "Cesium-137"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000026> <http://purl.archive.org/purl/rto-draft/RTO_0000011>)
 
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000027> (delivered dose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000027> "A physical quality that represents the physical dose that an object has the ability to absorb.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000027> "The information content entity RTO:radiation dose \"specifies value of\" RTO:delivered dose.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000027> "delivered dose"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000027> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000028> (radiation therapy delivered dose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000028> "A delivered dose that is delivered during the process of an RTO:radiation therapy treatment.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000028> "An RTO:radiation therapy treatment \"has output\" RTO:RT delivered dose.")
+AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000028> "Distinguished from RTO:delivered dose by the fact that it is delivered as a result of an RTO:radiation therapy treatment.  There are many ways of delivering a radiation dose such as a radiological accident or a diagnostic procedure.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000028> "radiation therapy delivered dose"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000028> <http://purl.archive.org/purl/rto-draft/RTO_0000027>)
+
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000030> (target volume)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000030> "A site that denotes a region of the body that contains disease that is to be irradiated during a radiation therapy procedure.")
@@ -339,6 +356,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000116>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0000028>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000040> (control_point)
 
@@ -499,6 +517,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/RBO_00015005> (beta decay)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00015005> "beta decay")
+
+# Class: <http://purl.obolibrary.org/obo/RBO_010016> (radiation dose)
+
+SubClassOf(<http://purl.obolibrary.org/obo/RBO_010016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001927> <http://purl.archive.org/purl/rto-draft/RTO_0000027>))
 
 # Class: <http://purl.obolibrary.org/obo/RTO_0000023> (radiation therapy course)
 
