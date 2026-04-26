@@ -62,7 +62,6 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000040>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000041>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000042>))
-Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000043>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000088>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000089>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000090>))
@@ -343,6 +342,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:comment <http://purl.archive.org/purl/rto-draft/RTO_0000038> "Following the discussion Arp et al, this class can be instantiated in multiple ways and is not meant to be restrictive to a particular mode, such as a printout or set of DICOM objects.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000038> "radiation therapy plan specification"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/IAO_0000104>)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000039> (radiation therapy treatment)
 
@@ -369,14 +369,6 @@ SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000041> <http://purl.arc
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000042> "An oncology care plan that specializes in the delivery of radiation therapy either as the sole therapy or as one of the components of a care plan that includes other modalities.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000042> "radiation therapy care plan"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000042> <http://purl.archive.org/purl/rto-draft/RTO_0000041>)
-
-# Class: <http://purl.archive.org/purl/rto-draft/RTO_0000043> (radiation therapy treatment plan)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0000043> "A radiation therapy care plan that specifies the details of the radiation therapy treatment plan and is realized by a radiation therapy treatment.")
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000043> "radiation therapy treatment plan"@en)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000043> <http://purl.archive.org/purl/rto-draft/RTO_0000042>)
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.archive.org/purl/rto-draft/RTO_0000039>))
-SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.archive.org/purl/rto-draft/RTO_0000038>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000088> (compensator)
 
