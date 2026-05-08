@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-05-01/imports/iao_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2026-05-05/imports/iao_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl>)
-Annotation(owl:versionInfo "2026-05-01")
+Annotation(owl:versionInfo "2026-05-05")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -63,6 +63,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000221>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000417>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000581>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
@@ -140,6 +141,15 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/IAO_0000221> <http://purl.ob
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000417> "inverse of the relation of is quality measurement of"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000417> "is quality measured as"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000581> (has time stamp)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000581> "relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000581> "has time stamp"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/IAO_0000581> <http://purl.obolibrary.org/obo/BFO_0000051>)
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000581>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000581> <http://purl.obolibrary.org/obo/IAO_0000582>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/IAO_0000581> <http://purl.obolibrary.org/obo/IAO_0000416>)
 
 
 

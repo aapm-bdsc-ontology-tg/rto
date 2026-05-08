@@ -10,6 +10,7 @@ OBI:0002135 # has specified value [data property]
 OBI:0001937 # has specified numeric value [data property]
 OBI:0000070 # assay 
 OBI:0000445 # mass measurement assay
+OBI:0002141 # volume measurement assay
 OBI:0600020 # histology assay 
 OBI:0000299 # has specified output
 OBI:0000293 # has specified input
