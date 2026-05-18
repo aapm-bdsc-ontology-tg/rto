@@ -1,0 +1,9 @@
+CHEBI:24431
+BFO:0000040
+BFO:0000019  # quality
+PATO:0001241 # physical object quality
+PATO:0001018 # physical quality
+PATO:0000125 # mass
+PATO:0000119 # height 
+PATO:0000128 # weight 
+

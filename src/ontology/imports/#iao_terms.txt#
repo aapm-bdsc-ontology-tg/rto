@@ -2,10 +2,10 @@ IAO:0000219	# denotes
 IAO:0000104	# plan specification
 IAO:0000101	# image
 IAO:0000109	# measurement datum
-IAO:0000582	# time stamped measurement datum
-IAO:0000581	# has time stamp
+IAO:0000416	# time stamped measurement datum
 IAO:0000027	# data item
 IAO:0000032	# scalar measurement datum
+IAO:
 IAO:0000414 	# mass measurement datum 
 IAO:0000408	# length measurement datum 
 IAO:0000416 	# time measurement datum 
@@ -46,6 +46,5 @@ BFO:0000031	# generically dependent continuant
 BFO:0000040	# material entity
 BFO:0000141	# immaterial entity
 BFO:0000019	# quality
-BFO:0000051	# has part
 PATO:0001241	# physical object quality
 
