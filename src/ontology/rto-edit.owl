@@ -75,7 +75,10 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C157740>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16212>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C163758>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C186664>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C1908>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C308>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C35472>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C93352>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000023>))
@@ -478,25 +481,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C16212> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C163758> "targeted therapy agent"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C163758> <http://purl.obolibrary.org/obo/NCIT_C1908>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C163758> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/NCIT_C93352>))
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C177561> (AJCC Cancer Staging Manual)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C177561> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C186664> (cytotoxic chemotherapy agent)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C186664> "cytotoxic chemotherapy agent"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C186664> <http://purl.obolibrary.org/obo/NCIT_C1908>)
-
-# Class: <http://purl.obolibrary.org/obo/NCIT_C308> (immunotherapeutic agent)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C308> "immunotherapeutic agent"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C308> <http://purl.obolibrary.org/obo/NCIT_C1908>)
-
-# Class: <http://purl.obolibrary.org/obo/NCIT_C35472> (anti-inflammatory drug)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C35472> "anti-inflammatory"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C35472> <http://purl.obolibrary.org/obo/NCIT_C1908>)
-
-# Class: <http://purl.obolibrary.org/obo/NCIT_C177561> (AJCC Cancer Staging Manual)
-
-SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C177561> <http://purl.obolibrary.org/obo/IAO_0000104>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C186664> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/OGMS_0000113>))
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C1908> (drug, food, chemical or biomedical material)
 
@@ -506,6 +501,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C1908> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/NCIT_C28108> (Disease Stage Qualifier)
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C28108> <http://purl.obolibrary.org/obo/OBI_0001930>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C308> (immunotherapeutic agent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C308> "immunotherapeutic agent"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C308> <http://purl.obolibrary.org/obo/NCIT_C1908>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C308> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/OGMS_0000114>))
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C35472> (anti-inflammatory)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C35472> "anti-inflammatory"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C35472> <http://purl.obolibrary.org/obo/NCIT_C1908>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C48698> (Cancer TNM Finding Category)
 
