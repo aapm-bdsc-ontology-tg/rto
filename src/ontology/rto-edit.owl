@@ -483,6 +483,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48698> <http://purl.obolibrary.
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C93352> "targeted therapeutic procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C93352> <http://purl.obolibrary.org/obo/NCIT_C16212>)
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C157740> (cancer surgery)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C157740> "cancer surgery"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C157740> <http://purl.obolibrary.org/obo/NCIT_C16212>)
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0002141> (volume measurement assay)
 
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0002141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0000044>))
