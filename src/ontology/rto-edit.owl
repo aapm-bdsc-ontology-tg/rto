@@ -72,7 +72,10 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001025>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001026>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001027>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C157740>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16212>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C163758>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C1908>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C93352>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000023>))
@@ -461,14 +464,29 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000582> ObjectSomeValuesFrom(<ht
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C15608> <http://purl.obolibrary.org/obo/COB_0000035>)
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C157740> (cancer surgery)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C157740> "cancer surgery"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C157740> <http://purl.obolibrary.org/obo/NCIT_C16212>)
+
 # Class: <http://purl.obolibrary.org/obo/NCIT_C16212> (cancer therapeutic procedure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C16212> "cancer therapeutic procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C16212> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C163758> (targeted therapy agent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C163758> "targeted therapy agent"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C163758> <http://purl.obolibrary.org/obo/NCIT_C1908>)
+
 # Class: <http://purl.obolibrary.org/obo/NCIT_C177561> (AJCC Cancer Staging Manual)
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C177561> <http://purl.obolibrary.org/obo/IAO_0000104>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C1908> (drug, food, chemical or biomedical material)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C1908> "drug, food, chemical or biomedical material"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C1908> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C28108> (Disease Stage Qualifier)
 
@@ -482,11 +500,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48698> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C93352> "targeted therapeutic procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C93352> <http://purl.obolibrary.org/obo/NCIT_C16212>)
-
-# Class: <http://purl.obolibrary.org/obo/NCIT_C157740> (cancer surgery)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C157740> "cancer surgery"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C157740> <http://purl.obolibrary.org/obo/NCIT_C16212>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0002141> (volume measurement assay)
 
