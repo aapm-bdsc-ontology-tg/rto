@@ -67,13 +67,15 @@ Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000091>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000092>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000093>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0000094>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001017>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001018>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001019>))
+Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001020>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001024>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001025>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001026>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001027>))
 Declaration(Class(<http://purl.archive.org/purl/rto-draft/RTO_0001028>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16212>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001025>))
@@ -397,12 +399,33 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_000
 MR scanner")
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000094> <http://purl.obolibrary.org/obo/OBI_0000398>)
 
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001017> (oncologic chemotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001017> "A chemotherapy process that uses drugs to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001017> "oncologic chemotherapy"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001017> "National Cancer Institute:
+https://www.cancer.gov/publications/dictionaries/cancer-terms/def/chemotherapy")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001017> <http://purl.obolibrary.org/obo/OGMS_0000113>)
+
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001018> (oncologic surgery)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001018> "A therpeutic procedure that surgically removes or samples cancerous tissue.")
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001018> "oncologic surgery"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001018> "Cancer surgery NCIT_C157740")
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001018> <http://purl.obolibrary.org/obo/OGMS_0000112>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001019> (oncologic immunotherapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001019> "A immunotherapy procedure that stimulates the immune system to treat cancer, improving the immune system's natural ability to fight the disease.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001019> "oncologic immunotherapy"@en)
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001019> <http://purl.obolibrary.org/obo/OGMS_0000114>)
+
+# Class: <http://purl.archive.org/purl/rto-draft/RTO_0001020> (oncologic targeted therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "A therapeutic procedure that treats cancer by using drugs or other substances to target specific molecules that cancer cells nned to survive and spread.")
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001020> "oncologic targeted therapy"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.archive.org/purl/rto-draft/RTO_0001020> "targeted therapy NCIT_C93352")
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0001020> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0001024> (radiation therapy simulation)
 
@@ -467,9 +490,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000582> ObjectSomeValuesFrom(<ht
 # Class: <http://purl.obolibrary.org/obo/NCIT_C15608> (Staging)
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C15608> <http://purl.obolibrary.org/obo/COB_0000035>)
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001028> "portal imaging"@en)
 
-# Class: <http://purl.obolibrary.org/obo/NCIT_C16212> (cancer therapeutic procedure)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C16212> "cancer therapeutic procedure"@en)
+# Class: <http://purl.obolibrary.org/obo/NCIT_C16212> (Cancer Therapeutic Procedure)
+
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C16212> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C177561> (AJCC Cancer Staging Manual)
