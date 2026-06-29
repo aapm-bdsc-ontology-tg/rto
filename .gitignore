@@ -83,3 +83,8 @@ src/scripts/update_repo.shZone.Identifier
 
 .aider*
 .env
+
+# Editor swap files
+*.swp
+*.swo
+*~
