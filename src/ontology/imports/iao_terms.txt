@@ -48,6 +48,4 @@ BFO:0000141	# immaterial entity
 BFO:0000019	# quality
 BFO:0000051	# has part
 PATO:0001241	# physical object quality
-UO:0000003 # time unit
-UO:1000031 # minute based unit
-UO:0000031 # minute
+UO:0000003 # time unit (seed bridge: IAO has SubClassOf placing UO:0000003 in BFO hierarchy)

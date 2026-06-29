@@ -1,0 +1,38 @@
+Prefix(:=<http://purl.obolibrary.org/obo/rto/imports/uo_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/rto/imports/uo_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2026-06-29/imports/uo_import.owl>
+Annotation(owl:versionInfo "2026-01-16")
+Annotation(owl:versionInfo "2026-06-29")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000031>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000003> (time unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000003> "time unit")
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000031> (minute)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000031> "minute")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000031> <http://purl.obolibrary.org/obo/UO_1000031>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000031> (minute based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000031> "minute based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000031> <http://purl.obolibrary.org/obo/UO_0000003>)
+
+
+)

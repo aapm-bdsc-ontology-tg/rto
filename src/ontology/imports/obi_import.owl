@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-05-05/imports/obi_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2026-03-19/obi.owl>)
-Annotation(owl:versionInfo "2026-05-05")
+<http://purl.obolibrary.org/obo/rto/releases/2026-06-29/imports/obi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2026-05-08/obi.owl>)
+Annotation(owl:versionInfo "2026-06-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
@@ -35,6 +35,17 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000414>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000416>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_117571>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2759>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_314146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32523>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32524>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33208>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33213>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_40674>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7742>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
@@ -55,6 +66,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000165>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000383>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000384>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000918>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001894>))
@@ -63,6 +75,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000039>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))
@@ -123,6 +137,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000015>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000062> (preceded by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000062> "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000062> "preceded by"@en)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>)
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000039> (has measurement unit label)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000039> "has measurement unit label"@en)
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000039>)
 
 # Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
 
@@ -280,6 +305,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000007> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data entity"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
@@ -337,12 +364,78 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000414> "mass measurement datum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000414> <http://purl.obolibrary.org/obo/IAO_0000032>)
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000416> (time measurement datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000416> "A scalar measurement datum that is the result of measuring a temporal interval"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000416> "time measurement datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000416> <http://purl.obolibrary.org/obo/IAO_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_117571> (Euteleostomi)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_117571> "bony vertebrates")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_117571> "Euteleostomi")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_117571> <http://purl.obolibrary.org/obo/NCBITaxon_7742>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2759> (Eukaryota)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_2759> "eukaryotes")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2759> "Eukaryota")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2759> <http://purl.obolibrary.org/obo/COB_0000022>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_314146> (Euarchontoglires)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_314146> "Euarchontoglires")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_314146> <http://purl.obolibrary.org/obo/NCBITaxon_40674>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_32523> (Tetrapoda)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_32523> "tetrapods")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_32523> "Tetrapoda")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_32523> <http://purl.obolibrary.org/obo/NCBITaxon_117571>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_32524> (Amniota)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_32524> "amniotes")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_32524> "Amniota")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_32524> <http://purl.obolibrary.org/obo/NCBITaxon_32523>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33154> (Opisthokonta)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33154> "Opisthokonta")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33154> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33208> (Metazoa)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_33208> "animals")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_33208> "metazoans")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_33208> "multicellular animals")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33208> "Metazoa")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33208> <http://purl.obolibrary.org/obo/NCBITaxon_33154>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33213> (Bilateria)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33213> "Bilateria")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33213> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_40674> (Mammalia)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_40674> "mammals")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_40674> "Mammalia")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_40674> <http://purl.obolibrary.org/obo/NCBITaxon_32524>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7742> (Vertebrata <vertebrates>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_7742> "Vertebrata")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_7742> "vertebrates")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7742> "Vertebrata <vertebrates>")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7742> <http://purl.obolibrary.org/obo/NCBITaxon_33213>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "human")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "human being")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/COB_0000022>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/NCBITaxon_314146>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000011> (obsolete planned process)
 
@@ -467,6 +560,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000383> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000384> "A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000384> "male")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000384> <http://purl.obolibrary.org/obo/PATO_0001894>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000918> (volume)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000918> "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000918> "volume")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000918> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
 

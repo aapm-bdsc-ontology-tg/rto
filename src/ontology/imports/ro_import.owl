@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-03-22/imports/ro_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2026-06-29/imports/ro_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl>)
-Annotation(owl:versionInfo "2026-03-22")
+Annotation(owl:versionInfo "2026-06-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -47,9 +47,24 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000092>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001015>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002012>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002081>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002082>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002083>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002084>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002085>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002086>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002087>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002088>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002090>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002091>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002092>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002093>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002222>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002223>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002224>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002229>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002230>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002323>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002350>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
@@ -69,6 +84,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002259>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002423>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002575>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0040042>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_annotation_extension>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_gp2term>))
@@ -76,6 +93,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_onto
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_gocam>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
@@ -222,6 +240,22 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0001900> <ht
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0002259> (<http://purl.obolibrary.org/obo/RO_0002259>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/RO_0002259> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/RO_0002575> (is direct form of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002575> "relation p is the direct form of relation q iff p is a subPropertyOf q, p does not have the Transitive characteristic, q does have the Transitive characteristic, and for all x, y: x q y -> exists z1, z2, ..., zn such that x p z1 ... z2n y")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002575> "The general property hierarchy is:
+
+  \"directly P\" SubPropertyOf \"P\"
+  Transitive(P)
+
+Where we have an annotation assertion
+
+  \"directly P\" \"is direct form of\" \"P\"")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002423> <http://purl.obolibrary.org/obo/RO_0002575> "If we have the annotation P is-direct-form-of Q, and we have inverses P' and Q', then it follows that P' is-direct-form-of Q'")
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/RO_0002575> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002575> "is direct form of")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002575> <http://purl.obolibrary.org/obo/ro/docs/direct-and-indirect-relations/>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0040042> (is homeomorphic for)
 
@@ -577,6 +611,127 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.obo
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.obolibrary.org/obo/BFO_0000003>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002012> <http://purl.obolibrary.org/obo/BFO_0000003>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002081> (before or simultaneous with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002081> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002081> "<="@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002081> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002081> "Primitive instance level timing relation between events")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002081> "before or simultaneous with"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002081> <http://purl.obolibrary.org/obo/RO_0002222>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002082> (simultaneous with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002082> "x simultaneous with y iff ω(x) = ω(y) and ω(α ) = ω(α), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point and '=' indicates the same instance in time.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002082> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002082> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002082> "t1 simultaneous_with t2 iff:=  t1 before_or_simultaneous_with t2  and not (t1 before t2)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002082> "simultaneous with"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002082> <http://purl.obolibrary.org/obo/RO_0002081>)
+SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002082>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002082>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002083> (before)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002083> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002083> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002083> "t1 before t2 iff:=  t1 before_or_simulataneous_with t2  and not (t1 simultaeous_with t2)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002083> "before"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002083> <http://purl.obolibrary.org/obo/RO_0002081>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002083>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002084> (during which ends)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002084> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002084> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002084> "Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002084> "during which ends"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002084> <http://purl.obolibrary.org/obo/RO_0002222>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002084> <http://purl.obolibrary.org/obo/RO_0002093>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002085> (encompasses)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002085> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002085> "di")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002085> "Previously had ID  http://purl.obolibrary.org/obo/RO_0002124 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002085> "encompasses"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002085> <http://purl.obolibrary.org/obo/RO_0002088>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002085> <http://purl.obolibrary.org/obo/RO_0002092>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002085>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002086> (ends after)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002086> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002086> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002086> "X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002086> "ends after"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002086> <http://purl.obolibrary.org/obo/RO_0002222>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002086>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002087> (immediately preceded by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002087> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002087> "starts_at_end_of")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002087> "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002087> "immediately preceded by"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002087> <http://purl.obolibrary.org/obo/RO_0002090>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002088> (during which starts)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002088> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002088> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002088> "Previously had ID  http://purl.obolibrary.org/obo/RO_0002123 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002088> "during which starts"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002088> <http://purl.obolibrary.org/obo/RO_0002222>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002088> <http://purl.obolibrary.org/obo/RO_0002091>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002090> (immediately precedes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002090> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002090> "ends_at_start_of")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002090> "meets")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002575> <http://purl.obolibrary.org/obo/RO_0002090> <http://purl.obolibrary.org/obo/BFO_0000063>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002090> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002090> "X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002090> "immediately precedes"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002091> (starts during)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002091> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002091> "io")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002091> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002091> "X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002091> "starts during"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002091> <http://purl.obolibrary.org/obo/RO_0002222>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002091> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002091> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002092> (happens during)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002092> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002092> "d")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002092> "during")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/valid_for_go_ontology>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/valid_for_gocam>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002092> "X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002092> "happens during"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002092> "https://wiki.geneontology.org/Happens_during"^^xsd:anyURI)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/RO_0002091>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/RO_0002093>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002092>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002093> (ends during)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002093> <https://orcid.org/0000-0002-7073-9172>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002093> "o")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002093> "overlaps")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002093> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002093> "X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). "@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002093> "ends during"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002093> <http://purl.obolibrary.org/obo/RO_0002222>)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002131> (overlaps)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/IAO_0000125>)
@@ -603,6 +758,18 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002222> "temp
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002222> <http://purl.obolibrary.org/obo/BFO_0000003>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002222> <http://purl.obolibrary.org/obo/BFO_0000003>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002223> (starts)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002223> "inverse of starts with")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002223> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002223> "Allen")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002223> "starts"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/BFO_0000050>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/RO_0002222>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/RO_0002224>)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002224> (starts with)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0002224> "Every insulin receptor signaling pathway starts with the binding of a ligand to the insulin receptor")
@@ -615,6 +782,29 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002224> "star
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002224> <http://purl.obolibrary.org/obo/BFO_0000051>)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002224> <http://purl.obolibrary.org/obo/RO_0002222>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002224>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002229> (ends)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/RO_0002229> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002229> "inverse of ends with")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002229> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002229> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002229> "ends"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002229> <http://purl.obolibrary.org/obo/BFO_0000050>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002229> <http://purl.obolibrary.org/obo/RO_0002222>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002229> <http://purl.obolibrary.org/obo/RO_0002230>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002230> (ends with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002230> "x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002230> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002230> "finished by")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002230> "ends with"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/BFO_0000051>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/RO_0002222>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002230>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002323> (mereotopologically related to)
 
@@ -770,6 +960,8 @@ SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/BFO_0000066>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0001025> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0001025>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002131>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002224> <http://purl.obolibrary.org/obo/RO_0002230>) <http://purl.obolibrary.org/obo/RO_0002087>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/RO_0002224>) <http://purl.obolibrary.org/obo/RO_0002090>)
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-02-10/imports/rbo_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2026-01-15/rbo.owl>)
-Annotation(owl:versionInfo "2026-02-10")
+<http://purl.obolibrary.org/obo/rto/releases/2026-06-29/imports/rbo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/rbo/releases/2026-03-05/rbo.owl>)
+Annotation(owl:versionInfo "2026-06-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -23,22 +23,26 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0001300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000984>))
@@ -53,9 +57,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000039>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
@@ -111,6 +119,23 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "rea
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000015>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000017>)
 
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000062> (preceded by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000062> "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000062> "is preceded by"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000062> "preceded_by"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000062> "preceded by")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000062> "preceded by"@en)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000039> (has measurement unit label)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000039> "has measurement unit label"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/BFO_0000051>)
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000039>)
+
 # Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000136> "A (currently) primitive relation that relates an information artifact to an entity."@en)
@@ -118,6 +143,19 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is_specified_output_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has_output")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has_specified_output")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has_specified_output"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RO_0000057>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/COB_0000035>)
 
 
 ############################
@@ -128,6 +166,12 @@ ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.o
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001937> "A relation between a value specification and a number that quantifies it."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001937> "has specified numeric value")
+SubDataPropertyOf(<http://purl.obolibrary.org/obo/OBI_0001937> <http://purl.obolibrary.org/obo/OBI_0002135>)
+
+# Data Property: <http://purl.obolibrary.org/obo/OBI_0002135> (has specified value)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0002135> "A relation between a value specification and a literal."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0002135> "has specified value"@en)
 
 
 
@@ -224,6 +268,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "gen
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000031>))
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000035> (process boundary)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000035> "process boundary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000035> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.")
@@ -257,6 +306,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/COB_0000022> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000026> "A material entity processed by human activity with an intent to produce it."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000026> "processed material entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000026> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000035> (completely executed planned process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000035> "completely executed planned process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
 
 # Class: <http://purl.obolibrary.org/obo/COB_0001300> (device)
 
@@ -301,6 +356,12 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "inf
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000001>))
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000032> (scalar measurement datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000032> "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000032> "scalar measurement datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000032> <http://purl.obolibrary.org/obo/IAO_0000109>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000033> (directive information entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000033> "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en)
@@ -335,6 +396,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000047> "Is a material entity that is created or changed during material processing."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000047> "processed material"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000047> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000070> (assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000070> "A planned process that has the objective to produce information about a material entity (the evaluant) by examining it."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000070> "measuring"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000070> "scientific observation"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000070> "assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/COB_0000035>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000260> (plan)
 
@@ -409,5 +478,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibra
 
 
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000062>) <http://purl.obolibrary.org/obo/BFO_0000062>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)
 )

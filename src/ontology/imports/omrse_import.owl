@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/omrse_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-02-26/imports/omrse_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse.owl>)
-Annotation(owl:versionInfo "2026-02-26")
+<http://purl.obolibrary.org/obo/rto/releases/2026-06-29/imports/omrse_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omrse/releases/2026-04-07/omrse.owl>)
+Annotation(owl:versionInfo "2026-06-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
@@ -27,6 +27,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002072>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
@@ -56,6 +57,14 @@ TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000055> "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
 
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000062> (preceded by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000062> "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000062> "is preceded by"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000062> "preceded_by"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000062> "preceded by"@en)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>)
+
 
 
 ############################
@@ -64,6 +73,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "rea
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000004> "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000004>))
 
@@ -137,5 +147,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002072> "
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002072> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000062>) <http://purl.obolibrary.org/obo/BFO_0000062>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)
 )
