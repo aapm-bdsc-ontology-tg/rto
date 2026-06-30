@@ -20,6 +20,7 @@ OBI:0000312 # is specified output of
 OBI:0001927 # specifies value of
 OBI:0000938 # categorical measurement datum
 OBI:0001930 # categorical value specification
+OBI:0001933 # value specification
 OBI:0001938 # has value specification
 BFO:0000001 # entity
 BFO:0000002 # continuant
