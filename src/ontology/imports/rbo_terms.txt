@@ -27,6 +27,7 @@ COB:0000011 # atom
 COB:0000022 # organism
 COB:0001300 # device
 COB:0000026 # processed material entity
+COB:0000082 # planned process
 OBI:0000047 # processed material
 OBI:0000968 # device
 OBI:0000984 # dose
