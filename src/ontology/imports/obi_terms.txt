@@ -51,12 +51,8 @@ IAO:0000027 # data item
 IAO:0000030 # information content entity
 IAO:0000032 # scalar measurement datum
 IAO:0000033 # directive information entity
-IAO:0000038 # graph
-IAO:0000309 # diagram
 IAO:0000104 # plan specification
 IAO:0000109 # measurement datum
-IAO:0000179 # histogram
-IAO:0000308 # figure
 IAO:0000136 # is about
 NCBITaxon:9606 # Homo sapiens
 COB:0000035 # completely executed planned process
