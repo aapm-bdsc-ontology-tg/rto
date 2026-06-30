@@ -69,6 +69,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000165>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000383>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000384>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000918>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001710>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001894>))
@@ -578,7 +581,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000384> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000918> "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000918> "volume")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000918> <http://purl.obolibrary.org/obo/PATO_0001241>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000918> <http://purl.obolibrary.org/obo/PATO_0001710>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001710> (3D extent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001710> "3-D extent")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001710> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000117> (size quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000117> "size quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000117> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
 
