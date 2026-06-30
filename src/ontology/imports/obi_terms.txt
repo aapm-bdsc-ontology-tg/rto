@@ -21,13 +21,13 @@ OBI:0001927 # specifies value of
 OBI:0000938 # categorical measurement datum
 OBI:0001930 # categorical value specification
 OBI:0001938 # has value specification
-BFO:0000001
+BFO:0000001 # entity
 BFO:0000002 # continuant
-BFO:0000003
+BFO:0000003 # occurrent
 BFO:0000004 # independent continuant
-BFO:0000015
+BFO:0000015 # process
 BFO:0000017 # realizable entity	
-BFO:0000019
+BFO:0000019 # quality
 BFO:0000020 # specifically dependent continuant
 BFO:0000023 # role
 BFO:0000029 # site

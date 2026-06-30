@@ -7,4 +7,5 @@ OMRSE:00000102	  # health care facility
 OMRSE:00000062	  # facility
 OMRSE:00000061	  # architectural structure
 BFO:0000040	  # material entity
+BFO:0000141	  # immaterial entity
 BFO:0000004	  # independend continuant

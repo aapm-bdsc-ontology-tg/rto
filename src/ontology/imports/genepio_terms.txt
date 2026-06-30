@@ -2,6 +2,7 @@ BFO:0000001 # entity
 BFO:0000002 # continuant
 BFO:0000031 # generically dependent
 IAO:0000030 # information entity
+IAO:0000033 # directive information entity
 OBI:0001933 # value specification
 OBI:0001931 # scalar value specification
 GENEPIO:0002113 # time value specification
