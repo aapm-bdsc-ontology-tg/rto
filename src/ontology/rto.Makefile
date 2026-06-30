@@ -37,6 +37,35 @@ $(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl $(IMPORTDIR)/doid_terms.txt 
 		 query --update ../sparql/remove-redundant-subclass.ru \
 		 $(ANNOTATE_CONVERT_FILE)
 
+## Module for ontology: rbo (filter)
+## Override: post-process with remove-redundant-subclass.ru to remove
+## redundant SubClassOf axioms created by complement remove stitching
+## children to surviving ancestors when intermediate parents exist.
+$(IMPORTDIR)/rbo_import.owl: $(MIRRORDIR)/rbo.owl $(IMPORTDIR)/rbo_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/rbo_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/RBO_ \
+		        --base-iri http://purl.obolibrary.org/obo/OBI_ \
+		        --base-iri http://purl.obolibrary.org/obo/IAO_ \
+		        --base-iri http://purl.obolibrary.org/obo/COB_ \
+		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
+		        --base-iri http://purl.obolibrary.org/obo/UBERON_ \
+		        --base-iri http://purl.obolibrary.org/obo/DOID_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/rbo_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 query --update ../sparql/remove-redundant-subclass.ru \
+		 $(ANNOTATE_CONVERT_FILE)
+
 ## Module for ontology: uo (filter)
 ## Override: preprocess with uo-depunn.ru to remove owl:oneOf equivalentClass axioms
 ## and NamedIndividual declarations for punned entities (e.g. UO_0000031 minute)

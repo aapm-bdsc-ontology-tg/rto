@@ -498,7 +498,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/RBO_010016> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (material anatomical entity)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/BFO_0000004>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 
