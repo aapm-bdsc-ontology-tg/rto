@@ -30,6 +30,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000309>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
@@ -332,7 +333,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000038> "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000038> "graph"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000308>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000309>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000309> (diagram)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000309> "diagram"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000309> <http://purl.obolibrary.org/obo/IAO_0000308>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
 

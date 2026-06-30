@@ -41,6 +41,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000309>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
@@ -390,7 +393,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000179> "A histogram is a report graph which is a statistical description of a
 distribution in terms of occurrence frequencies of different event classes."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000179> "histogram"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.org/obo/IAO_0000038>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000038> (graph)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000038> "graph"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000309>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000309> (diagram)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000309> "diagram"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000309> <http://purl.obolibrary.org/obo/IAO_0000308>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000308> (figure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000308> "figure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000047> (processed material)
 
