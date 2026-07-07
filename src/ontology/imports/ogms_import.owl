@@ -16,6 +16,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16212>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000090>))
@@ -54,7 +55,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000030> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
+# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (obsolete planned process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000011> "A process that realizes a plan which is the concretization of a plan specification."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
@@ -88,19 +89,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000112> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000113> "A therapeutic procedure that uses synthetic or naturally-occurring chemicals")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000113> "chemotherapy procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000113> <http://purl.obolibrary.org/obo/OGMS_0000112>)
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000113> <http://purl.obolibrary.org/obo/NCIT_C16212>)
 
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000114> (immunotherapy procedure)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000114> "A therapeutic procedure that uses immune system derived entities.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000114> "immunotherapy procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000114> <http://purl.obolibrary.org/obo/OGMS_0000112>)
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000114> <http://purl.obolibrary.org/obo/NCIT_C16212>)
 
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000116> (radiation therapy procedure)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000116> "A therapeutic procedure that uses radiation.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000116> "radiation therapy procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> <http://purl.obolibrary.org/obo/OGMS_0000112>)
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000116> <http://purl.obolibrary.org/obo/NCIT_C16212>)
 
 
 )
