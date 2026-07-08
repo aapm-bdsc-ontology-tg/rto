@@ -2,6 +2,10 @@ IAO:0000109 # measurement datum
 IAO:0000027 # data item
 IAO:0000030 # information content entity
 IAO:0000033 # directive information entity
+IAO:0000038 # graph
+IAO:0000309 # diagram
+IAO:0000308 # figure
+IAO:0000179 # histogram
 BFO:0000001 # entity
 BFO:0000002 # continuant
 BFO:0000003 # occurrent
@@ -23,8 +27,10 @@ COB:0000011 # atom
 COB:0000022 # organism
 COB:0001300 # device
 COB:0000026 # processed material entity
+COB:0000082 # planned process
 OBI:0000047 # processed material
 OBI:0000968 # device
 OBI:0000984 # dose
+OBI:0001933 # value specification
 UBERON:0000465 # material anatomical entity
 DOID:4 # disease

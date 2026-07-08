@@ -29,8 +29,6 @@ RO:0001015 # location of
 RO:0001025 # located in
 RO:0002012 # occurrent part of
 RO:0002131 # overlaps
-RO:0002222 # temporally related to
-RO:0002224 # starts with
 RO:0002323 # mereotopologically related to
 RO:0002350 # member of
 RO:0002351 # has member
@@ -43,3 +41,23 @@ BFO:0000054 # realized in
 BFO:0000055 # realizes
 BFO:0000066 # occurs in
 BFO:0000067 # contains process
+RO:0002222 # temporally related to
+RO:0000063 # precedes
+RO:0002090 # immediately precedes
+RO:0002081 # before or simultaneous with
+RO:0002082 # simultaneous with
+RO:0002083 # before
+RO:0002084 # during which ends
+RO:0002086 # ends after
+RO:0000062 # preceded by
+RO:0002087 # immediately preceded by
+RO:0002088 # during which starts
+RO:0002085 # encompasses
+RO:0002091 # starts during
+RO:0002092 # happens during
+RO:0002093 # ends during
+RO:0002092 # happens during
+RO:0002223 # starts
+RO:0002229 # ends
+RO:0002230 # ends with
+RO:0002224 # starts with

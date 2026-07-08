@@ -23,6 +23,7 @@ import_group:
         - http://purl.obolibrary.org/obo/BFO_
         - http://purl.obolibrary.org/obo/IAO_
         - http://purl.obolibrary.org/obo/PATO_
+        - http://purl.obolibrary.org/obo/UO_
     - id: bfo
       module_type: slme
       module_type_slme: top
@@ -83,4 +84,15 @@ import_group:
       module_type: filter
       is_large: TRUE
       base_iris:
-        - http://purl.obolibrary.org/obo/GSSO_        
+        - http://purl.obolibrary.org/obo/GSSO_
+    - id: genepio
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/BFO_
+        - http://purl.obolibrary.org/obo/IAO_
+        - http://purl.obolibrary.org/obo/OBI_
+        - http://purl.obolibrary.org/obo/GENEPIO_
+    - id: uo
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/UO_

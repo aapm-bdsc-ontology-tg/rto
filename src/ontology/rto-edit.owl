@@ -13,6 +13,7 @@ Import(<http://purl.obolibrary.org/obo/rto/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/doid_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rto/imports/genepio_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/gsso_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ncit_import.owl>)
@@ -23,6 +24,7 @@ Import(<http://purl.obolibrary.org/obo/rto/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/rbo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rto/imports/uberon_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rto/imports/uo_import.owl>)
 Annotation(dcterms:description "An ontology describing the domain of radiation therapy concerned primarily with the processes and equipment used to deliver therapeutic radiation in a clinical setting. RTO aims to be useful in bridging institutional and clinical practice differences. It is also intended to useful in investigations in oncology which includes medical, surgical and genetic oncological domains. In modeling this domain, RTO uses terms from many existing OBO ontologies.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Radiation Therapy Ontology")
@@ -84,11 +86,32 @@ Declaration(Class(<http://purl.obolibrary.org/obo/RBO_00015005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RTO_c0b69744_e0f2_4ba9_a772_e10651b0b518>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GENEPIO_0001739>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002082>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002085>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002087>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002088>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002090>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002091>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002092>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002223>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002229>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002230>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000024>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_7de429dd_c4f1_4cad_a133_81ec295a0a29>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_90d61216_2b42_4d19_b44c_f0a8354f8e40>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_b66636c2_303c_4fbb_82ab_c1e0d4440378>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_c2a0d3a5_6495_450c_ba70_3d48e6d28e7a>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_c691510a_1161_4a41_a412_6951691936b8>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000031>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
 ############################
 #   Annotation Properties
 ############################
@@ -105,6 +128,18 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/GENEPIO_0001739> (after)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GENEPIO_0001739> "Damion Dooley's note: Intention is to have it be the inverse of \"before\".  This allows axioms like \"B after A\" to be placed in class B, rather than having to phrase them as \"A before B\" in class A.
+
+I believe time dependency relations (conditions) don't imply existence by themselves.  If B after A, and B exists, this doesn't necessarily mean that A exists, only that if A does exist, it must be before B.  To add that extra existence implication probably requires the \"causally downstream of\" and \"immediately causally downstream of\" RO relations, in a closed system where B cannot exist any other way."@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/GENEPIO_0001739> <http://purl.obolibrary.org/obo/RO_0002222>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/GENEPIO_0001739>)
 
 
 ############################
@@ -558,6 +593,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0001026> "med
 SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001026> <http://purl.obolibrary.org/obo/OGMS_0000096>)
 SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/OBI_0000398>))
 
+# Class: <http://purl.obolibrary.org/obo/RTO_c0b69744_e0f2_4ba9_a772_e10651b0b518> (time measurement assay)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_c0b69744_e0f2_4ba9_a772_e10651b0b518> "time measurement assay"@zh)
+SubClassOf(<http://purl.obolibrary.org/obo/RTO_c0b69744_e0f2_4ba9_a772_e10651b0b518> <http://purl.obolibrary.org/obo/OBI_0000070>)
+
 
 ############################
 #   Named Individuals
@@ -573,5 +613,55 @@ ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000013> <http://purl
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000024> "test plan specification"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/RTO_0000024>)
 
+# Individual: <http://purl.obolibrary.org/obo/RTO_7de429dd_c4f1_4cad_a133_81ec295a0a29> (patient entering room)
 
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_7de429dd_c4f1_4cad_a133_81ec295a0a29> "patient entering room"@zh)
+ClassAssertion(<http://purl.obolibrary.org/obo/BFO_0000035> <http://purl.obolibrary.org/obo/RTO_7de429dd_c4f1_4cad_a133_81ec295a0a29>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/RTO_7de429dd_c4f1_4cad_a133_81ec295a0a29> <http://purl.obolibrary.org/obo/RTO_90d61216_2b42_4d19_b44c_f0a8354f8e40>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_90d61216_2b42_4d19_b44c_f0a8354f8e40> (patient radiation therapy treatment)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_90d61216_2b42_4d19_b44c_f0a8354f8e40> "patient radiation therapy treatment"@zh)
+ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/RTO_90d61216_2b42_4d19_b44c_f0a8354f8e40>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RTO_90d61216_2b42_4d19_b44c_f0a8354f8e40> <http://purl.obolibrary.org/obo/RTO_c691510a_1161_4a41_a412_6951691936b8>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/RTO_90d61216_2b42_4d19_b44c_f0a8354f8e40> <http://purl.obolibrary.org/obo/RTO_c2a0d3a5_6495_450c_ba70_3d48e6d28e7a>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_b66636c2_303c_4fbb_82ab_c1e0d4440378> (patient start datetime)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_b66636c2_303c_4fbb_82ab_c1e0d4440378> "patient start datetime"@zh)
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000416> <http://purl.obolibrary.org/obo/RTO_b66636c2_303c_4fbb_82ab_c1e0d4440378>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/RTO_b66636c2_303c_4fbb_82ab_c1e0d4440378> <http://purl.obolibrary.org/obo/RTO_7de429dd_c4f1_4cad_a133_81ec295a0a29>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0> (patient start datetime specification)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0> "patient start datetime specification"@zh)
+ClassAssertion(<http://purl.obolibrary.org/obo/GENEPIO_0002113> <http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0> <http://purl.obolibrary.org/obo/UO_0000031>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0> <http://purl.obolibrary.org/obo/RTO_c2a0d3a5_6495_450c_ba70_3d48e6d28e7a>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0001927> <http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0> <http://purl.obolibrary.org/obo/RTO_b66636c2_303c_4fbb_82ab_c1e0d4440378>)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0002135> <http://purl.obolibrary.org/obo/RTO_ba333edf_9630_4e68_b76c_5aabde0844e0> "2024-07-28T11:55:00"^^xsd:dateTime)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_c2a0d3a5_6495_450c_ba70_3d48e6d28e7a> (patient)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_c2a0d3a5_6495_450c_ba70_3d48e6d28e7a> "patient"@zh)
+ClassAssertion(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/RTO_c2a0d3a5_6495_450c_ba70_3d48e6d28e7a>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_c691510a_1161_4a41_a412_6951691936b8> (radiation therapy technician noting start time)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_c691510a_1161_4a41_a412_6951691936b8> "radiation therapy technician noting start time"@zh)
+ClassAssertion(<http://purl.obolibrary.org/obo/RTO_c0b69744_e0f2_4ba9_a772_e10651b0b518> <http://purl.obolibrary.org/obo/RTO_c691510a_1161_4a41_a412_6951691936b8>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RTO_c691510a_1161_4a41_a412_6951691936b8> <http://purl.obolibrary.org/obo/RTO_b66636c2_303c_4fbb_82ab_c1e0d4440378>)
+
+# Individual: <http://purl.obolibrary.org/obo/UO_0000031> (minute)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/UO_0000031> <http://purl.obolibrary.org/obo/UO_0000031>)
+
+
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO3: overlaps") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst1) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst3) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst2) Variable(:inst4)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002088> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002091> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO5: during") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst1) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst4) Variable(:inst2)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002085> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002092> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Note that preceded_by is not sufficiently narrow, require after term") Annotation(rdfs:label "TO1: before") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst2) Variable(:inst3)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/BFO_0000062> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO6: finishes") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst3)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst4)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(:inst3) Variable(:inst1)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002229> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:tr1))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO4: starts") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(<urn:swrl:var#tr1>) Variable(<urn:swrl:var#inst1>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(<urn:swrl:var#tr1>) Variable(<urn:swrl:var#inst2>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(<urn:swrl:var#tr2>) Variable(<urn:swrl:var#inst1>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(<urn:swrl:var#tr2>) Variable(<urn:swrl:var#inst4>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002083> Variable(<urn:swrl:var#inst2>) Variable(<urn:swrl:var#inst4>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002223> Variable(<urn:swrl:var#tr1>) Variable(<urn:swrl:var#tr2>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO7: equals") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr1) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst1)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr2) Variable(:inst2)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002082> Variable(:tr1) Variable(:tr2))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "TO2: meets") Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002230> Variable(:tr1) Variable(:inst2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002224> Variable(:tr2) Variable(:inst2)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002090> Variable(:tr1) Variable(:tr2)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002087> Variable(:tr2) Variable(:tr1))))
 )
