@@ -86,13 +86,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RTO_0001026>))
 Declaration(DataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001007>))
 Declaration(DataProperty(<http://purl.archive.org/purl/rto-draft/RTO_0001008>))
-Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0000101>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001000>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001001>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001002>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001003>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001004>))
-Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001005>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001006>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001009>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001010>))
@@ -108,7 +106,10 @@ Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001019>
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001020>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001021>))
 Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001022>))
+Declaration(NamedIndividual(<http://purl.archive.org/purl/rto-draft/RTO_0001023>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0000024>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0001024>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/RTO_0001027>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -375,6 +376,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ar
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000039> "radiation therapy treatment"@en)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/OGMS_0000116>)
 SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+SubClassOf(<http://purl.archive.org/purl/rto-draft/RTO_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000582>))
 
 # Class: <http://purl.archive.org/purl/rto-draft/RTO_0000040> (control_point)
 
@@ -504,6 +506,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020017> ObjectSomeValuesFrom(<ht
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/OBI_0002141>))
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OMRSE_00000011>))
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C15608> (Staging)
@@ -606,22 +609,20 @@ SubClassOf(<http://purl.obolibrary.org/obo/RTO_0001026> ObjectSomeValuesFrom(<ht
 #   Named Individuals
 ############################
 
-# Individual: <http://purl.archive.org/purl/rto-draft/RTO_0000101> (Amersham 6702)
-
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0000101> "Amersham 6702"@en)
-ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000013> <http://purl.archive.org/purl/rto-draft/RTO_0000101>)
-
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001000> (Pat_01)
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001000> "Pat_01"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.archive.org/purl/rto-draft/RTO_0001000>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0001000> <http://purl.archive.org/purl/rto-draft/RTO_0001001>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0001000> <http://purl.archive.org/purl/rto-draft/RTO_0001002>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0001000> <http://purl.obolibrary.org/obo/RTO_0001024>)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001001> (MRI_Pat_01_a)
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001001> "MRI_Pat_01_a"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0002141> <http://purl.archive.org/purl/rto-draft/RTO_0001001>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001001> <http://purl.archive.org/purl/rto-draft/RTO_0001004>)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001001> <http://purl.archive.org/purl/rto-draft/RTO_0001005>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001001> <http://purl.archive.org/purl/rto-draft/RTO_0001023>)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001002> (MRI_Pat_01_b)
 
@@ -644,12 +645,6 @@ AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_00010
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000044> <http://purl.archive.org/purl/rto-draft/RTO_0001004>)
 DataPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0001937> <http://purl.archive.org/purl/rto-draft/RTO_0001004> "4.0"^^xsd:float)
 
-# Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001005> (timestamp_Pat_01_a)
-
-AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001005> "timestamp_Pat_01_a"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000582> <http://purl.archive.org/purl/rto-draft/RTO_0001005>)
-DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http://purl.archive.org/purl/rto-draft/RTO_0001005> "2026-01-02T9:00:00"^^xsd:dateTime)
-
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001006> (timestamp_Pat_01_b)
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001006> "timestamp_Pat_01_b"@en)
@@ -670,6 +665,10 @@ DataPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0002135> <http://purl.
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001011> "Pat_02"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.archive.org/purl/rto-draft/RTO_0001011>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0001011> <http://purl.archive.org/purl/rto-draft/RTO_0001014>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0001011> <http://purl.archive.org/purl/rto-draft/RTO_0001015>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0001011> <http://purl.archive.org/purl/rto-draft/RTO_0001016>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.archive.org/purl/rto-draft/RTO_0001011> <http://purl.obolibrary.org/obo/RTO_0001027>)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001012> (Pat_02_family_name)
 
@@ -687,16 +686,22 @@ DataPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0002135> <http://purl.
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001014> "MRI_Pat_02_a"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0002141> <http://purl.archive.org/purl/rto-draft/RTO_0001014>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001014> <http://purl.archive.org/purl/rto-draft/RTO_0001017>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001014> <http://purl.archive.org/purl/rto-draft/RTO_0001020>)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001015> (MRI_Pat_02_b)
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001015> "MRI_Pat_02_b"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0002141> <http://purl.archive.org/purl/rto-draft/RTO_0001015>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001015> <http://purl.archive.org/purl/rto-draft/RTO_0001018>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001015> <http://purl.archive.org/purl/rto-draft/RTO_0001021>)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001016> (MRI_Pat_02_c)
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001016> "MRI_Pat_02_c"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0002141> <http://purl.archive.org/purl/rto-draft/RTO_0001016>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001016> <http://purl.archive.org/purl/rto-draft/RTO_0001019>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.archive.org/purl/rto-draft/RTO_0001016> <http://purl.archive.org/purl/rto-draft/RTO_0001022>)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001017> (timestamp_Pat_02_a)
 
@@ -720,27 +725,44 @@ DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001020> "Vol_measure_Pat_02_a"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000044> <http://purl.archive.org/purl/rto-draft/RTO_0001020>)
-DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "5.1"^^xsd:decimal)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0001937> <http://purl.archive.org/purl/rto-draft/RTO_0001020> "5.1"^^xsd:float)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001021> (Vol_measure_Pat_02_b)
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001021> "Vol_measure_Pat_02_b"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000044> <http://purl.archive.org/purl/rto-draft/RTO_0001021>)
-DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http://purl.archive.org/purl/rto-draft/RTO_0001021> "3.7"^^xsd:decimal)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0001937> <http://purl.archive.org/purl/rto-draft/RTO_0001021> "3.7"^^xsd:float)
 
 # Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001022> (Vol_measure_Pat_02_c)
 
 AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001022> "Vol_measure_Pat_02_c"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000044> <http://purl.archive.org/purl/rto-draft/RTO_0001022>)
-DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http://purl.archive.org/purl/rto-draft/RTO_0001022> "3.7"^^xsd:decimal)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0001937> <http://purl.archive.org/purl/rto-draft/RTO_0001022> "3.0"^^xsd:float)
+
+# Individual: <http://purl.archive.org/purl/rto-draft/RTO_0001023> (timestamp_Pat_01_a)
+
+AnnotationAssertion(rdfs:label <http://purl.archive.org/purl/rto-draft/RTO_0001023> "timestamp_Pat_01_a"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000582> <http://purl.archive.org/purl/rto-draft/RTO_0001023>)
+DataPropertyAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0001008> <http://purl.archive.org/purl/rto-draft/RTO_0001023> "2026-01-05T11:00:00"^^xsd:dateTime)
 
 # Individual: <http://purl.obolibrary.org/obo/RTO_0000024> (test plan specification)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0000024> "test plan specification"@en)
 ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000038> <http://purl.obolibrary.org/obo/RTO_0000024>)
 
+# Individual: <http://purl.obolibrary.org/obo/RTO_0001024> (RadTx_Pat_01_a)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0001024> "RadTx_Pat_01_a"@en)
+ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/RTO_0001024>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RTO_0001024> <http://purl.archive.org/purl/rto-draft/RTO_0001023>)
+
+# Individual: <http://purl.obolibrary.org/obo/RTO_0001027> (RadTx_Pat_02_a)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RTO_0001027> "RadTx_Pat_02_a"@en)
+ClassAssertion(<http://purl.archive.org/purl/rto-draft/RTO_0000039> <http://purl.obolibrary.org/obo/RTO_0001027>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RTO_0001027> <http://purl.archive.org/purl/rto-draft/RTO_0001017>)
+
 
 DifferentIndividuals(<http://purl.archive.org/purl/rto-draft/RTO_0001001> <http://purl.archive.org/purl/rto-draft/RTO_0001002>)
 DifferentIndividuals(<http://purl.archive.org/purl/rto-draft/RTO_0001003> <http://purl.archive.org/purl/rto-draft/RTO_0001004>)
-DifferentIndividuals(<http://purl.archive.org/purl/rto-draft/RTO_0001005> <http://purl.archive.org/purl/rto-draft/RTO_0001006>)
 )
