@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                efb4d530046eee86c7b2652720b53e82ecac5ef9d26ce73ae5d92aef97782477
+CONFIG_HASH=                a43b59469d8212b2d295638af6ed5b93e1b9d14dc9c373cf7778edf0b544f7bd
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  rbo ro iao bfo ogms omrse obi doid pato cob chebi ncit uberon gsso
+IMPORTS =  rbo ro iao bfo ogms omrse obi doid pato cob chebi ncit uberon stato gsso
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -668,6 +668,27 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 		 $(ANNOTATE_CONVERT_FILE)
 endif # IMP_LARGE=true
 
+## Module for ontology: stato (filter)
+$(IMPORTDIR)/stato_import.owl: $(MIRRORDIR)/stato.owl $(IMPORTDIR)/stato_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/stato_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
+		        --base-iri http://purl.obolibrary.org/obo/IAO_ \
+		        --base-iri http://purl.obolibrary.org/obo/STATO_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/stato_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
 ## Module for ontology: gsso (filter)
 ifeq ($(IMP_LARGE),true)
 $(IMPORTDIR)/gsso_import.owl: $(MIRRORDIR)/gsso.owl $(IMPORTDIR)/gsso_terms.txt $(IMPORTSEED) | all_robot_plugins
@@ -830,6 +851,14 @@ mirror-uberon: | $(TMPDIR)
 	curl -L $(OBOBASE)/uberon.owl --create-dirs -o $(TMPDIR)/uberon-download.owl --retry 4 --max-time 10000 && \
 	$(ROBOT) convert -i $(TMPDIR)/uberon-download.owl -o $(TMPDIR)/$@.owl
 endif
+
+
+## ONTOLOGY: stato
+.PHONY: mirror-stato
+.PRECIOUS: $(MIRRORDIR)/stato.owl
+mirror-stato: | $(TMPDIR)
+	curl -L $(OBOBASE)/stato.owl --create-dirs -o $(TMPDIR)/stato-download.owl --retry 4 --max-time 10000 && \
+	$(ROBOT) convert -i $(TMPDIR)/stato-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: gsso
