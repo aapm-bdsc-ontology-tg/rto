@@ -215,6 +215,12 @@
         <Class IRI="http://purl.obolibrary.org/obo/RTO_0001026"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000010"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.archive.org/purl/rto-draft/RTO_0001046"/>
     </Declaration>
     <Declaration>
@@ -255,6 +261,15 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001060"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001061"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001062"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001063"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:description"/>
@@ -700,13 +715,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0002141"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000581"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000582"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0002141"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.archive.org/purl/rto-draft/RTO_0000044"/>
         </ObjectSomeValuesFrom>
@@ -743,6 +751,14 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000398"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000009"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000010"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
@@ -788,6 +804,14 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000582"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001060"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C157740"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001061"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/OGMS_0000116"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001062"/>
+    </ClassAssertion>
     <DifferentIndividuals>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001050"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
@@ -818,6 +842,21 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001050"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001050"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001063"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001061"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001062"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.archive.org/purl/rto-draft/RTO_0001046"/>
@@ -1579,6 +1618,21 @@ Each session is bounded by the entrance to a treatment room until the prescribed
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.archive.org/purl/rto-draft/RTO_0001061</IRI>
+        <Literal xml:lang="en">surgery_P2_a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.archive.org/purl/rto-draft/RTO_0001062</IRI>
+        <Literal xml:lang="en">RT_P2_b</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.archive.org/purl/rto-draft/RTO_0001063</IRI>
+        <Literal xml:lang="en">RT_P1_a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.archive.org/purl/rto-draft/RTO_0001075</IRI>
         <Literal xml:lang="en">coordinate measurement assay</Literal>
     </AnnotationAssertion>
@@ -1656,6 +1710,16 @@ Each session is bounded by the entrance to a treatment room until the prescribed
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/RTO_0001026</IRI>
         <Literal xml:lang="en">medical imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000009</IRI>
+        <Literal xml:lang="en">cartesian coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000010</IRI>
+        <Literal xml:lang="en">coordinate system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
