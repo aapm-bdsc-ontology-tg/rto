@@ -272,6 +272,57 @@
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001063"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001070"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001071"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001072"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001073"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001074"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001076"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001077"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001078"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001079"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001080"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001081"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001082"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001083"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001084"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001085"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RTO_0001086"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RTO_0001087"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:description"/>
     </Declaration>
     <Declaration>
@@ -876,6 +927,14 @@
         <Class IRI="http://purl.archive.org/purl/rto-draft/RTO_0000044"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001085"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.archive.org/purl/rto-draft/RTO_0000044"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RTO_0001086"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.archive.org/purl/rto-draft/RTO_0000044"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RTO_0001087"/>
+    </ClassAssertion>
     <DifferentIndividuals>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001050"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
@@ -1066,6 +1125,21 @@
         <DataProperty IRI="http://purl.archive.org/purl/rto-draft/RTO_0001008"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001077"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-01T10:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0001937"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001085"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0001937"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RTO_0001086"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.archive.org/purl/rto-draft/RTO_0001008"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/RTO_0001087"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.archive.org/purl/rto-draft/RTO_0001046"/>
@@ -1934,6 +2008,16 @@ Each session is bounded by the entrance to a treatment room until the prescribed
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/RTO_0001026</IRI>
         <Literal xml:lang="en">medical imaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RTO_0001086</IRI>
+        <Literal xml:lang="en">volume_P2_c</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RTO_0001087</IRI>
+        <Literal xml:lang="en">volume_P2_d</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
