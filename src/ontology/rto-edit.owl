@@ -982,6 +982,26 @@
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001062"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001081"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001082"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001083"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001051"/>
+        <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001084"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.archive.org/purl/rto-draft/RTO_0001046"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001052"/>
         <NamedIndividual IRI="http://purl.archive.org/purl/rto-draft/RTO_0001058"/>
@@ -1137,7 +1157,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.archive.org/purl/rto-draft/RTO_0001008"/>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0001937"/>
         <NamedIndividual IRI="http://purl.obolibrary.org/obo/RTO_0001087"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6</Literal>
     </DataPropertyAssertion>
