@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/iao_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-05-05/imports/iao_import.owl>
+<http://purl.obolibrary.org/obo/rto/releases/2026-09-16/imports/iao_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl>)
-Annotation(owl:versionInfo "2026-05-05")
+Annotation(owl:versionInfo "2026-09-16")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -41,6 +41,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000309>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000403>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000408>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000414>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000416>))
@@ -339,6 +341,18 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000309> "A figure that expresses one or more propositions"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000309> "diagram"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000309> <http://purl.obolibrary.org/obo/IAO_0000308>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000400> (cartesian spatial coordinate datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000400> "A cartesian spatial coordinate datum is a representation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000400> "cartesian spatial coordinate datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000400> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000403> (three dimensional cartesian spatial coordinate datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000403> "A cartesion spatial coordinate datum that  uses three values to specify a position within a three dimensional spatial region"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000403> "three dimensional cartesian spatial coordinate datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000403> <http://purl.obolibrary.org/obo/IAO_0000400>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000408> (length measurement datum)
 

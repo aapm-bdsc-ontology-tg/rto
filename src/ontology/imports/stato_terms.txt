@@ -1,0 +1,5 @@
+STATO:0000009 # cartesian coordinate system
+STATO:0000010 # coordinate system
+IAO:0000030   # information content entity
+BFO:0000031   # generically dependent continuant
+BFO:0000002   # continuant

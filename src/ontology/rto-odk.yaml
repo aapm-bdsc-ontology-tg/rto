@@ -79,6 +79,12 @@ import_group:
       is_large: TRUE
       base_iris:
         - http://purl.obolibrary.org/obo/UBERON_
+    - id: stato
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/BFO_
+        - http://purl.obolibrary.org/obo/IAO_
+        - http://purl.obolibrary.org/obo/STATO_
     - id: gsso
       module_type: filter
       is_large: TRUE
