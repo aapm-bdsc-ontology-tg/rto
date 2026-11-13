@@ -10,3 +10,7 @@ CHEBI:24636
 CHEBI:149692
 CHEBI:149675
 CHEBI:149691
+CHEBI:231679    # ipilimumab
+CHEBI:231614    # nivolumab
+CHEBI:75047	# Braf inhibitor
+CHEBI:79091	# MEK inhibitor
