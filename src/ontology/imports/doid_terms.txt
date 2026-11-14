@@ -1,4 +1,4 @@
-DOID:4	      # disease
+#DOID:4	      # disease
 DOID:162      # cancer
 DOID:10283    # prostate cancer
 DOID:2526     # prostate adenocarcinoma # DOID:3565
