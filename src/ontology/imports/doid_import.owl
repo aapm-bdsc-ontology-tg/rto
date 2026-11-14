@@ -7,14 +7,19 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/doid_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-03-22/imports/doid_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/doid/releases/2026-02-28/doid.owl>)
-Annotation(owl:versionInfo "2026-03-22")
+<http://purl.obolibrary.org/obo/rto/releases/2026-11-14/imports/doid_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/doid/releases/2026-10-29/doid.owl>)
+Annotation(owl:versionInfo "2026-11-14")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_0050671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_10283>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_1107>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_162>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_1909>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_2526>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_3908>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DOID_4450>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 
 
@@ -22,16 +27,33 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/DOID_0050671> (female breast cancer)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_0050671> "female breast cancer"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050671> <http://purl.obolibrary.org/obo/DOID_162>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_0050671> <http://purl.obolibrary.org/obo/DOID_4>)
+
 # Class: <http://purl.obolibrary.org/obo/DOID_10283> (prostate cancer)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_10283> "prostate cancer"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DOID_10283> <http://purl.obolibrary.org/obo/DOID_162>)
 SubClassOf(<http://purl.obolibrary.org/obo/DOID_10283> <http://purl.obolibrary.org/obo/DOID_4>)
 
+# Class: <http://purl.obolibrary.org/obo/DOID_1107> (esophageal carcinoma)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1107> "esophageal carcinoma"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_1107> <http://purl.obolibrary.org/obo/DOID_162>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_1107> <http://purl.obolibrary.org/obo/DOID_4>)
+
 # Class: <http://purl.obolibrary.org/obo/DOID_162> (cancer)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_162> "cancer"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DOID_162> <http://purl.obolibrary.org/obo/DOID_4>)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_1909> (melanoma)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_1909> "melanoma"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_1909> <http://purl.obolibrary.org/obo/DOID_162>)
 
 # Class: <http://purl.obolibrary.org/obo/DOID_2526> (prostate adenocarcinoma)
 
@@ -39,9 +61,21 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_2526> "prost
 SubClassOf(<http://purl.obolibrary.org/obo/DOID_2526> <http://purl.obolibrary.org/obo/DOID_10283>)
 SubClassOf(<http://purl.obolibrary.org/obo/DOID_2526> <http://purl.obolibrary.org/obo/DOID_162>)
 
+# Class: <http://purl.obolibrary.org/obo/DOID_3908> (lung non-small cell carcinoma)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_3908> "lung non-small cell carcinoma"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_3908> <http://purl.obolibrary.org/obo/DOID_162>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_3908> <http://purl.obolibrary.org/obo/DOID_4>)
+
 # Class: <http://purl.obolibrary.org/obo/DOID_4> (disease)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4> "disease"@en)
+
+# Class: <http://purl.obolibrary.org/obo/DOID_4450> (renal cell carcinoma)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DOID_4450> "renal cell carcinoma"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4450> <http://purl.obolibrary.org/obo/DOID_162>)
+SubClassOf(<http://purl.obolibrary.org/obo/DOID_4450> <http://purl.obolibrary.org/obo/DOID_4>)
 
 
 )
