@@ -7,14 +7,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2025-09-28/imports/chebi_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/244/chebi.owl>)
-Annotation(owl:versionInfo "2025-09-28")
+<http://purl.obolibrary.org/obo/rto/releases/2026-11-13/imports/chebi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/257/chebi.owl>)
+Annotation(owl:versionInfo "2026-11-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_10545>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_149675>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_149691>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_149692>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_231614>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_231679>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24431>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24636>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30126>))
@@ -23,6 +25,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30222>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30225>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36342>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36344>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_75047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_79091>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 
@@ -33,7 +37,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_10545> (electron)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_10545> "Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_10545> "Elementary particle not affected by the strong force having a spin ½, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_10545> "electron")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_10545> <http://purl.obolibrary.org/obo/CHEBI_36342>)
 
@@ -55,6 +59,32 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_149692> "oxygen-16(6+)")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_149692> <http://purl.obolibrary.org/obo/CHEBI_24431>)
 
+# Class: <http://purl.obolibrary.org/obo/CHEBI_231614> (Nivolumab)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_231614> "Nivolumab is a human monoclonal antibody for Programmed Death Receptor-1 (PD-1). It is a targeted immunotherapy treatment against metastatic cancer.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_231614> "Nivolumab")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_231614> <http://purl.obolibrary.org/obo/NCIT_C308>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_231679> (ipilimumab)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_231679> "Ipilimumab is a human cytotoxic T-lymphocyte antigen 4 (CTLA-4) blocking antibody used to treat metastatic or unresectable melanoma.(DrugBank)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_231679> "ipilimumab")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_231679> <http://purl.obolibrary.org/obo/NCIT_C308>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_75047> (B-Raf inhibitor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_75047> "A serine/threonine kinase inhibitor that specifically inhibits human mutant serine/threonine kinase (B-Raf)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_75047> "B-Raf inhibitor")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_75047> <http://purl.obolibrary.org/obo/NCIT_C163758>)
+
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_79091> (EC 2.7.11.24 (mitogen-activated protein kinase) inhibitor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_79091> "An EC 2.7.11.* (protein-serine/threonine kinase) inhibitor that interferes with the action of mitogen-activated protein kinase (EC 2.7.11.24).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_79091> "MEK inhibitor")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_79091> <http://purl.obolibrary.org/obo/NCIT_C163758>)
+
+
 # Class: <http://purl.obolibrary.org/obo/CHEBI_24431> (chemical entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24431> "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.")
@@ -62,7 +92,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24431> "che
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_24636> (proton)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24636> "Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24636> "Nuclear particle of charge number +1, spin ½ and rest mass of 1.007276470(12) u.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24636> "proton")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/CHEBI_24431>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/CHEBI_36342>)
@@ -75,20 +105,20 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30126> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30212> (photon)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30212> "Particle of zero charge, zero rest mass, spin quantum number 1, energy hnu and momentum hnu/c (h is the Planck constant, nu the frequency of radiation and c the speed of light), carrier of electromagnetic force.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30212> "Particle of zero charge, zero rest mass, spin quantum number 1, energy <em>h</em><em>ν</em> and momentum <em>h</em><em>ν</em>/<em>c</em> (<em>h</em> is the Planck constant, <em>ν</em> the frequency of radiation and <em>c</em> the speed of light), carrier of electromagnetic force.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30212> "photon")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30212> <http://purl.obolibrary.org/obo/CHEBI_36342>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30222> (neutron)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30222> "Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30222> "Nuclear particle of zero charge, spin ½ and rest mass of 1.008664904(14) u.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30222> "neutron")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30222> <http://purl.obolibrary.org/obo/CHEBI_36342>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30222> <http://purl.obolibrary.org/obo/CHEBI_36344>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30225> (positron)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30225> "Elementary particle not affected by the strong force having a spin 1/2, a positive elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30225> "Elementary particle not affected by the strong force having a spin ½, a positive elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30225> "positron")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30225> <http://purl.obolibrary.org/obo/CHEBI_36342>)
 
@@ -102,6 +132,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36342> "sub
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_36344> "Hadron is a subatomic particle which experiences the strong force.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36344> "hadron")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_36344> <http://purl.obolibrary.org/obo/CHEBI_36342>)
+
 
 
 )
