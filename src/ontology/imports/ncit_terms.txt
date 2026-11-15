@@ -186,3 +186,9 @@ NCIT:C27972 # Stage IVS
 
 NCIT:C28065 # Limited Stage
 NCIT:C28064 # Extensive Stage
+
+# genetic mutations
+BFO:0000016	# disposition
+NCIT:C36327     # gene abnormality
+NCIT:C136425	# RAF family mutation
+NCIT:C40430	# BRAF mutation

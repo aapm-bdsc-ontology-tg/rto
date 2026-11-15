@@ -7,13 +7,14 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rto/imports/ncit_import.owl>
-<http://purl.obolibrary.org/obo/rto/releases/2026-02-10/imports/ncit_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ncit/releases/2025-08-06/ncit.owl>)
-Annotation(owl:versionInfo "2026-02-10")
+<http://purl.obolibrary.org/obo/rto/releases/2026-11-15/imports/ncit_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ncit/releases/2026-03-19/ncit.owl>)
+Annotation(owl:versionInfo "2026-11-15")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C106299>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C125755>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C132010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C136425>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C136485>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C137676>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C139980>))
@@ -24,14 +25,18 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C146985>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C148411>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C148412>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C15608>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C157740>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C161009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16212>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C162609>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C162610>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C163758>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C177561>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C180899>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C181581>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C186612>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C186613>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C186664>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C188292>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C188293>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C188294>))
@@ -40,6 +45,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C188296>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C188297>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C188298>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C188301>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C1908>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C191343>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C191344>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C206714>))
@@ -50,6 +56,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C208261>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C208262>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C208263>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C208264>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C222343>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C222345>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C222349>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C222357>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C223528>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C27964>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C27965>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C27966>))
@@ -78,6 +89,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28108>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C28285>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C308>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C35472>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C36327>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C40430>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48698>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48699>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48700>))
@@ -164,6 +179,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48885>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48886>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48887>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48888>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C93352>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C95177>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C95178>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C95179>))
@@ -202,6 +218,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C125755> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C132010> "T5 TNM Finding")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C132010> <http://purl.obolibrary.org/obo/NCIT_C48885>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C136425> (RAF Family Gene Mutation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C136425> "RAF Family Gene Mutation")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C136425> <http://purl.obolibrary.org/obo/NCIT_C36327>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C136485> (Stage IA3)
 
@@ -252,10 +273,18 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C148412> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C15608> "Staging")
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C157740> (Cancer Surgery)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C157740> "Cancer Surgery")
+
 # Class: <http://purl.obolibrary.org/obo/NCIT_C161009> (Clinical Primary Tumor TNM Finding)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C161009> "Clinical Primary Tumor TNM Finding")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C161009> <http://purl.obolibrary.org/obo/NCIT_C48881>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C16212> (Cancer Therapeutic Procedure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C16212> "Cancer Therapeutic Procedure")
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C162609> (Clinical Regional Lymph Nodes TNM Finding)
 
@@ -266,6 +295,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C162609> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C162610> "Clinical Distant Metastasis TNM Finding")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C162610> <http://purl.obolibrary.org/obo/NCIT_C48881>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C163758> (Targeted Therapy Agent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C163758> "Targeted Therapy Agent")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C163758> <http://purl.obolibrary.org/obo/NCIT_C1908>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C177561> (AJCC Cancer Staging Manual)
 
@@ -290,6 +324,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C186612> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C186613> "AJCC Cancer Staging System Version 9")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C186613> <http://purl.obolibrary.org/obo/NCIT_C177561>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C186664> (Cytotoxic Chemotherapeutic Agent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C186664> "Cytotoxic Chemotherapeutic Agent")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C186664> <http://purl.obolibrary.org/obo/NCIT_C1908>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C188292> (T1a1 Stage Finding)
 
@@ -330,6 +369,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C188298> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C188301> "M1d TNM Finding")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C188301> <http://purl.obolibrary.org/obo/NCIT_C48700>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C1908> (Drug, Food, Chemical or Biomedical Material)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C1908> "Drug, Food, Chemical or Biomedical Material")
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C191343> (AJCC Cancer Staging Manual 4th Edition)
 
@@ -380,6 +423,31 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C208263> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C208264> "pT2d TNM Finding")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C208264> <http://purl.obolibrary.org/obo/NCIT_C48764>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C222343> (pT1b1 TNM Finding)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C222343> "pT1b1 TNM Finding")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C222343> <http://purl.obolibrary.org/obo/NCIT_C48761>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C222345> (pT1b2 TNM Finding)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C222345> "pT1b2 TNM Finding")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C222345> <http://purl.obolibrary.org/obo/NCIT_C48761>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C222349> (pT1a2 TNM Finding)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C222349> "pT1a2 TNM Finding")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C222349> <http://purl.obolibrary.org/obo/NCIT_C48760>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C222357> (pT1a1 TNM Finding)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C222357> "pT1a1 TNM Finding")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C222357> <http://purl.obolibrary.org/obo/NCIT_C48760>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C223528> (T3ab TNM Finding)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C223528> "T3ab TNM Finding")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C223528> <http://purl.obolibrary.org/obo/NCIT_C48728>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C27964> (Stage 0a)
 
@@ -519,6 +587,25 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C28108> "Dis
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C28285> "Stage IS")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C28285> <http://purl.obolibrary.org/obo/NCIT_C27966>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C308> (Immunotherapeutic Agent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C308> "Immunotherapeutic Agent")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C308> <http://purl.obolibrary.org/obo/NCIT_C1908>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C35472> (Anemia due to Enzyme Disorder)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C35472> "Anemia due to Enzyme Disorder")
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C36327> (Gene Abnormality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C36327> "Gene Abnormality")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C36327> <http://purl.obolibrary.org/obo/BFO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C40430> (BRAF Gene Mutation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C40430> "BRAF Gene Mutation")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C40430> <http://purl.obolibrary.org/obo/NCIT_C136425>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C48698> (Cancer TNM Finding Category)
 
@@ -948,6 +1035,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48887> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C48888> "Pathologic Primary Tumor TNM Finding")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48888> <http://purl.obolibrary.org/obo/NCIT_C48739>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C93352> (Targeted Therapy)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C93352> "Targeted Therapy")
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C95177> (Stage IIA1)
 
